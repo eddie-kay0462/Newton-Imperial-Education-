@@ -80,9 +80,14 @@ const ApplicationForm = () => {
           <h2 className="text-2xl md:text-3xl font-semibold text-white mb-8">
             NIE Research Scholar Application
           </h2>
-          <p className="text-xl text-white max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-white max-w-4xl mx-auto leading-relaxed mb-6">
             Our students are academically excellent with a unique passion and drive for knowledge. They are the world's future scholars and change makers.
           </p>
+          <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4 max-w-2xl mx-auto">
+            <p className="text-white/90 text-lg">
+              <strong className="text-white">Highly Selective:</strong> With only a 1% acceptance rate, we accept only the most exceptional candidates.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -111,6 +116,11 @@ const ApplicationForm = () => {
             <p className="text-gray-700 mb-4">
               You will be working 1-1 with top PhD candidates and researchers in Oxford, Cambridge, MIT, and Harvard.
             </p>
+            <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-4">
+              <p className="text-red-800">
+                <strong>Highly Competitive:</strong> Our programs are extremely competitive with only a 1% acceptance rate. We select only the most exceptional candidates who demonstrate outstanding academic excellence, research potential, and passion for their chosen fields.
+              </p>
+            </div>
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
               <p className="text-yellow-800">
                 <strong>Important:</strong> As these are rigorous programs, applicants will be interviewed for 30 minutes. If you are conditionally accepted after the interview, you are required to make a deposit of $300, which will then go towards your tuition fee.
