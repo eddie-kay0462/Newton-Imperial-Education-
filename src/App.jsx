@@ -20,7 +20,7 @@ import CareerExplorationPathways from './components/CareerExplorationPathways.js
 import LeadershipPersonalDevelopment from './components/LeadershipPersonalDevelopment.jsx';
 import IntensivePrograms from './components/IntensivePrograms.jsx';
 import SummerPrograms from './components/SummerPrograms.jsx';
-import ApplicationForm from './components/ApplicationForm.jsx';
+
 
 // Home page component
 const HomePage = () => {
@@ -52,7 +52,7 @@ function App() {
       <Route path="/leadership-personal-development" element={<LeadershipPersonalDevelopment />} />
       <Route path="/intensive-programs" element={<IntensivePrograms />} />
       <Route path="/summer-programs" element={<SummerPrograms />} />
-      <Route path="/apply" element={<ApplicationForm />} />
+
     </Routes>
   );
 }

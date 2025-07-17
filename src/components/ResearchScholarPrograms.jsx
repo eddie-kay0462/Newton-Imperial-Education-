@@ -261,12 +261,14 @@ const ResearchScholarPrograms = () => {
                     Join our research community and work alongside world-class academics from top universities.
                   </p>
                   <div className="flex space-x-4">
-                    <Link 
-                      to="/apply" 
+                    <a 
+                      href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors"
                     >
                       Apply Now
-                    </Link>
+                    </a>
                     <button className="border border-gray-300 hover:bg-gray-50 text-gray-700 font-semibold py-2 px-6 rounded-lg transition-colors">
                       Download Brochure
                     </button>

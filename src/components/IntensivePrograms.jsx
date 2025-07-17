@@ -264,9 +264,14 @@ const IntensivePrograms = () => {
                     Join our intensive programs and accelerate your academic journey with expert mentorship and focused learning.
                   </p>
                   <div className="flex space-x-4">
-                    <button className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors">
+                    <a 
+                      href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors inline-block"
+                    >
                       Apply Now
-                    </button>
+                    </a>
                     <button className="border border-gray-300 hover:bg-gray-50 text-gray-700 font-semibold py-2 px-6 rounded-lg transition-colors">
                       Download Details
                     </button>

@@ -39,12 +39,14 @@ const Header = () => {
             <a href="/#contact" className="text-gray-700 hover:text-primary-700 font-medium transition-colors">
               Contact
             </a>
-            <Link 
-              to="/apply" 
+            <a 
+              href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
             >
               Apply Now
-            </Link>
+            </a>
           </nav>
 
           {/* Mobile menu button */}
@@ -104,13 +106,15 @@ const Header = () => {
                 Contact
               </a>
               <div className="px-3 py-2">
-                <Link 
-                  to="/apply"
+                <a 
+                  href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-center"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Apply Now
-                </Link>
+                </a>
               </div>
             </div>
           </div>

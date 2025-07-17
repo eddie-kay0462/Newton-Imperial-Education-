@@ -125,9 +125,14 @@ const OurStudents = () => {
             <p className="text-primary-100 mb-6 max-w-2xl mx-auto">
               Join our community of ambitious students and take the first step toward your academic and career goals.
             </p>
-            <button className="bg-white text-primary-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-colors">
+            <a 
+              href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-primary-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-colors inline-block"
+            >
               Apply Today
-            </button>
+            </a>
           </div>
         </div>
       </div>

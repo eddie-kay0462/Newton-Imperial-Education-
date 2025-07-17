@@ -194,12 +194,14 @@ const OurPrograms = () => {
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
               Join thousands of students who have transformed their academic future through our programs.
             </p>
-            <Link 
-              to="/apply" 
+            <a 
+              href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors"
             >
               Apply Now
-            </Link>
+            </a>
           </div>
         </div>
       </div>

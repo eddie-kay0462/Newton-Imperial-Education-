@@ -11,12 +11,14 @@ const CallToAction = () => {
         <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
           Join thousands of students who have transformed their academic future through our research programs.
         </p>
-        <Link 
-          to="/apply"
-          className="bg-white text-primary-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-colors transform hover:scale-105"
-        >
-          Apply Now
-        </Link>
+                 <a 
+           href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
+           target="_blank"
+           rel="noopener noreferrer"
+           className="bg-white text-primary-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-colors transform hover:scale-105"
+         >
+           Apply Now
+         </a>
       </div>
     </section>
   );
