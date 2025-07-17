@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,31 +14,37 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-primary-700 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">B</span>
               </div>
               <span className="text-xl font-bold text-gray-900">Newton Imperial Education</span>
-            </div>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-primary-700 font-medium transition-colors">
+            <Link to="/" className="text-gray-700 hover:text-primary-700 font-medium transition-colors">
               Home
-            </a>
-            <a href="#about" className="text-gray-700 hover:text-primary-700 font-medium transition-colors">
+            </Link>
+            <a href="/#about" className="text-gray-700 hover:text-primary-700 font-medium transition-colors">
               About
             </a>
-            <a href="#programs" className="text-gray-700 hover:text-primary-700 font-medium transition-colors">
+            <a href="/#programs" className="text-gray-700 hover:text-primary-700 font-medium transition-colors">
               Programs
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-primary-700 font-medium transition-colors">
+            <a href="/#our-students" className="text-gray-700 hover:text-primary-700 font-medium transition-colors">
+              Our Students
+            </a>
+            <a href="/#contact" className="text-gray-700 hover:text-primary-700 font-medium transition-colors">
               Contact
             </a>
-            <button className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            <Link 
+              to="/apply" 
+              className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+            >
               Apply Now
-            </button>
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -61,41 +68,49 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
-              <a
-                href="#home"
+              <Link
+                to="/"
                 className="block px-3 py-2 text-gray-700 hover:text-primary-700 hover:bg-gray-50 rounded-md font-medium transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
-              </a>
+              </Link>
               <a
-                href="#about"
+                href="/#about"
                 className="block px-3 py-2 text-gray-700 hover:text-primary-700 hover:bg-gray-50 rounded-md font-medium transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About
               </a>
               <a
-                href="#programs"
+                href="/#programs"
                 className="block px-3 py-2 text-gray-700 hover:text-primary-700 hover:bg-gray-50 rounded-md font-medium transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Programs
               </a>
               <a
-                href="#contact"
+                href="/#our-students"
+                className="block px-3 py-2 text-gray-700 hover:text-primary-700 hover:bg-gray-50 rounded-md font-medium transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Our Students
+              </a>
+              <a
+                href="/#contact"
                 className="block px-3 py-2 text-gray-700 hover:text-primary-700 hover:bg-gray-50 rounded-md font-medium transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
               </a>
               <div className="px-3 py-2">
-                <button 
-                  className="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors"
+                <Link 
+                  to="/apply"
+                  className="block w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-center"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Apply Now
-                </button>
+                </Link>
               </div>
             </div>
           </div>

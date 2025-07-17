@@ -22,9 +22,12 @@ const HeroSection = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="btn-primary text-lg px-8 py-4">
-                Apply Now
-              </button>
+              <a 
+                href="/#programs" 
+                className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors text-center text-lg"
+              >
+                Explore Programs
+              </a>
               <button className="btn-secondary text-lg px-8 py-4">
                 Learn More
               </button>
