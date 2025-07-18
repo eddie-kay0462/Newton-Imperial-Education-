@@ -4,7 +4,7 @@ import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 
 const IntensivePrograms = () => {
-  const [selectedProgram, setSelectedProgram] = useState('weekly');
+  const [selectedProgram, setSelectedProgram] = useState('intense');
 
   // Scroll to top when component mounts
   useEffect(() => {
@@ -12,43 +12,46 @@ const IntensivePrograms = () => {
   }, []);
 
   const programs = {
-    weekly: {
-      title: "Weekly Program",
-      duration: "12 weeks",
-      price: "$600",
-      overview: "This 12-week intensive program offers weekly mentorship sessions designed to accelerate your academic growth and prepare you for university success.",
-      format: "Weekly 1-hour sessions with expert mentors",
+    intense: {
+      title: "Newton Intense",
+      subtitle: "Weekend Intense",
+      duration: "Weekend Program",
+      price: "£1,500",
+      overview: "An intense weekend program where students receive comprehensive mentorship over Saturday and Sunday. Each day includes 6 hours of focused learning with expert mentors.",
+      format: "6 hours of intensive mentorship on Saturday and Sunday",
       highlights: [
-        "Personalized mentorship from top university researchers",
-        "Structured learning path with clear milestones",
-        "Weekly assignments and progress tracking",
-        "Access to exclusive academic resources"
+        "12 hours of intensive mentorship over the weekend",
+        "Personalized learning with expert mentors",
+        "Perfect for students with busy weekday schedules",
+        "Accelerated skill development in a short timeframe"
       ]
     },
-    monthly: {
-      title: "Monthly Program",
-      duration: "3 months",
-      price: "$1,200",
-      overview: "A comprehensive 3-month program with monthly deep-dive sessions, perfect for students who want intensive learning with more flexibility.",
-      format: "Monthly 2-hour intensive sessions plus continuous support",
+    sprint: {
+      title: "Newton Sprint",
+      subtitle: "2 Week Program",
+      duration: "2 weeks",
+      price: "£2,000",
+      overview: "A comprehensive 2-week group program where students meet for 2 hours every weekday. Students present their project on the final day and receive dedicated one-on-one mentorship sessions.",
+      format: "2 hours daily (weekdays) + 2 timed 30-minute mentor meetings",
       highlights: [
-        "Monthly intensive workshops with industry experts",
-        "Flexible scheduling to fit your academic calendar",
-        "Project-based learning with real-world applications",
-        "Peer collaboration and networking opportunities"
+        "20 hours of group learning over 2 weeks",
+        "Two dedicated 30-minute one-on-one mentor sessions",
+        "Collaborative learning with peer group",
+        "Final project presentation on the last day"
       ]
     },
-    custom: {
-      title: "Custom Program",
-      duration: "Flexible",
-      price: "Contact for pricing",
-      overview: "Tailored program designed specifically for your unique academic goals and timeline. Work with our team to create your perfect learning experience.",
-      format: "Customized schedule and format based on your needs",
+    premium: {
+      title: "Newton Sprint Premium",
+      subtitle: "2 Week Premium",
+      duration: "2 weeks",
+      price: "£3,000",
+      overview: "An exclusive individual program where students meet daily with a mentor for 2 weeks. This premium experience culminates in a final presentation, offering the most personalized learning experience.",
+      format: "Daily individual mentorship sessions for 2 weeks",
       highlights: [
+        "Daily one-on-one mentorship for 2 weeks",
         "Completely personalized curriculum",
-        "Flexible timing and duration",
-        "One-on-one mentorship options",
-        "Specialized focus areas available"
+        "Individual attention and tailored learning path",
+        "Final project presentation and assessment"
       ]
     }
   };
@@ -111,9 +114,12 @@ const IntensivePrograms = () => {
           <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
                   {currentProgram.title}
                 </h3>
+                <p className="text-lg text-primary-600 font-semibold mb-4">
+                  {currentProgram.subtitle}
+                </p>
                 <div className="flex items-center gap-4 mb-6">
                   <div className="flex items-center text-gray-600">
                     <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
