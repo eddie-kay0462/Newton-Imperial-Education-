@@ -205,7 +205,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100">
-      <div className="w-full max-w-none mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24">
+      <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
@@ -244,7 +244,7 @@ const Header = () => {
                 </button>
                 
                 {activeDropdown === 'about' && (
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[640px] bg-white rounded-2xl shadow-xl border border-gray-200 py-6 z-50 backdrop-blur-sm">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-[640px] bg-white rounded-2xl shadow-xl border border-gray-200 py-6 z-50 backdrop-blur-sm">
                     <div className="px-6 py-2">
                       <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">About Us</h3>
                     </div>
@@ -294,7 +294,7 @@ const Header = () => {
                 </button>
                 
                 {activeDropdown === 'programs' && (
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[960px] bg-white rounded-2xl shadow-xl border border-gray-200 py-6 z-50 backdrop-blur-sm">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-[960px] bg-white rounded-2xl shadow-xl border border-gray-200 py-6 z-50 backdrop-blur-sm">
                     <div className="px-6 py-2">
                       <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Our Programs</h3>
                     </div>

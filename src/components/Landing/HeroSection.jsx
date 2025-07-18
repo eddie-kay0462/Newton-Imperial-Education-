@@ -2,8 +2,8 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-br from-slate-25 via-blue-25 to-indigo-25 relative overflow-hidden" style={{ background: 'linear-gradient(to bottom right, #fafafa, #f8fafc, #f7fafc)' }} aria-labelledby="hero-heading">
-      <div className="w-full max-w-none mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24 relative z-10">
+    <section className="bg-white relative overflow-hidden" aria-labelledby="hero-heading">
+      <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28 relative z-10">
         {/* Hero Content */}
         <header className="pt-20 pb-16 lg:pt-32 lg:pb-20">
           <div className="grid lg:grid-cols-2 gap-24 xl:gap-40 items-center max-w-screen-2xl mx-auto">

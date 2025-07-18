@@ -5,7 +5,7 @@ const CallToAction = () => {
     <section className="py-20 lg:py-32 bg-gradient-to-br from-primary-600 to-primary-700 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-primary-600/95 to-primary-700/95"></div>
       
-      <div className="w-full max-w-none mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24 relative z-10">
+              <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28 relative z-10">
         <div className="max-w-screen-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-8" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
             Start Your Journey Today

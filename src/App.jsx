@@ -20,6 +20,7 @@ import CareerExplorationPathways from './components/CareerExplorationPathways.js
 import LeadershipPersonalDevelopment from './components/LeadershipPersonalDevelopment.jsx';
 import IntensivePrograms from './components/IntensivePrograms.jsx';
 import SummerPrograms from './components/SummerPrograms.jsx';
+import WhyChooseUsPage from './components/WhyChooseUsPage.jsx';
 
 
 // Home page component
@@ -52,6 +53,7 @@ function App() {
       <Route path="/leadership-personal-development" element={<LeadershipPersonalDevelopment />} />
       <Route path="/intensive-programs" element={<IntensivePrograms />} />
       <Route path="/summer-programs" element={<SummerPrograms />} />
+      <Route path="/why-choose-us" element={<WhyChooseUsPage />} />
 
     </Routes>
   );

@@ -3,7 +3,7 @@ import React from 'react';
 const VisionMission = () => {
   return (
     <section id="vision-mission" className="py-20 lg:py-32 bg-gradient-to-b from-gray-50 to-white">
-      <div className="w-full max-w-none mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24">
+      <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
