@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
                   Excellence in Education, Research, and Personal Development
                 </h3>
                 
-                <div className="space-y-4 text-gray-600 leading-relaxed">
+                <div className="space-y-4 text-gray-600 leading-relaxed text-justify">
                   <p className="text-lg">
                     At Newton Imperial Education, we believe every student deserves access to world-class education and mentorship. Our programs are designed to unlock your potential and prepare you for success in top universities and beyond.
                   </p>
@@ -59,18 +59,38 @@ const WhyChooseUs = () => {
               {/* Key highlights */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex items-center">
+                  <div className="w-5 h-5 bg-primary-600 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
                   <span className="text-gray-700 font-medium">World-Class Mentors</span>
                 </div>
                 
                 <div className="flex items-center">
+                  <div className="w-5 h-5 bg-primary-600 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
                   <span className="text-gray-700 font-medium">Research Opportunities</span>
                 </div>
                 
                 <div className="flex items-center">
+                  <div className="w-5 h-5 bg-primary-600 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
                   <span className="text-gray-700 font-medium">Global Community</span>
                 </div>
                 
                 <div className="flex items-center">
+                  <div className="w-5 h-5 bg-primary-600 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
                   <span className="text-gray-700 font-medium">Proven Results</span>
                 </div>
               </div>

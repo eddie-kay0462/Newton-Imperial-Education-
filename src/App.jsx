@@ -21,6 +21,7 @@ import IntensivePrograms from './components/IntensivePrograms.jsx';
 import SummerPrograms from './components/SummerPrograms.jsx';
 import WhyChooseUsPage from './components/WhyChooseUsPage.jsx';
 import FAQPage from './components/FAQPage.jsx';
+import WhoShouldJoin from './components/WhoShouldJoin.jsx';
 
 
 // Home page component
@@ -33,8 +34,8 @@ const HomePage = () => {
       <VisionMission />
       <OurPrograms />
       <OurStudents />
-      <MentorsFrom />
       <MentorInstitutions />
+      <MentorsFrom />
       <SuccessStories />
       <HowItWorks />
       <Footer />
@@ -54,6 +55,7 @@ function App() {
       <Route path="/summer-programs" element={<SummerPrograms />} />
       <Route path="/why-choose-us" element={<WhyChooseUsPage />} />
       <Route path="/FAQPage" element={<FAQPage />} />
+      <Route path="/who-should-join" element={<WhoShouldJoin />} />
 
     </Routes>
   );

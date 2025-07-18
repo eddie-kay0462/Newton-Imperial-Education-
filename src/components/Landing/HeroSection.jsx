@@ -23,7 +23,7 @@ const HeroSection = () => {
                   </span>
                 </h1>
                 
-                <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-2xl">
+                <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-2xl text-justify">
                   Connect with top-tier researchers from <span className="font-black uppercase">Cambridge</span>, <span className="font-black uppercase">Oxford</span>, <span className="font-black uppercase">MIT</span>, and <span className="font-black uppercase">Harvard</span>. 
                   Transform your academic journey with world-class mentorship and research opportunities.
                 </p>

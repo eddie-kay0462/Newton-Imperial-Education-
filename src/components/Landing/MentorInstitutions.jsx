@@ -4,11 +4,13 @@ const MentorInstitutions = () => {
   const institutions = [
     {
       name: "Oxford University",
+      displayName: { first: "Oxford", second: "University" },
       logo: "/school_logos/oxford_logo.png",
       alt: "Oxford University Logo"
     },
     {
       name: "University of Cambridge",
+      displayName: { first: "Cambridge", second: "University" },
       logo: "/school_logos/cambridge_logo.png",
       alt: "Cambridge University Logo"
     }
@@ -30,17 +32,22 @@ const MentorInstitutions = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 max-w-4xl mx-auto">
             {institutions.map((institution, index) => (
               <div key={index} className="flex items-center justify-center group transition-all duration-300">
-                <div className="flex items-center space-x-4 lg:space-x-6">
-                  <div className="w-24 h-24 lg:w-32 lg:h-32 flex items-center justify-center flex-shrink-0">
+                <div className="flex items-center space-x-6 lg:space-x-8">
+                  <div className="w-40 h-40 lg:w-48 lg:h-48 flex items-center justify-center flex-shrink-0">
                     <img 
                       src={institution.logo} 
                       alt={institution.alt}
                       className="max-w-full max-h-full object-contain transition-all duration-300 group-hover:scale-105"
                     />
                   </div>
-                  <h3 className="text-xl lg:text-2xl font-bold text-gray-900 leading-tight uppercase">
-                    {institution.name}
-                  </h3>
+                  <div className="text-left">
+                    <h3 className="text-xl lg:text-2xl font-bold text-gray-900 leading-tight uppercase">
+                      {institution.displayName.first}
+                    </h3>
+                    <h3 className="text-xl lg:text-2xl font-bold text-gray-900 leading-tight uppercase">
+                      {institution.displayName.second}
+                    </h3>
+                  </div>
                 </div>
               </div>
             ))}

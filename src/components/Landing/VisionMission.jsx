@@ -2,10 +2,10 @@ import React from 'react';
 
 const VisionMission = () => {
   return (
-    <section id="vision-mission" className="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section id="vision-mission" className="py-12 lg:py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
               Vision & Mission
             </h2>
@@ -26,7 +26,7 @@ const VisionMission = () => {
                 </div>
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-900" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>Our Vision</h3>
               </div>
-              <p className="text-base lg:text-lg text-gray-600 leading-relaxed">
+              <p className="text-base lg:text-lg text-gray-600 leading-relaxed text-justify">
                 To become the world's leading platform for connecting brilliant young minds with cutting-edge research opportunities, fostering the next generation of innovative thinkers and breakthrough discoveries that will shape the future of science and technology.
               </p>
             </div>
@@ -41,7 +41,7 @@ const VisionMission = () => {
                 </div>
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-900" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>Our Mission</h3>
               </div>
-              <p className="text-base lg:text-lg text-gray-600 leading-relaxed">
+              <p className="text-base lg:text-lg text-gray-600 leading-relaxed text-justify">
                 To provide exceptional research opportunities and mentorship to ambitious students worldwide, bridging the gap between academic potential and real-world impact through collaborative partnerships with leading universities and research institutions.
               </p>
             </div>

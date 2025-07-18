@@ -127,7 +127,7 @@ const OurPrograms = () => {
                   />
                   
                   {/* Content */}
-                  <div className="p-8 lg:p-10 flex flex-col flex-grow">
+                  <div className="p-8 lg:p-10 flex flex-col flex-grow text-left">
                     <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-6 leading-tight">
                       {program.title}
                     </h3>
