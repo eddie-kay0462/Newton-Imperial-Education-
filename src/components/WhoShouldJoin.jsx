@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
+import CounterAnimation from './CounterAnimation.jsx';
 
 const WhoShouldJoin = () => {
   // Scroll to top when component mounts
@@ -173,19 +174,39 @@ const WhoShouldJoin = () => {
 
             <div className="grid md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary-600 mb-2">97%</div>
+                <CounterAnimation 
+                  targetValue={97} 
+                  suffix="%" 
+                  duration={2000}
+                  className="text-4xl font-bold text-primary-600 mb-2"
+                />
                 <div className="text-lg text-gray-600">University Acceptance Rate</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary-600 mb-2">500+</div>
+                <CounterAnimation 
+                  targetValue={500} 
+                  suffix="+" 
+                  duration={2000}
+                  className="text-4xl font-bold text-primary-600 mb-2"
+                />
                 <div className="text-lg text-gray-600">Students Mentored</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary-600 mb-2">150+</div>
+                <CounterAnimation 
+                  targetValue={150} 
+                  suffix="+" 
+                  duration={2000}
+                  className="text-4xl font-bold text-primary-600 mb-2"
+                />
                 <div className="text-lg text-gray-600">Research Papers Published</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary-600 mb-2">25+</div>
+                <CounterAnimation 
+                  targetValue={25} 
+                  suffix="+" 
+                  duration={2000}
+                  className="text-4xl font-bold text-primary-600 mb-2"
+                />
                 <div className="text-lg text-gray-600">Countries Represented</div>
               </div>
             </div>

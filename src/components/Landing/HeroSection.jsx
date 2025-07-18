@@ -1,6 +1,64 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const HeroSection = () => {
+  const [researchPapers, setResearchPapers] = useState(0);
+  const [researchMentors, setResearchMentors] = useState(0);
+  const [successRate, setSuccessRate] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const statsRef = useRef(null);
+
+  // Counter animation function
+  const animateCounter = (start, end, duration, setter, suffix = '') => {
+    const startTime = performance.now();
+    const animate = (currentTime) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      
+      // Easing function for smooth animation
+      const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+      const current = Math.floor(start + (end - start) * easeOutQuart);
+      
+      setter(current + suffix);
+      
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    };
+    requestAnimationFrame(animate);
+  };
+
+  // Intersection Observer to trigger animation when section is visible
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            setHasAnimated(true);
+            
+            // Start animations with slight delays for better effect
+            setTimeout(() => animateCounter(0, 150, 2000, setResearchPapers, '+'), 200);
+            setTimeout(() => animateCounter(0, 120, 2000, setResearchMentors, '+'), 400);
+            setTimeout(() => animateCounter(0, 97, 2000, setSuccessRate, '%'), 600);
+          }
+        });
+      },
+      {
+        threshold: 0.5, // Trigger when 50% of the section is visible
+        rootMargin: '0px 0px -50px 0px'
+      }
+    );
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current);
+    }
+
+    return () => {
+      if (statsRef.current) {
+        observer.unobserve(statsRef.current);
+      }
+    };
+  }, [hasAnimated]);
+
   return (
     <section className="bg-white relative overflow-hidden" aria-labelledby="hero-heading">
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28 relative z-10">
@@ -33,7 +91,7 @@ const HeroSection = () => {
             {/* Right Side - Stats and CTA */}
             <aside className="space-y-8">
               {/* Trust Indicators - Now on top */}
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-sm border border-gray-100">
+              <div ref={statsRef} className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-sm border border-gray-100">
                 <div className="text-center mb-6">
                   <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">
                     Trusted by Students Worldwide
@@ -48,7 +106,7 @@ const HeroSection = () => {
                        </div>
                        <div className="text-sm text-gray-600">Research Papers</div>
                      </div>
-                     <div className="text-2xl font-bold text-gray-900">150+</div>
+                     <div className="text-2xl font-bold text-gray-900">{researchPapers}</div>
                    </div>
                   
                                      <div className="flex items-center justify-between">
@@ -58,7 +116,7 @@ const HeroSection = () => {
                        </div>
                        <div className="text-sm text-gray-600">Research Mentors</div>
                      </div>
-                     <div className="text-2xl font-bold text-gray-900">120+</div>
+                     <div className="text-2xl font-bold text-gray-900">{researchMentors}</div>
                    </div>
                   
                                      <div className="flex items-center justify-between">
@@ -68,7 +126,7 @@ const HeroSection = () => {
                        </div>
                        <div className="text-sm text-gray-600">Success Rate</div>
                      </div>
-                     <div className="text-2xl font-bold text-gray-900">97%</div>
+                     <div className="text-2xl font-bold text-gray-900">{successRate}</div>
                    </div>
                 </div>
               </div>

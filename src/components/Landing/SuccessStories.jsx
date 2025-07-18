@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CounterAnimation from '../CounterAnimation.jsx';
 
 const SuccessStories = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -161,19 +162,40 @@ const SuccessStories = () => {
 
               <div className="grid md:grid-cols-4 gap-8 lg:gap-12">
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2">150+</div>
+                  <CounterAnimation 
+                    targetValue={150} 
+                    suffix="+" 
+                    duration={2000}
+                    className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2"
+                  />
                   <div className="text-lg text-gray-600">Research Papers Published</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2">95%</div>
+                  <CounterAnimation 
+                    targetValue={95} 
+                    suffix="%" 
+                    duration={2000}
+                    className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2"
+                  />
                   <div className="text-lg text-gray-600">Top University Acceptance</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2">$2.5M</div>
+                  <CounterAnimation 
+                    targetValue={2.5} 
+                    prefix="$" 
+                    suffix="M" 
+                    duration={2000}
+                    className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2"
+                  />
                   <div className="text-lg text-gray-600">In Scholarships Awarded</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2">50+</div>
+                  <CounterAnimation 
+                    targetValue={50} 
+                    suffix="+" 
+                    duration={2000}
+                    className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2"
+                  />
                   <div className="text-lg text-gray-600">Awards Won</div>
                 </div>
               </div>

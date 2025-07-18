@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CounterAnimation from '../CounterAnimation.jsx';
 
 const OurStudents = () => {
   return (
@@ -82,19 +83,39 @@ const OurStudents = () => {
 
               <div className="grid md:grid-cols-4 gap-8 lg:gap-12">
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2">97%</div>
+                  <CounterAnimation 
+                    targetValue={97} 
+                    suffix="%" 
+                    duration={2000}
+                    className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2"
+                  />
                   <div className="text-lg text-gray-600">University Acceptance Rate</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2">500+</div>
+                  <CounterAnimation 
+                    targetValue={500} 
+                    suffix="+" 
+                    duration={2000}
+                    className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2"
+                  />
                   <div className="text-lg text-gray-600">Students Mentored</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2">150+</div>
+                  <CounterAnimation 
+                    targetValue={150} 
+                    suffix="+" 
+                    duration={2000}
+                    className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2"
+                  />
                   <div className="text-lg text-gray-600">Research Papers Published</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2">25+</div>
+                  <CounterAnimation 
+                    targetValue={25} 
+                    suffix="+" 
+                    duration={2000}
+                    className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2"
+                  />
                   <div className="text-lg text-gray-600">Countries Represented</div>
               </div>
             </div>

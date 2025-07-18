@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
+import CounterAnimation from './CounterAnimation.jsx';
 
 const WhyChooseUsPage = () => {
   // Scroll to top when component mounts
@@ -195,17 +196,32 @@ const WhyChooseUsPage = () => {
              <div className="bg-white rounded-2xl p-8 lg:p-12">
                <div className="grid md:grid-cols-3 gap-8 lg:gap-12 text-center">
                  <div className="group">
-                   <div className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">120+</div>
+                   <CounterAnimation 
+                     targetValue={120} 
+                     suffix="+" 
+                     duration={2000}
+                     className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2"
+                   />
                    <div className="text-lg text-gray-600 font-medium">PhD Mentors</div>
                  </div>
 
                  <div className="group">
-                   <div className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">100%</div>
+                   <CounterAnimation 
+                     targetValue={100} 
+                     suffix="%" 
+                     duration={2000}
+                     className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2"
+                   />
                    <div className="text-lg text-gray-600 font-medium">Success Rate</div>
                  </div>
 
                  <div className="group">
-                   <div className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">2</div>
+                   <CounterAnimation 
+                     targetValue={2} 
+                     suffix="" 
+                     duration={2000}
+                     className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2"
+                   />
                    <div className="text-lg text-gray-600 font-medium">Top Universities</div>
                  </div>
                </div>
