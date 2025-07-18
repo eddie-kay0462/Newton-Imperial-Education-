@@ -13,6 +13,7 @@ import {
   SuccessStories,
   HowItWorks
 } from './components/Landing';
+import ReadyToBeginJourney from './components/Landing/ReadyToBeginJourney.jsx';
 import ResearchScholarPrograms from './components/ResearchScholarPrograms.jsx';
 import UniversityPrepCourse from './components/UniversityPrepCourse.jsx';
 import CareerExplorationPathways from './components/CareerExplorationPathways.jsx';
@@ -38,6 +39,7 @@ const HomePage = () => {
       <MentorsFrom />
       <SuccessStories />
       <HowItWorks />
+      <ReadyToBeginJourney />
       <Footer />
     </div>
   );
