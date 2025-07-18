@@ -16,7 +16,7 @@ const VisionMission = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Vision */}
-            <div className="bg-white border border-gray-200 rounded-3xl p-10 lg:p-12 group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+            <div className="bg-white rounded-3xl p-10 lg:p-12 group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="flex items-center mb-8">
                 <div className="w-20 h-20 rounded-2xl flex items-center justify-center mr-6 shadow-lg" style={{ backgroundColor: '#0F2A44' }}>
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -32,7 +32,7 @@ const VisionMission = () => {
             </div>
 
             {/* Mission */}
-            <div className="bg-white border border-gray-200 rounded-3xl p-10 lg:p-12 group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+            <div className="bg-white rounded-3xl p-10 lg:p-12 group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="flex items-center mb-8">
                 <div className="w-20 h-20 rounded-2xl flex items-center justify-center mr-6 shadow-lg" style={{ backgroundColor: '#0F2A44' }}>
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">

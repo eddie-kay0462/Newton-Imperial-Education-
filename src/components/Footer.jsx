@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
 
         {/* Stay Updated Section */}
-        <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 mb-8 border border-white/20 shadow-lg">
+        <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 mb-8 border border-white/20 shadow-sm">
           <h3 className="text-lg font-bold text-gray-900 mb-2">Stay Updated</h3>
           <p className="text-gray-600 mb-4">Get program updates and research opportunities delivered to your inbox.</p>
           <div className="flex gap-3">

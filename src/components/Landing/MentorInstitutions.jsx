@@ -46,25 +46,7 @@ const MentorInstitutions = () => {
             ))}
           </div>
 
-          {/* Trust Indicators */}
-          <div className="mt-16 text-center">
-            <div className="border border-gray-200 rounded-2xl p-12 lg:p-16">
-              <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
-                <div className="text-center">
-                  <div className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">120+</div>
-                  <div className="text-lg lg:text-xl text-gray-600 font-medium">Expert Mentors</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">2</div>
-                  <div className="text-lg lg:text-xl text-gray-600 font-medium">Top Universities</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">100%</div>
-                  <div className="text-lg lg:text-xl text-gray-600 font-medium">PhD Level</div>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>

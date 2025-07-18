@@ -54,7 +54,7 @@ const HeroSection = () => {
               </div>
 
               {/* Trust Indicators */}
-              <div className="bg-white/80 backdrop-blur-md border border-gray-200/50 rounded-2xl p-6 space-y-4">
+              <div className="bg-white/80 backdrop-blur-md rounded-2xl p-6 space-y-4">
                 <div className="grid grid-cols-1 gap-4">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">

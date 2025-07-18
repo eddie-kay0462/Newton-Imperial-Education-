@@ -32,6 +32,100 @@ const CareerExplorationPathways = () => {
         </div>
       </section>
 
+      {/* Main Content */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
+          <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  Career Exploration & University Pathways
+                </h3>
+                <p className="text-lg text-primary-600 font-semibold mb-4">
+                  Comprehensive Career & University Guidance
+                </p>
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="flex items-center text-gray-600">
+                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    4 weeks
+                  </div>
+                  <div className="flex items-center text-primary-600 font-semibold">
+                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                    </svg>
+                    $1,000
+                  </div>
+                </div>
+                <p className="text-gray-700 mb-6">
+                  This program helps students explore different career paths and university programs, and make informed decisions about their future.
+                </p>
+                <div className="mb-6">
+                  <h4 className="font-semibold text-gray-900 mb-2">Format:</h4>
+                  <p className="text-gray-700">Interactive workshops, career assessments, guest speakers, and virtual campus tours.</p>
+                </div>
+              </div>
+
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-4">Program Highlights:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Hear from professionals in various fields about their career journeys.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Get a deeper understanding of how to choose the right university program.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Build your resume and learn about internships and scholarship opportunities.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-8 text-center">
+              <a 
+                href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-primary-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-primary-700 transition-colors"
+              >
+                Apply for Career Exploration Program
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-primary-600 text-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Ready to Explore Your Future?
+          </h2>
+          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+            Join our career exploration program and discover your path to success
+          </p>
+          <a 
+            href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors"
+          >
+            Apply Now
+          </a>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

@@ -11,8 +11,7 @@ import {
   MentorsFrom,
   MentorInstitutions,
   SuccessStories,
-  HowItWorks,
-  CallToAction
+  HowItWorks
 } from './components/Landing';
 import ResearchScholarPrograms from './components/ResearchScholarPrograms.jsx';
 import UniversityPrepCourse from './components/UniversityPrepCourse.jsx';
@@ -38,7 +37,6 @@ const HomePage = () => {
       <MentorInstitutions />
       <SuccessStories />
       <HowItWorks />
-      <CallToAction />
       <Footer />
     </div>
   );
