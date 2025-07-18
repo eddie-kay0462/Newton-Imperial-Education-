@@ -30,68 +30,78 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Right Side - CTA and Stats */}
-            <aside className="space-y-10">
-              {/* CTA Buttons */}
+            {/* Right Side - Stats and CTA */}
+            <aside className="space-y-8">
+              {/* Trust Indicators - Now on top */}
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-sm border border-gray-100">
+                <div className="text-center mb-6">
+                  <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">
+                    Trusted by Students Worldwide
+                  </h3>
+                </div>
+                
+                <div className="grid grid-cols-1 gap-6">
+                                     <div className="flex items-center justify-between">
+                     <div className="flex items-center gap-3">
+                       <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#2F5840' }}>
+                         <span className="material-icons text-white text-2xl">description</span>
+                       </div>
+                       <div className="text-sm text-gray-600">Research Papers</div>
+                     </div>
+                     <div className="text-2xl font-bold text-gray-900">150+</div>
+                   </div>
+                  
+                                     <div className="flex items-center justify-between">
+                     <div className="flex items-center gap-3">
+                       <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#83301C' }}>
+                         <span className="material-icons text-white text-2xl">school</span>
+                       </div>
+                       <div className="text-sm text-gray-600">Research Mentors</div>
+                     </div>
+                     <div className="text-2xl font-bold text-gray-900">120+</div>
+                   </div>
+                  
+                                     <div className="flex items-center justify-between">
+                     <div className="flex items-center gap-3">
+                       <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#1F2212' }}>
+                         <span className="material-icons text-white text-2xl">check_circle</span>
+                       </div>
+                       <div className="text-sm text-gray-600">Success Rate</div>
+                     </div>
+                     <div className="text-2xl font-bold text-gray-900">97%</div>
+                   </div>
+                </div>
+              </div>
+
+              {/* CTA Buttons - Now below stats */}
               <div className="space-y-4">
                 <a 
                   href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-base text-center block"
+                  className="w-full text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-base text-center block group"
                   style={{ backgroundColor: '#8A774A' }}
                   onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
                   onMouseLeave={(e) => e.target.style.backgroundColor = '#8A774A'}
                 >
-                  Apply Now
+                  <span className="flex items-center justify-center gap-2">
+                    Apply Now
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </span>
                 </a>
                 <a 
                   href="/#programs"
-                  className="w-full border-2 border-gray-300 hover:border-primary-600 text-gray-700 hover:text-primary-600 font-semibold py-4 px-8 rounded-xl transition-all duration-300 text-base text-center block hover:bg-primary-50"
+                  className="w-full border-2 border-gray-300 hover:border-primary-600 text-gray-700 hover:text-primary-600 font-semibold py-4 px-8 rounded-xl transition-all duration-300 text-base text-center block hover:bg-primary-50 group"
                 >
-                  Explore Programs
+                  <span className="flex items-center justify-center gap-2">
+                    Explore Programs
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </span>
                 </a>
-              </div>
-
-              {/* Trust Indicators */}
-              <div className="bg-white/80 backdrop-blur-md rounded-2xl p-6 space-y-4">
-                <div className="grid grid-cols-1 gap-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-                      <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="text-lg font-bold text-gray-900">500+</div>
-                      <div className="text-sm text-gray-600">Students Enrolled</div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                      <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="text-lg font-bold text-gray-900">120+</div>
-                      <div className="text-sm text-gray-600">Research Mentors</div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
-                      <svg className="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="text-lg font-bold text-gray-900">97%</div>
-                      <div className="text-sm text-gray-600">Success Rate</div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </aside>
           </div>

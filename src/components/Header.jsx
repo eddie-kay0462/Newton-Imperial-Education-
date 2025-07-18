@@ -297,26 +297,29 @@ const Header = () => {
                 </button>
                 
                 {activeDropdown === 'about' && (
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-[640px] bg-white rounded-2xl shadow-xl border border-gray-200 py-6 z-50 backdrop-blur-sm">
-                    <div className="px-6 py-2">
-                      <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">About Us</h3>
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[680px] bg-white rounded-2xl shadow-2xl border border-gray-200 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                    <div className="px-8 py-2">
+                      <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
+                        <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
+                        About Us
+                      </h3>
                     </div>
-                    <div className="grid grid-cols-2 gap-4 px-6">
+                    <div className="grid grid-cols-2 gap-3 px-8">
                       {aboutDropdownItems.map((item, index) => (
                         <a
                           key={index}
                           href={item.path}
-                          className="flex items-start p-3 text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-200 group rounded-xl"
+                          className="flex items-start p-4 text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-300 group rounded-xl hover:shadow-md hover:scale-102 transform"
                           onClick={() => setActiveDropdown(null)}
                         >
-                          <div className="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-xl mr-3 group-hover:bg-primary-100 group-hover:text-primary-600 transition-all duration-200">
+                          <div className="flex items-center justify-center w-11 h-11 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl mr-4 group-hover:from-primary-100 group-hover:to-primary-200 group-hover:text-primary-600 transition-all duration-300 shadow-sm">
                             {item.icon}
                           </div>
                           <div className="flex-1 min-w-0">
-                            <div className="text-sm font-semibold text-gray-900 group-hover:text-primary-600 transition-colors duration-200">
+                            <div className="text-sm font-bold text-gray-900 group-hover:text-primary-600 transition-colors duration-300 mb-1">
                               {item.name}
                             </div>
-                            <div className="text-xs text-gray-500 mt-0.5 leading-relaxed">
+                            <div className="text-xs text-gray-500 group-hover:text-gray-600 leading-relaxed">
                               {item.description}
                             </div>
                           </div>
@@ -347,26 +350,29 @@ const Header = () => {
                 </button>
                 
                 {activeDropdown === 'programs' && (
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-[960px] bg-white rounded-2xl shadow-xl border border-gray-200 py-6 z-50 backdrop-blur-sm">
-                    <div className="px-6 py-2">
-                      <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Our Programs</h3>
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[980px] bg-white rounded-2xl shadow-2xl border border-gray-200 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                    <div className="px-8 py-2">
+                      <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
+                        <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
+                        Our Programs
+                      </h3>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 px-6">
+                    <div className="grid grid-cols-3 gap-3 px-8">
                       {programsDropdownItems.map((item, index) => (
                         <Link
                           key={index}
                           to={item.path}
-                          className="flex items-start p-3 text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-200 group rounded-xl"
+                          className="flex items-start p-4 text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-300 group rounded-xl hover:shadow-md hover:scale-102 transform"
                           onClick={() => setActiveDropdown(null)}
                         >
-                          <div className="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-xl mr-3 group-hover:bg-primary-100 group-hover:text-primary-600 transition-all duration-200">
+                          <div className="flex items-center justify-center w-11 h-11 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl mr-4 group-hover:from-primary-100 group-hover:to-primary-200 group-hover:text-primary-600 transition-all duration-300 shadow-sm">
                             {item.icon}
                           </div>
                           <div className="flex-1 min-w-0">
-                            <div className="text-sm font-semibold text-gray-900 group-hover:text-primary-600 transition-colors duration-200">
+                            <div className="text-sm font-bold text-gray-900 group-hover:text-primary-600 transition-colors duration-300 mb-1">
                               {item.name}
                             </div>
-                            <div className="text-xs text-gray-500 mt-0.5 leading-relaxed">
+                            <div className="text-xs text-gray-500 group-hover:text-gray-600 leading-relaxed">
                               {item.description}
                             </div>
                           </div>
@@ -397,26 +403,29 @@ const Header = () => {
                 </button>
                 
                 {activeDropdown === 'students' && (
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-[640px] bg-white rounded-2xl shadow-xl border border-gray-200 py-6 z-50 backdrop-blur-sm">
-                    <div className="px-6 py-2">
-                      <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Students</h3>
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[680px] bg-white rounded-2xl shadow-2xl border border-gray-200 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                    <div className="px-8 py-2">
+                      <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
+                        <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
+                        Students
+                      </h3>
                     </div>
-                    <div className="grid grid-cols-2 gap-4 px-6">
+                    <div className="grid grid-cols-2 gap-3 px-8">
                       {studentsDropdownItems.map((item, index) => (
                         <a
                           key={index}
                           href={item.path}
-                          className="flex items-start p-3 text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-200 group rounded-xl"
+                          className="flex items-start p-4 text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-300 group rounded-xl hover:shadow-md hover:scale-102 transform"
                           onClick={() => setActiveDropdown(null)}
                         >
-                          <div className="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-xl mr-3 group-hover:bg-primary-100 group-hover:text-primary-600 transition-all duration-200">
+                          <div className="flex items-center justify-center w-11 h-11 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl mr-4 group-hover:from-primary-100 group-hover:to-primary-200 group-hover:text-primary-600 transition-all duration-300 shadow-sm">
                             {item.icon}
                           </div>
                           <div className="flex-1 min-w-0">
-                            <div className="text-sm font-semibold text-gray-900 group-hover:text-primary-600 transition-colors duration-200">
+                            <div className="text-sm font-bold text-gray-900 group-hover:text-primary-600 transition-colors duration-300 mb-1">
                               {item.name}
                             </div>
-                            <div className="text-xs text-gray-500 mt-0.5 leading-relaxed">
+                            <div className="text-xs text-gray-500 group-hover:text-gray-600 leading-relaxed">
                               {item.description}
                             </div>
                           </div>
