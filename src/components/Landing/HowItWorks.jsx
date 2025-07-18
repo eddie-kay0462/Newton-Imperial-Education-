@@ -45,11 +45,11 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-20 lg:py-32 bg-white">
+    <section id="how-it-works" className="py-16 lg:py-24 bg-white">
               <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
               How It Works
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -57,29 +57,54 @@ const HowItWorks = () => {
             </p>
           </div>
 
-          <div className="relative">
-            {/* Connecting lines container */}
-            <div className="hidden lg:block absolute top-16 left-0 right-0 h-1 bg-gradient-to-r from-primary-200 via-primary-300 to-primary-200 z-0"></div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 relative z-10">
-              {steps.map((step, index) => (
-                <div key={index} className="text-center">
-                  {/* Step circle */}
-                  <div className="w-20 h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-primary-600 to-primary-700 rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-lg group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                    {step.icon}
+          {/* Timeline Design */}
+          <div className="relative max-w-6xl mx-auto">
+            {/* Timeline Container */}
+            <div className="relative">
+              {/* Timeline Steps */}
+              <div className="space-y-12 lg:space-y-16">
+                {steps.map((step, index) => (
+                  <div key={index} className="relative">
+                    {/* Timeline Line */}
+                    {index < steps.length - 1 && (
+                      <div className="absolute left-1/2 transform -translate-x-1/2 top-20 lg:top-24 w-1 h-20 lg:h-24 bg-gradient-to-b from-gray-300 to-gray-200 hidden md:block"></div>
+                    )}
+                    
+                    {/* Timeline Item */}
+                    <div className={`grid md:grid-cols-2 gap-8 lg:gap-12 items-center ${index % 2 === 0 ? '' : 'md:grid-flow-col-dense'}`}>
+                      {/* Step Icon and Number */}
+                      <div className={`text-center ${index % 2 === 0 ? 'md:text-right' : 'md:text-left md:order-2'}`}>
+                        <div className="inline-flex items-center justify-center relative">
+                          {/* Step Number Badge */}
+                          <div className="absolute -top-2 -right-2 w-8 h-8 bg-white border-2 border-gray-300 rounded-full flex items-center justify-center z-10 shadow-sm">
+                            <span className="text-sm font-bold text-gray-600">{step.number}</span>
+                          </div>
+                          
+                          {/* Step Icon */}
+                          <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2" style={{ backgroundColor: '#0F2A44' }}>
+                            {step.icon}
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* Step Content */}
+                      <div className={`${index % 2 === 0 ? 'md:text-left' : 'md:text-right md:order-1'}`}>
+                        <div className="bg-white border border-gray-200 rounded-2xl p-6 lg:p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                          <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                            {step.title}
+                          </h3>
+                          <p className="text-gray-600 leading-relaxed text-base lg:text-lg">
+                            {step.description}
+                          </p>
+                          
+                          {/* Connector Line for Desktop */}
+                          <div className={`hidden md:block absolute top-1/2 transform -translate-y-1/2 w-8 h-0.5 bg-gray-300 ${index % 2 === 0 ? '-right-8' : '-left-8'}`}></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  
-                  {/* Step content */}
-                  <div className="bg-white border border-gray-200 rounded-3xl p-8 lg:p-10 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                    <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
-                      {step.title}
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed text-base lg:text-lg">
-                      {step.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
 

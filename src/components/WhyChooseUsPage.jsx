@@ -143,12 +143,91 @@ const WhyChooseUsPage = () => {
         </div>
       </section>
 
+      {/* Credibility Section - Where Our Mentors Are From */}
+      <section className="py-16 lg:py-20 bg-white">
+        <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
+          <div className="max-w-screen-2xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center px-4 py-2 bg-primary-100 border border-primary-200 rounded-full text-primary-700 font-semibold text-sm mb-6">
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                World-Class Mentors
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                Where Our Mentors Are From
+              </h2>
+              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Learn from PhD candidates and researchers from the world's most prestigious universities
+              </p>
+            </div>
+
+            {/* University Logos */}
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-20 mb-12">
+              <div className="group">
+                <div className="flex items-center space-x-4 lg:space-x-6 transition-all duration-300 group-hover:scale-105">
+                  <div className="w-24 h-24 lg:w-32 lg:h-32 flex items-center justify-center flex-shrink-0">
+                    <img 
+                      src="/school_logos/oxford_logo.png" 
+                      alt="Oxford University Logo"
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="text-xl lg:text-2xl font-bold text-gray-900 uppercase">Oxford University</h3>
+                </div>
+              </div>
+
+              <div className="group">
+                <div className="flex items-center space-x-4 lg:space-x-6 transition-all duration-300 group-hover:scale-105">
+                  <div className="w-24 h-24 lg:w-32 lg:h-32 flex items-center justify-center flex-shrink-0">
+                    <img 
+                      src="/school_logos/cambridge_logo.png" 
+                      alt="Cambridge University Logo"
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="text-xl lg:text-2xl font-bold text-gray-900 uppercase">Cambridge University</h3>
+                </div>
+              </div>
+            </div>
+
+                         {/* Credibility Stats */}
+             <div className="bg-white rounded-2xl p-8 lg:p-12">
+               <div className="grid md:grid-cols-3 gap-8 lg:gap-12 text-center">
+                 <div className="group">
+                   <div className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">120+</div>
+                   <div className="text-lg text-gray-600 font-medium">PhD Mentors</div>
+                 </div>
+
+                 <div className="group">
+                   <div className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">100%</div>
+                   <div className="text-lg text-gray-600 font-medium">Success Rate</div>
+                 </div>
+
+                 <div className="group">
+                   <div className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2">2</div>
+                   <div className="text-lg text-gray-600 font-medium">Top Universities</div>
+                 </div>
+               </div>
+             </div>
+
+            {/* Trust Building Quote */}
+            <div className="text-center mt-12">
+              <blockquote className="text-xl lg:text-2xl font-medium text-gray-700 italic max-w-4xl mx-auto">
+                "Access to world-class mentorship from <span className="font-black uppercase not-italic">Oxford</span> and <span className="font-black uppercase not-italic">Cambridge</span> researchers - 
+                the same caliber of expertise that has shaped centuries of academic excellence."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* What You Will Gain Section */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
                 What You Will Gain
               </h2>
               <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -211,11 +290,11 @@ const WhyChooseUsPage = () => {
       </section>
 
       {/* Resources Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section className="py-16 lg:py-24 bg-white">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
                 Essential Resources for Success
               </h2>
               <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -310,16 +389,13 @@ const WhyChooseUsPage = () => {
                 <div key={index} className={`grid lg:grid-cols-2 gap-12 lg:gap-16 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                   {/* Content */}
                   <div className={`space-y-8 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                    <div className="flex items-start space-x-4">
-                      {reason.icon}
-                      <div>
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                          {reason.title}
-                        </h2>
-                        <p className="text-lg text-gray-600 leading-relaxed">
-                          {reason.description}
-                        </p>
-                      </div>
+                    <div>
+                      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                        {reason.title}
+                      </h2>
+                      <p className="text-lg text-gray-600 leading-relaxed">
+                        {reason.description}
+                      </p>
                     </div>
                     
                     <div className="space-y-3">

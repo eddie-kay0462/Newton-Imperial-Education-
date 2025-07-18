@@ -2,11 +2,11 @@ import React from 'react';
 
 const OurStudents = () => {
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-b from-white to-gray-50" id="our-students">
+    <section className="py-16 lg:py-24 bg-gradient-to-b from-white to-gray-50" id="our-students">
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
               Who Should Join Our Programs?
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">

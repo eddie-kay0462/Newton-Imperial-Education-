@@ -148,9 +148,9 @@ const Header = () => {
       )
     },
     { 
-      name: 'Summer Programs', 
+      name: 'Summer In-Person Programs', 
       path: '/summer-programs',
-      description: 'Engaging summer learning experiences',
+      description: 'Immersive summer experiences at Cambridge and Oxford',
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -198,6 +198,59 @@ const Header = () => {
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        </svg>
+      )
+    },
+    { 
+      name: 'FAQ', 
+      path: '/FAQPage',
+      description: 'Frequently asked questions',
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      )
+    },
+  ];
+
+  const studentsDropdownItems = [
+    { 
+      name: 'Our Students', 
+      path: '/#our-students',
+      description: 'Who should join our programs',
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+        </svg>
+      )
+    },
+    { 
+      name: 'Success Stories', 
+      path: '/#success-stories',
+      description: 'Student achievements and testimonials',
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+        </svg>
+      )
+    },
+    { 
+      name: 'Student Testimonials', 
+      path: '/#testimonials',
+      description: 'Hear from our amazing students',
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+        </svg>
+      )
+    },
+    { 
+      name: 'Alumni Network', 
+      path: '/#alumni',
+      description: 'Connect with our global alumni community',
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 515.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 919.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>
       )
     },
@@ -253,7 +306,7 @@ const Header = () => {
                         <a
                           key={index}
                           href={item.path}
-                          className="flex items-start p-4 text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-200 group rounded-xl"
+                          className="flex items-start p-3 text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-200 group rounded-xl"
                           onClick={() => setActiveDropdown(null)}
                         >
                           <div className="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-xl mr-3 group-hover:bg-primary-100 group-hover:text-primary-600 transition-all duration-200">
@@ -303,7 +356,7 @@ const Header = () => {
                         <Link
                           key={index}
                           to={item.path}
-                          className="flex items-start p-4 text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-200 group rounded-xl"
+                          className="flex items-start p-3 text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-200 group rounded-xl"
                           onClick={() => setActiveDropdown(null)}
                         >
                           <div className="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-xl mr-3 group-hover:bg-primary-100 group-hover:text-primary-600 transition-all duration-200">
@@ -324,9 +377,55 @@ const Header = () => {
                 )}
               </div>
 
-              <a href="/#our-students" className={getLinkClasses('/#our-students')}>
-                Our Students
-              </a>
+              {/* Students Dropdown */}
+              <div 
+                className="relative"
+                ref={el => dropdownRefs.current.students = el}
+                onMouseEnter={() => handleDropdownHover('students')}
+                onMouseLeave={() => handleDropdownLeave('students')}
+              >
+                <button className={getLinkClasses('/#students', false, true)}>
+                  <span>Students</span>
+                  <svg 
+                    className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === 'students' ? 'rotate-180' : ''}`}
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                
+                {activeDropdown === 'students' && (
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-[640px] bg-white rounded-2xl shadow-xl border border-gray-200 py-6 z-50 backdrop-blur-sm">
+                    <div className="px-6 py-2">
+                      <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Students</h3>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4 px-6">
+                      {studentsDropdownItems.map((item, index) => (
+                        <a
+                          key={index}
+                          href={item.path}
+                          className="flex items-start p-3 text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-200 group rounded-xl"
+                          onClick={() => setActiveDropdown(null)}
+                        >
+                          <div className="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-xl mr-3 group-hover:bg-primary-100 group-hover:text-primary-600 transition-all duration-200">
+                            {item.icon}
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <div className="text-sm font-semibold text-gray-900 group-hover:text-primary-600 transition-colors duration-200">
+                              {item.name}
+                            </div>
+                            <div className="text-xs text-gray-500 mt-0.5 leading-relaxed">
+                              {item.description}
+                            </div>
+                          </div>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
               <a href="/#contact" className={getLinkClasses('/#contact')}>
                 Contact
               </a>
@@ -334,12 +433,12 @@ const Header = () => {
 
             {/* CTA Buttons */}
             <div className="hidden lg:flex items-center space-x-3">
-              <a 
-                href="/#faqs" 
+              <Link 
+                to="/FAQPage" 
                 className="text-gray-600 hover:text-primary-600 font-medium transition-all duration-300 text-base px-4 py-2 rounded-lg hover:bg-gray-50 relative after:content-[''] after:absolute after:bottom-0 after:left-4 after:right-4 after:h-0.5 after:bg-primary-600 after:transition-all after:duration-300 after:w-0 hover:after:w-3/4"
               >
                 FAQs
-              </a>
+              </Link>
               <a 
                 href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY" 
                 target="_blank"
@@ -449,13 +548,38 @@ const Header = () => {
                 )}
               </div>
 
-              <a
-                href="/#our-students"
-                className={getLinkClasses('/#our-students', true)}
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Our Students
-              </a>
+              {/* Mobile Students Dropdown */}
+              <div>
+                <button
+                  onClick={() => handleMobileDropdownToggle('students')}
+                  className="flex items-center justify-between w-full px-4 py-3 text-gray-600 hover:text-primary-600 hover:bg-gray-50 rounded-lg font-medium transition-all duration-300 text-base"
+                >
+                  <span>Students</span>
+                  <svg 
+                    className={`w-4 h-4 transition-transform duration-200 ${mobileDropdowns.students ? 'rotate-180' : ''}`}
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                
+                {mobileDropdowns.students && (
+                  <div className="ml-4 mt-2 space-y-1">
+                    {studentsDropdownItems.map((item, index) => (
+                      <a
+                        key={index}
+                        href={item.path}
+                        className="block px-4 py-2 text-gray-600 hover:text-primary-600 hover:bg-primary-50 rounded-lg text-sm font-medium transition-colors duration-200"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
               <a
                 href="/#contact"
                 className={getLinkClasses('/#contact', true)}
@@ -464,13 +588,13 @@ const Header = () => {
                 Contact
               </a>
               <div className="px-4 py-3 border-t border-gray-200 mt-2">
-                <a 
-                  href="/#faqs"
+                <Link 
+                  to="/FAQPage"
                   className="block px-0 py-2 text-gray-600 hover:text-primary-600 font-medium transition-colors duration-300 text-base mb-3"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   FAQs
-                </a>
+                </Link>
                 <a 
                   href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                   target="_blank"

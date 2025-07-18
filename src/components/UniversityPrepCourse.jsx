@@ -181,8 +181,8 @@ const UniversityPrepCourse = () => {
                 <h4 className="font-semibold text-gray-900 mb-2">Contact Us</h4>
                 <div className="text-sm text-gray-600">
                   <p>Course Support</p>
-                  <p>Email: prep@newton.edu</p>
-                  <p>Phone: +1 (555) 123-4567</p>
+                                  <p>Email: hello@newtonimperial.education</p>
+                <p>Phone: +44 7999 846221</p>
                 </div>
               </div>
             </div>

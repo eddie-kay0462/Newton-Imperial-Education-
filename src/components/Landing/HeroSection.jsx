@@ -5,7 +5,7 @@ const HeroSection = () => {
     <section className="bg-white relative overflow-hidden" aria-labelledby="hero-heading">
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28 relative z-10">
         {/* Hero Content */}
-        <header className="pt-20 pb-16 lg:pt-32 lg:pb-20">
+        <header className="pt-16 pb-12 lg:pt-24 lg:pb-16">
           <div className="grid lg:grid-cols-2 gap-24 xl:gap-40 items-center max-w-screen-2xl mx-auto">
             {/* Left Side - Main Content */}
             <div className="space-y-10">
@@ -24,7 +24,7 @@ const HeroSection = () => {
                 </h1>
                 
                 <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-2xl">
-                  Connect with top-tier researchers from Cambridge, Oxford, MIT, and Harvard. 
+                  Connect with top-tier researchers from <span className="font-black uppercase">Cambridge</span>, <span className="font-black uppercase">Oxford</span>, <span className="font-black uppercase">MIT</span>, and <span className="font-black uppercase">Harvard</span>. 
                   Transform your academic journey with world-class mentorship and research opportunities.
                 </p>
               </div>
@@ -98,7 +98,7 @@ const HeroSection = () => {
         </header>
 
         {/* Hero Image Section */}
-        <div className="relative pb-20 lg:pb-32">
+        <div className="relative pb-16 lg:pb-24">
           <div className="relative max-w-screen-2xl mx-auto">
                          <div className="relative rounded-3xl overflow-hidden shadow-lg">
                <img 

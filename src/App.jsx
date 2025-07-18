@@ -21,6 +21,7 @@ import LeadershipPersonalDevelopment from './components/LeadershipPersonalDevelo
 import IntensivePrograms from './components/IntensivePrograms.jsx';
 import SummerPrograms from './components/SummerPrograms.jsx';
 import WhyChooseUsPage from './components/WhyChooseUsPage.jsx';
+import FAQPage from './components/FAQPage.jsx';
 
 
 // Home page component
@@ -54,6 +55,7 @@ function App() {
       <Route path="/intensive-programs" element={<IntensivePrograms />} />
       <Route path="/summer-programs" element={<SummerPrograms />} />
       <Route path="/why-choose-us" element={<WhyChooseUsPage />} />
+      <Route path="/FAQPage" element={<FAQPage />} />
 
     </Routes>
   );
