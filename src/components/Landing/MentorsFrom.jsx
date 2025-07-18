@@ -7,32 +7,38 @@ const MentorsFrom = () => {
     {
       role: "ML Researcher",
       institution: "Harvard",
-      image: "/mentor-1.jpg"
+      image: "/mentor-1.jpg",
+      description: "Specializes in machine learning applications in healthcare"
     },
     {
-      role: "PHD Candidate",
+      role: "PhD Candidate",
       institution: "MIT",
-      image: "/mentor-2.jpg"
+      image: "/mentor-2.jpg",
+      description: "Researching quantum computing and cryptography"
     },
     {
       role: "Assistant Professor",
       institution: "Yale",
-      image: "/mentor-3.jpg"
+      image: "/mentor-3.jpg",
+      description: "Expert in cognitive neuroscience and brain imaging"
     },
     {
       role: "Research Scientist",
       institution: "Stanford",
-      image: "/mentor-4.jpg"
+      image: "/mentor-4.jpg",
+      description: "Developing AI systems for autonomous vehicles"
     },
     {
       role: "Data Scientist",
       institution: "Oxford",
-      image: "/mentor-5.jpg"
+      image: "/mentor-5.jpg",
+      description: "Analyzing complex datasets for climate research"
     },
     {
       role: "Postdoc Researcher",
       institution: "Cambridge",
-      image: "/mentor-6.jpg"
+      image: "/mentor-6.jpg",
+      description: "Investigating sustainable energy solutions"
     }
   ];
 
@@ -58,70 +64,101 @@ const MentorsFrom = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            WHERE DO OUR MENTORS COME FROM?
-          </h2>
-        </div>
-
-        <div className="relative">
-          {/* Left Navigation Arrow */}
-          <button 
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors shadow-md"
-          >
-            <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-
-          {/* Right Navigation Arrow */}
-          <button 
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors shadow-md"
-          >
-            <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-
-          {/* Mentor Cards */}
-          <div className="grid md:grid-cols-3 gap-8 mx-20">
-            {getVisibleMentors().map((mentor, index) => (
-              <div key={`${currentSlide}-${index}`} className="bg-white border border-gray-200 rounded-lg p-6 text-center shadow-sm">
-                {/* Profile Icon */}
-                <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <svg className="w-12 h-12 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8c0 2.208-1.79 4-3.998 4-2.208 0-3.998-1.792-3.998-4s1.79-4 3.998-4c2.208 0 3.998 1.792 3.998 4z"/>
-                  </svg>
-                </div>
-                
-                {/* Mentor Info */}
-                <div className="text-center">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    {mentor.role}
-                  </h3>
-                  <p className="text-gray-600 font-medium">
-                    {mentor.institution}
-                  </p>
-                </div>
-              </div>
-            ))}
+    <section id="mentors" className="py-20 lg:py-32 bg-white">
+      <div className="w-full max-w-none mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24">
+        <div className="max-w-screen-2xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              Where Do Our Mentors Come From?
+            </h2>
+            <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Meet our exceptional mentors from the world's leading research institutions
+            </p>
           </div>
 
-          {/* Pagination Dots */}
-          <div className="flex justify-center mt-8 space-x-2">
-            {mentors.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentSlide ? 'bg-primary-600' : 'bg-gray-300'
-                }`}
-              />
-            ))}
+          <div className="relative">
+            {/* Left Navigation Arrow */}
+            <button 
+              onClick={prevSlide}
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-14 h-14 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition-all duration-300 hover:border-primary-600 shadow-lg"
+            >
+              <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+
+            {/* Right Navigation Arrow */}
+            <button 
+              onClick={nextSlide}
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-14 h-14 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition-all duration-300 hover:border-primary-600 shadow-lg"
+            >
+              <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+
+            {/* Mentor Cards */}
+            <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 mx-0 lg:mx-20">
+              {getVisibleMentors().map((mentor, index) => (
+                <div key={`${currentSlide}-${index}`} className="bg-white border border-gray-200 rounded-3xl p-8 lg:p-10 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                  {/* Profile Icon */}
+                  <div className="w-24 h-24 lg:w-28 lg:h-28 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg">
+                    <svg className="w-12 h-12 lg:w-14 lg:h-14 text-primary-600" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8c0 2.208-1.79 4-3.998 4-2.208 0-3.998-1.792-3.998-4s1.79-4 3.998-4c2.208 0 3.998 1.792 3.998 4z"/>
+                    </svg>
+                  </div>
+                  
+                  {/* Mentor Info */}
+                  <div className="text-center">
+                    <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">
+                      {mentor.role}
+                    </h3>
+                    <p className="text-lg font-semibold text-primary-600 mb-4">
+                      {mentor.institution}
+                    </p>
+                    <p className="text-gray-600 leading-relaxed">
+                      {mentor.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Pagination Dots */}
+            <div className="flex justify-center mt-12 space-x-3">
+              {mentors.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                    index === currentSlide ? 'bg-primary-600 scale-125' : 'bg-gray-300 hover:bg-gray-400'
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* CTA Section */}
+          <div className="mt-20 text-center">
+            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-12 lg:p-16">
+              <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                Ready to Meet Your Mentor?
+              </h3>
+              <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Get matched with a world-class researcher who will guide your academic journey
+              </p>
+              <a 
+                href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-lg"
+                style={{ backgroundColor: '#8A774A' }}
+                onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#8A774A'}
+              >
+                Find Your Mentor
+              </a>
+            </div>
           </div>
         </div>
       </div>

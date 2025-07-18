@@ -2,137 +2,163 @@ import React from 'react';
 
 const OurStudents = () => {
   return (
-    <section className="py-20 bg-white" id="our-students">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            WHO SHOULD JOIN OUR PROGRAMS?
-          </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Our programs are designed for high school and college students eager to explore higher education, develop research skills, and build academic networks. Whether you're at the beginning of your academic journey or looking for advanced research opportunities, we have something for everyone.
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Ideal Candidates */}
-          <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-              <svg className="w-8 h-8 text-primary-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-              Ideal Candidates
-            </h3>
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-3 mt-1">
-                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">High School Students (ages 15–18)</h4>
-                  <p className="text-gray-700">Aiming to pursue university studies and research.</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-3 mt-1">
-                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">College Students (ages 18–22)</h4>
-                  <p className="text-gray-700">Seeking to enhance their academic profiles.</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-3 mt-1">
-                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Research-Interested Students</h4>
-                  <p className="text-gray-700">Interested in research and exploring their passion for science, technology, arts, or humanities.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          {/* What You Will Gain */}
-          <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-              <svg className="w-8 h-8 text-primary-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-              What You Will Gain
-            </h3>
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-3 mt-1">
-                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">University Readiness</h4>
-                  <p className="text-gray-700">Prepare for university life by developing academic and personal skills.</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-3 mt-1">
-                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Research Skills</h4>
-                  <p className="text-gray-700">Participate in high-level research with top scholars from renowned universities.</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-3 mt-1">
-                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Career Clarity</h4>
-                  <p className="text-gray-700">Explore your academic and career interests while building connections with researchers and professionals.</p>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-3 mt-1">
-                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Global Network</h4>
-                  <p className="text-gray-700">Join a community of ambitious students from all over the world.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <div className="bg-primary-600 text-white rounded-lg p-8">
-            <h3 className="text-2xl font-bold mb-4">
-              Ready to Transform Your Academic Journey?
-            </h3>
-            <p className="text-primary-100 mb-6 max-w-2xl mx-auto">
-              Join our community of ambitious students and take the first step toward your academic and career goals.
+    <section className="py-20 lg:py-32 bg-gradient-to-b from-white to-gray-50" id="our-students">
+      <div className="w-full max-w-none mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24">
+        <div className="max-w-screen-2xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              Who Should Join Our Programs?
+            </h2>
+            <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Our programs are designed for high school and college students eager to explore higher education, develop research skills, and build academic networks. Whether you're at the beginning of your academic journey or looking for advanced research opportunities, we have something for everyone.
             </p>
-            <a 
-              href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white text-primary-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-colors inline-block"
-            >
-              Apply Today
-            </a>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+            {/* Ideal Candidates */}
+            <div className="bg-white border border-gray-200 rounded-3xl p-10 lg:p-12 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div className="flex items-center mb-8">
+                <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mr-6 shadow-lg">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                  Ideal Candidates
+                </h3>
+              </div>
+              <ul className="space-y-4 text-base lg:text-lg text-gray-600">
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span>High school students (ages 14-18) with strong academic performance</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span>College students seeking research experience and publication opportunities</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span>Students interested in STEM fields, social sciences, or humanities</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span>Ambitious learners who want to enhance their university applications</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span>Future researchers and academic leaders</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* What You'll Gain */}
+            <div className="bg-white border border-gray-200 rounded-3xl p-10 lg:p-12 hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div className="flex items-center mb-8">
+                <div className="w-20 h-20 bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl flex items-center justify-center mr-6 shadow-lg">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                  What You'll Gain
+                </h3>
+              </div>
+              <ul className="space-y-4 text-base lg:text-lg text-gray-600">
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span>Hands-on research experience with world-class mentors</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span>Publication opportunities in peer-reviewed journals</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span>Strong letters of recommendation for university applications</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span>Global network of peers and academic connections</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span>Advanced research and critical thinking skills</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Success Statistics */}
+          <div className="mt-20">
+            <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-3xl p-12 lg:p-16">
+              <div className="text-center mb-12">
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                  Our Student Success
+                </h3>
+                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                  See how our students have transformed their academic journeys
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-4 gap-8 lg:gap-12">
+                <div className="text-center">
+                  <div className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2">97%</div>
+                  <div className="text-lg text-gray-600">University Acceptance Rate</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2">500+</div>
+                  <div className="text-lg text-gray-600">Students Mentored</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2">150+</div>
+                  <div className="text-lg text-gray-600">Research Papers Published</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2">25+</div>
+                  <div className="text-lg text-gray-600">Countries Represented</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

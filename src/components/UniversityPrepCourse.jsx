@@ -1,102 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
 
 const UniversityPrepCourse = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   // Scroll to top when component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <Link to="/" className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-primary-700 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">B</span>
-                </div>
-                <span className="text-xl font-bold text-gray-900">Newton Imperial Education</span>
-              </Link>
-            </div>
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link to="/" className="text-gray-700 hover:text-primary-700 font-medium transition-colors">
-                Home
-              </Link>
-              <a href="/#about" className="text-gray-700 hover:text-primary-700 font-medium transition-colors">
-                About
-              </a>
-              <a href="/#programs" className="text-gray-700 hover:text-primary-700 font-medium transition-colors">
-                Programs
-              </a>
-              <a href="/#contact" className="text-gray-700 hover:text-primary-700 font-medium transition-colors">
-                Contact
-              </a>
-            </nav>
-
-            {/* Mobile menu button */}
-            <div className="md:hidden">
-              <button 
-                onClick={toggleMobileMenu}
-                className="text-gray-700 hover:text-primary-700 focus:outline-none focus:text-primary-700"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  {isMobileMenuOpen ? (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  ) : (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  )}
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          {/* Mobile Navigation Menu */}
-          {isMobileMenuOpen && (
-            <div className="md:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
-                <Link
-                  to="/"
-                  className="block px-3 py-2 text-gray-700 hover:text-primary-700 hover:bg-gray-50 rounded-md font-medium transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Home
-                </Link>
-                <a
-                  href="/#about"
-                  className="block px-3 py-2 text-gray-700 hover:text-primary-700 hover:bg-gray-50 rounded-md font-medium transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  About
-                </a>
-                <a
-                  href="/#programs"
-                  className="block px-3 py-2 text-gray-700 hover:text-primary-700 hover:bg-gray-50 rounded-md font-medium transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Programs
-                </a>
-                <a
-                  href="/#contact"
-                  className="block px-3 py-2 text-gray-700 hover:text-primary-700 hover:bg-gray-50 rounded-md font-medium transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Contact
-                </a>
-              </div>
-            </div>
-          )}
-        </div>
-      </header>
-
+      <Header />
+      
       {/* Hero Section */}
       <section 
         className="relative text-white py-20 bg-cover bg-center bg-no-repeat"
@@ -106,27 +22,12 @@ const UniversityPrepCourse = () => {
       >
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="text-6xl mb-6">🎓</div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
               University Preparation Course
             </h1>
-            <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
-              Get ready for university success with our comprehensive preparation program
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+              Comprehensive preparation for university-level academics and research
             </p>
-            <div className="flex items-center justify-center space-x-6 text-lg">
-              <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span>6 weeks</span>
-              </div>
-              <div className="flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                </svg>
-                <span>$1,500</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -289,12 +190,7 @@ const UniversityPrepCourse = () => {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p>&copy; 2024 Newton Imperial Education. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

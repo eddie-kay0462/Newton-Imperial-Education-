@@ -77,131 +77,115 @@ const OurPrograms = () => {
   };
 
   return (
-    <section className="py-20 bg-white" id="programs">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            OUR PROGRAMS
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Discover our comprehensive range of educational programs designed to unlock your potential and prepare you for success.
-          </p>
-        </div>
+    <section className="py-20 lg:py-32 bg-white" id="programs">
+      <div className="w-full max-w-none mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-24">
+        <div className="max-w-screen-2xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              Our Programs
+            </h2>
+            <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Discover our comprehensive range of educational programs designed to unlock your potential and prepare you for success.
+            </p>
+          </div>
 
-        <div 
-          className="relative"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-        >
-          {/* Left Navigation Arrow */}
-          <button 
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors shadow-md"
+          <div 
+            className="relative"
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
           >
-            <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
+            {/* Left Navigation Arrow */}
+            <button 
+              onClick={prevSlide}
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-14 h-14 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition-all duration-300 hover:border-primary-600 shadow-lg"
+            >
+              <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
 
-          {/* Right Navigation Arrow */}
-          <button 
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors shadow-md"
-          >
-            <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+            {/* Right Navigation Arrow */}
+            <button 
+              onClick={nextSlide}
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-14 h-14 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition-all duration-300 hover:border-primary-600 shadow-lg"
+            >
+              <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
 
-          {/* Program Cards */}
-          <div className="grid md:grid-cols-3 gap-8 mx-20">
-            {getVisiblePrograms().map((program, index) => (
-              <div key={`${currentSlide}-${index}`} className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col">
-                {/* Hero Image */}
-                <div 
-                  className="w-full h-48 bg-cover bg-center bg-no-repeat"
-                  style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('${program.image}')`
-                  }}
-                />
-                
-                {/* Content */}
-                <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">
-                    {program.title}
-                  </h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed flex-grow">
-                    {program.description}
-                  </p>
-                  {program.link === "#" ? (
-                    <button className="w-full py-3 border-2 border-primary-600 text-primary-600 font-semibold rounded hover:bg-primary-600 hover:text-white transition-colors">
-                      LEARN MORE
-                    </button>
-                  ) : (
-                    <Link 
-                      to={program.link}
-                      className="w-full py-3 border-2 border-primary-600 text-primary-600 font-semibold rounded hover:bg-primary-600 hover:text-white transition-colors text-center block"
-                    >
-                      LEARN MORE
-                    </Link>
-                  )}
+            {/* Program Cards */}
+            <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 mx-0 lg:mx-20">
+              {getVisiblePrograms().map((program, index) => (
+                <div key={`${currentSlide}-${index}`} className="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                  {/* Hero Image */}
+                  <div 
+                    className="w-full h-64 lg:h-72 bg-cover bg-center bg-no-repeat"
+                    style={{
+                      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('${program.image}')`
+                    }}
+                  />
+                  
+                  {/* Content */}
+                  <div className="p-8 lg:p-10 flex flex-col flex-grow">
+                    <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-6 leading-tight">
+                      {program.title}
+                    </h3>
+                    <p className="text-gray-600 mb-8 leading-relaxed flex-grow text-base lg:text-lg">
+                      {program.description}
+                    </p>
+                    {program.link === "#" ? (
+                      <button className="w-full py-4 px-6 border-2 border-primary-600 text-primary-600 font-semibold rounded-xl hover:bg-primary-600 hover:text-white transition-all duration-300 text-base lg:text-lg">
+                        Learn More
+                      </button>
+                    ) : (
+                      <Link 
+                        to={program.link}
+                        className="w-full py-4 px-6 border-2 border-primary-600 text-primary-600 font-semibold rounded-xl hover:bg-primary-600 hover:text-white transition-all duration-300 text-center block text-base lg:text-lg"
+                      >
+                        Learn More
+                      </Link>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
 
-          {/* Pagination Dots */}
-          <div className="flex justify-center mt-8 space-x-2">
-            {programs.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentSlide ? 'bg-primary-600' : 'bg-gray-300'
-                }`}
-              />
-            ))}
-          </div>
-
-          {/* Auto-advance indicator */}
-          <div className="flex justify-center mt-4">
-            <div className="text-sm text-gray-500">
-              {isPaused ? (
-                <span className="flex items-center">
-                  <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 9v6m4-6v6" />
-                  </svg>
-                  Paused
-                </span>
-              ) : (
-                <span className="flex items-center">
-                  <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.586a1 1 0 00.707-.293l2.414-2.414a1 1 0 00.293-.707V6a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 00.293.707L10.707 12.293A1 1 0 0011.586 13H13" />
-                  </svg>
-                  Auto-advancing
-                </span>
-              )}
+            {/* Pagination Dots */}
+            <div className="flex justify-center mt-12 space-x-3">
+              {programs.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                    index === currentSlide ? 'bg-primary-600 scale-125' : 'bg-gray-300 hover:bg-gray-400'
+                  }`}
+                />
+              ))}
             </div>
           </div>
-        </div>
 
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <div className="bg-gray-50 rounded-lg p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Ready to Begin Your Journey?
-            </h3>
-            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Join thousands of students who have transformed their academic future through our programs.
-            </p>
-            <a 
-              href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors"
-            >
-              Apply Now
-            </a>
+          {/* CTA Section */}
+          <div className="text-center mt-20">
+            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-12 lg:p-16">
+              <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                Ready to Begin Your Journey?
+              </h3>
+              <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Join thousands of students who have transformed their academic future through our programs.
+              </p>
+              <a 
+                href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-lg"
+                style={{ backgroundColor: '#8A774A' }}
+                onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#8A774A'}
+              >
+                Apply Now
+              </a>
+            </div>
           </div>
         </div>
       </div>
