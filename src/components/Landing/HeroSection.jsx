@@ -81,7 +81,7 @@ const HeroSection = () => {
                   </span>
                 </h1>
                 
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-2xl" style={{ fontSize: 'clamp(0.875rem, 2.5vw, 1.25rem)' }}>
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl" style={{ fontSize: 'clamp(0.875rem, 2.5vw, 1.25rem)', lineHeight: '1.2' }}>
                   Connect with top-tier researchers from <span className="font-black uppercase">Cambridge</span>, <span className="font-black uppercase">Oxford</span>, <span className="font-black uppercase">MIT</span>, and <span className="font-black uppercase">Harvard</span>. 
                   Transform your academic journey with world-class mentorship and research opportunities.
                 </p>

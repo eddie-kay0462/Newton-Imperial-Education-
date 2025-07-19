@@ -97,9 +97,9 @@ const OurPrograms = () => {
             {/* Left Navigation Arrow */}
             <button 
               onClick={prevSlide}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-14 h-14 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition-all duration-300 hover:border-primary-600 shadow-lg"
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-16 h-16 bg-white border-2 border-[#0F2A44] rounded-full flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
             >
-              <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
@@ -107,9 +107,9 @@ const OurPrograms = () => {
             {/* Right Navigation Arrow */}
             <button 
               onClick={nextSlide}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-14 h-14 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition-all duration-300 hover:border-primary-600 shadow-lg"
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-16 h-16 bg-white border-2 border-[#0F2A44] rounded-full flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
             >
-              <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
