@@ -146,7 +146,7 @@ const FAQPage = () => {
                       </h3>
                       <div className="flex-shrink-0">
                         <svg
-                          className={`w-6 h-6 text-primary-600 transform transition-transform duration-200 ${
+                          className={`w-6 h-6 text-primary-600 transform transition-transform duration-300 ${
                             openQuestion === index ? 'rotate-180' : ''
                           }`}
                           fill="none"
@@ -159,7 +159,11 @@ const FAQPage = () => {
                     </div>
                   </button>
                   
-                  {openQuestion === index && (
+                  <div 
+                    className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                      openQuestion === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
                     <div className="px-8 pb-6">
                       <div className="pt-4 border-t border-gray-100">
                         <p className="text-gray-600 leading-relaxed text-base md:text-lg">
@@ -167,7 +171,7 @@ const FAQPage = () => {
                         </p>
                       </div>
                     </div>
-                  )}
+                  </div>
                 </div>
               ))}
             </div>

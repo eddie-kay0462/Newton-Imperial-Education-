@@ -1,13 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 
 const OxfordSummerProgram = () => {
+  const [openQuestion, setOpenQuestion] = useState(null);
+
   // Scroll to top when component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const toggleQuestion = (index) => {
+    setOpenQuestion(openQuestion === index ? null : index);
+  };
 
   return (
     <div className="min-h-screen bg-gray-25">
@@ -35,12 +41,12 @@ const OxfordSummerProgram = () => {
                   >
                     Apply Now for Summer 2026
                   </a>
-                  <Link 
-                    to="/summer-programs/cambridge"
+                  <a 
+                    href="#faq-section"
                     className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg border-2 border-white hover:bg-white hover:text-[#0F2A44]"
                   >
-                    View Cambridge Program
-                  </Link>
+                    Learn More
+                  </a>
                 </div>
               </div>
               <div className="relative">
@@ -198,6 +204,92 @@ const OxfordSummerProgram = () => {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Social Events</h3>
                 <p className="text-gray-600">Connect with international students and mentors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq-section" className="py-16 lg:py-24 bg-gray-50">
+        <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
+          <div className="max-w-screen-2xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                Frequently Asked Questions
+              </h2>
+              <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                Everything you need to know about our Oxford Summer Program
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto">
+              <div className="space-y-6">
+                {[
+                  {
+                    question: "What are the program dates for Summer 2026?",
+                    answer: "Our Oxford Summer Program offers flexible 2-4 week sessions throughout July and August 2026. Specific dates will be confirmed upon acceptance, and we'll work with you to find the best schedule."
+                  },
+                  {
+                    question: "What is included in the program fee?",
+                    answer: "The program fee includes college accommodation, formal dining experiences, research mentorship, campus tours, social events, and all academic materials. Travel and personal expenses are not included."
+                  },
+                  {
+                    question: "Who can apply for this program?",
+                    answer: "We welcome high-achieving students aged 16-19 who are passionate about research and academic excellence. Applicants should have strong academic records and a genuine interest in their chosen field of study."
+                  },
+                  {
+                    question: "What research areas are available?",
+                    answer: "Research opportunities span across sciences, humanities, and social sciences. Areas include physics, mathematics, computer science, literature, history, economics, and more. We'll match you with mentors based on your interests and academic background."
+                  },
+                  {
+                    question: "Will I receive a certificate or credit?",
+                    answer: "Yes, all participants receive a certificate of completion from our program. While this is not formal university credit, it's a valuable addition to college applications and demonstrates your commitment to academic excellence."
+                  },
+                  {
+                    question: "What is the application process?",
+                    answer: "The application process includes submitting your academic records, a personal statement, and a brief interview. We review applications on a rolling basis, so early applications are encouraged. Decisions are typically made within 2-3 weeks of submission."
+                  }
+                ].map((faq, index) => (
+                  <div key={index} className="bg-white border border-gray-200/30 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+                    <button
+                      onClick={() => toggleQuestion(index)}
+                      className="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl"
+                    >
+                      <div className="flex items-center justify-between">
+                        <h3 className="text-lg md:text-xl font-semibold text-gray-900 pr-4">
+                          {faq.question}
+                        </h3>
+                        <div className="flex-shrink-0">
+                          <svg
+                            className={`w-6 h-6 text-primary-600 transform transition-transform duration-300 ${
+                              openQuestion === index ? 'rotate-180' : ''
+                            }`}
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                    
+                    <div 
+                      className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                        openQuestion === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-8 pb-6">
+                        <div className="pt-4 border-t border-gray-100">
+                          <p className="text-gray-600 leading-relaxed text-base md:text-lg">
+                            {faq.answer}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
