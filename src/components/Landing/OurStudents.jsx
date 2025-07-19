@@ -4,7 +4,7 @@ import CounterAnimation from '../CounterAnimation.jsx';
 
 const OurStudents = () => {
   return (
-    <section className="py-12 lg:py-16 bg-gradient-to-b from-white to-gray-50" id="our-students">
+    <section className="py-12 lg:py-16 bg-gray-25" id="our-students">
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
@@ -17,7 +17,7 @@ const OurStudents = () => {
           </div>
 
           {/* Simplified Overview Section */}
-          <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-16">
+          <div className="bg-white rounded-xl shadow-sm p-8 md:p-12 mb-16">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">
@@ -84,7 +84,7 @@ const OurStudents = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 xl:gap-12">
                                   <div className="text-center">
                     <CounterAnimation 
-                      targetValue={97} 
+                      targetValue={100} 
                       suffix="%" 
                       duration={2000}
                       className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-primary-600 mb-2"

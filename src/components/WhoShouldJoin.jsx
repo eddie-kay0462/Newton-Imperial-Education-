@@ -11,7 +11,7 @@ const WhoShouldJoin = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-25">
       <Header />
       
       {/* Hero Section */}
@@ -49,7 +49,7 @@ const WhoShouldJoin = () => {
           {/* Two Column Layout */}
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             {/* Who Should Join */}
-            <div className="bg-white rounded-xl shadow-lg p-8 md:p-10">
+            <div className="bg-white rounded-xl shadow-sm p-8 md:p-10">
               <div className="flex items-center mb-8">
                 <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mr-6">
                   <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -105,7 +105,7 @@ const WhoShouldJoin = () => {
             </div>
 
             {/* What You'll Gain */}
-            <div className="bg-white rounded-xl shadow-lg p-8 md:p-10">
+            <div className="bg-white rounded-xl shadow-sm p-8 md:p-10">
               <div className="flex items-center mb-8">
                 <div className="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mr-6">
                   <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -175,7 +175,7 @@ const WhoShouldJoin = () => {
             <div className="grid md:grid-cols-4 gap-8">
               <div className="text-center">
                 <CounterAnimation 
-                  targetValue={97} 
+                  targetValue={100} 
                   suffix="%" 
                   duration={2000}
                   className="text-4xl font-bold text-primary-600 mb-2"
@@ -213,7 +213,7 @@ const WhoShouldJoin = () => {
           </div>
 
           {/* Program Eligibility */}
-          <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-16">
+          <div className="bg-white rounded-xl shadow-sm p-8 md:p-12 mb-16">
             <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">
               Program Eligibility & Requirements
             </h3>

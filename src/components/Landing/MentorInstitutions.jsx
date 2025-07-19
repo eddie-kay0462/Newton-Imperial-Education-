@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const MentorInstitutions = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -133,6 +134,19 @@ const MentorInstitutions = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
+            </div>
+
+            {/* CTA Button */}
+            <div className="text-center mt-16">
+              <Link 
+                to="/mentors"
+                className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg"
+                style={{ backgroundColor: '#0F2A44' }}
+                onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#0F2A44'}
+              >
+                Find Out More About Our Mentors
+              </Link>
             </div>
           </div>
         </div>

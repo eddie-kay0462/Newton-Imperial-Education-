@@ -53,7 +53,7 @@ const ResearchScholarPrograms = () => {
   const currentProgram = programs[selectedProgram];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-25">
       <Header />
       
       {/* Hero Section */}

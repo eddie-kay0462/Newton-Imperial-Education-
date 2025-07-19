@@ -102,7 +102,7 @@ const FAQPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-25">
       <Header />
       
       {/* Hero Section */}
@@ -135,7 +135,7 @@ const FAQPage = () => {
           <div className="max-w-4xl mx-auto">
             <div className="space-y-6">
               {faqs.map((faq, index) => (
-                <div key={index} className="bg-white border border-gray-200/30 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <div key={index} className="bg-white border border-gray-200/30 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
                   <button
                     onClick={() => toggleQuestion(index)}
                     className="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl"

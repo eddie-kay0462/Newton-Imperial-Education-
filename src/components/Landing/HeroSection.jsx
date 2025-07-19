@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const HeroSection = () => {
-  const [researchPapers, setResearchPapers] = useState(0);
-  const [researchMentors, setResearchMentors] = useState(0);
-  const [successRate, setSuccessRate] = useState(0);
+  const [researchPapers, setResearchPapers] = useState('150+');
+  const [researchMentors, setResearchMentors] = useState('120+');
+  const [successRate, setSuccessRate] = useState('100%');
   const [hasAnimated, setHasAnimated] = useState(false);
   const statsRef = useRef(null);
 
@@ -38,7 +38,7 @@ const HeroSection = () => {
             // Start animations with slight delays for better effect
             setTimeout(() => animateCounter(0, 150, 2000, setResearchPapers, '+'), 200);
             setTimeout(() => animateCounter(0, 120, 2000, setResearchMentors, '+'), 400);
-            setTimeout(() => animateCounter(0, 97, 2000, setSuccessRate, '%'), 600);
+            setTimeout(() => animateCounter(0, 100, 2000, setSuccessRate, '%'), 600);
           }
         });
       },
@@ -68,8 +68,8 @@ const HeroSection = () => {
             {/* Left Side - Main Content */}
             <div className="space-y-10">
               <div className="space-y-8">
-                <div className="inline-flex items-center px-4 py-2 bg-green-50 border border-green-200 rounded-full text-green-700 font-semibold text-sm">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                <div className="inline-flex items-center px-4 py-2 bg-green-50 border border-green-200 rounded-full text-green-700 font-semibold text-sm animate-pulse hover:animate-none transition-all duration-300 hover:scale-105 hover:shadow-md">
+                  <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-ping"></span>
                   Applications are Open for our upcoming cohorts
                 </div>
                 
@@ -98,36 +98,42 @@ const HeroSection = () => {
                   </h3>
                 </div>
                 
-                <div className="grid grid-cols-1 gap-4 sm:gap-6">
-                                     <div className="flex items-center justify-between">
-                     <div className="flex items-center gap-2 sm:gap-3">
-                       <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#2F5840' }}>
-                         <span className="material-icons text-white text-lg sm:text-xl lg:text-2xl">description</span>
-                       </div>
-                       <div className="text-xs sm:text-sm text-gray-600" style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)' }}>Research Papers</div>
-                     </div>
-                     <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900" style={{ fontSize: 'clamp(1.125rem, 3vw, 1.5rem)' }}>{researchPapers}</div>
-                   </div>
+                <div className="space-y-4 sm:space-y-5">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3 sm:gap-4">
+                      <div className="w-6 h-6 sm:w-7 sm:h-7 bg-[#0F2A44] rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <svg className="w-3 h-3 sm:w-4 sm:h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <div className="text-sm sm:text-base text-gray-700 font-medium" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>Research Papers</div>
+                    </div>
+                    <div className="text-lg sm:text-xl lg:text-2xl font-bold text-[#0F2A44]" style={{ fontSize: 'clamp(1.125rem, 3vw, 1.5rem)' }}>{researchPapers}</div>
+                  </div>
                   
-                                     <div className="flex items-center justify-between">
-                     <div className="flex items-center gap-2 sm:gap-3">
-                       <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#83301C' }}>
-                         <span className="material-icons text-white text-lg sm:text-xl lg:text-2xl">school</span>
-                       </div>
-                       <div className="text-xs sm:text-sm text-gray-600" style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)' }}>Research Mentors</div>
-                     </div>
-                     <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900" style={{ fontSize: 'clamp(1.125rem, 3vw, 1.5rem)' }}>{researchMentors}</div>
-                   </div>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3 sm:gap-4">
+                      <div className="w-6 h-6 sm:w-7 sm:h-7 bg-[#0F2A44] rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <svg className="w-3 h-3 sm:w-4 sm:h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <div className="text-sm sm:text-base text-gray-700 font-medium" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>Research Mentors</div>
+                    </div>
+                    <div className="text-lg sm:text-xl lg:text-2xl font-bold text-[#0F2A44]" style={{ fontSize: 'clamp(1.125rem, 3vw, 1.5rem)' }}>{researchMentors}</div>
+                  </div>
                   
-                                     <div className="flex items-center justify-between">
-                     <div className="flex items-center gap-2 sm:gap-3">
-                       <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#1F2212' }}>
-                         <span className="material-icons text-white text-lg sm:text-xl lg:text-2xl">check_circle</span>
-                       </div>
-                       <div className="text-xs sm:text-sm text-gray-600" style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)' }}>Success Rate</div>
-                     </div>
-                     <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900" style={{ fontSize: 'clamp(1.125rem, 3vw, 1.5rem)' }}>{successRate}</div>
-                   </div>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3 sm:gap-4">
+                      <div className="w-6 h-6 sm:w-7 sm:h-7 bg-[#0F2A44] rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
+                        <svg className="w-3 h-3 sm:w-4 sm:h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <div className="text-sm sm:text-base text-gray-700 font-medium" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>Complete Program Success</div>
+                    </div>
+                    <div className="text-lg sm:text-xl lg:text-2xl font-bold text-[#0F2A44]" style={{ fontSize: 'clamp(1.125rem, 3vw, 1.5rem)' }}>{successRate}</div>
+                  </div>
                 </div>
               </div>
 
@@ -137,10 +143,20 @@ const HeroSection = () => {
                   href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-full transition-all duration-300 hover:shadow-lg text-center block group"
-                  style={{ backgroundColor: '#0F2A44', fontSize: 'clamp(0.875rem, 2.5vw, 1rem)' }}
-                  onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
-                  onMouseLeave={(e) => e.target.style.backgroundColor = '#0F2A44'}
+                  className="w-full text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-full transition-all duration-500 ease-in-out hover:shadow-lg text-center block group relative overflow-hidden"
+                  style={{ 
+                    backgroundColor: '#0F2A44', 
+                    fontSize: 'clamp(0.875rem, 2.5vw, 1rem)',
+                    background: 'linear-gradient(135deg, #0F2A44 0%, #0F2A44 100%)'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.background = 'linear-gradient(135deg, #766542 0%, #8B7355 100%)';
+                    e.target.style.transform = 'translateY(-2px)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.background = 'linear-gradient(135deg, #0F2A44 0%, #0F2A44 100%)';
+                    e.target.style.transform = 'translateY(0)';
+                  }}
                 >
                   <span className="flex items-center justify-center gap-2">
                     Apply Now
@@ -169,12 +185,16 @@ const HeroSection = () => {
         {/* Hero Image Section */}
         <div className="relative pb-16 lg:pb-24">
           <div className="relative max-w-screen-2xl mx-auto">
-                         <div className="relative rounded-3xl overflow-hidden shadow-lg">
+                         <div className="relative rounded-3xl overflow-hidden shadow-sm">
                <img 
                  src="/landing_page/kids_in_classroom.png"
                  alt="Students engaged in learning at Newton Imperial Education"
                  className="w-full h-auto object-cover"
-                 style={{ aspectRatio: '2.5/1', maxHeight: '500px' }}
+                 style={{ 
+                   aspectRatio: '2.2/1', 
+                   maxHeight: '600px',
+                   objectPosition: 'center 20%'
+                 }}
                />
               
               {/* Subtle overlay for branding */}
@@ -182,17 +202,19 @@ const HeroSection = () => {
             </div>
 
             {/* Floating achievement badges */}
-            <div className="absolute -top-6 -left-6 bg-white/95 backdrop-blur-sm border border-gray-200/50 rounded-2xl p-4 shadow-xl hidden lg:block">
+            <div className="absolute -top-8 -left-8 bg-gradient-to-br from-[#0F2A44] to-[#1a3a5a] rounded-3xl p-6 shadow-lg hidden lg:block transform hover:scale-105 transition-all duration-300">
               <div className="text-center">
-                <div className="text-xl font-bold mb-1 text-gray-900">Top 1%</div>
-                <div className="text-xs text-gray-600 font-medium">Global Universities</div>
+                <div className="text-3xl font-bold mb-2 text-white">Top 1%</div>
+                <div className="text-sm text-white/90 font-medium">Global Universities</div>
+                <div className="w-12 h-1 bg-[#B8A67A] rounded-full mx-auto mt-3"></div>
               </div>
             </div>
 
-            <div className="absolute -bottom-6 -right-6 bg-white/95 backdrop-blur-sm border border-gray-200/50 rounded-2xl p-4 shadow-xl hidden lg:block">
+            <div className="absolute -bottom-8 -right-8 bg-gradient-to-br from-[#B8A67A] to-[#C4B28A] rounded-3xl p-6 shadow-lg hidden lg:block transform hover:scale-105 transition-all duration-300">
               <div className="text-center">
-                <div className="text-xl font-bold mb-1 text-gray-900">100%</div>
-                <div className="text-xs text-gray-600 font-medium">Scholarship Available</div>
+                <div className="text-3xl font-bold mb-2 text-white">100%</div>
+                <div className="text-sm text-white/90 font-medium">Scholarship Available</div>
+                <div className="w-12 h-1 bg-white/30 rounded-full mx-auto mt-3"></div>
               </div>
             </div>
           </div>

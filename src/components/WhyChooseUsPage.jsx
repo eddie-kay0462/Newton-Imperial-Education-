@@ -139,9 +139,9 @@ const WhyChooseUsPage = () => {
         </div>
       ),
       title: "Proven Track Record",
-      description: "With a 97% success rate and hundreds of satisfied students, our programs have consistently delivered exceptional results. Our graduates go on to attend top universities and pursue successful careers.",
+              description: "With a 100% program completion rate and hundreds of satisfied students, our programs have consistently delivered exceptional results. Our graduates go on to attend top universities and pursue successful careers.",
       details: [
-        "97% program completion rate",
+                  "100% program completion rate",
         "High university acceptance rates",
         "Strong alumni network",
         "Measurable academic improvements"
@@ -167,7 +167,7 @@ const WhyChooseUsPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-25">
       <Header />
       {/* Hero Section */}
       <section 
@@ -292,7 +292,7 @@ const WhyChooseUsPage = () => {
                      duration={2000}
                      className="text-3xl lg:text-4xl font-bold text-gray-900 mb-2"
                    />
-                   <div className="text-lg text-gray-600 font-medium">Success Rate</div>
+                   <div className="text-lg text-gray-600 font-medium">Complete Program Success</div>
                  </div>
 
                  <div className="group">
@@ -513,7 +513,7 @@ const WhyChooseUsPage = () => {
                     <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-12 lg:p-16">
                       <div className="flex items-center justify-center">
                         <div className="w-32 h-32 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center">
-                          <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg">
+                          <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm">
                           </div>
                         </div>
                       </div>

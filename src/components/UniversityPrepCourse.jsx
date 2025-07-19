@@ -10,7 +10,7 @@ const UniversityPrepCourse = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-25">
       <Header />
       
       {/* Hero Section */}
@@ -53,7 +53,7 @@ const UniversityPrepCourse = () => {
                   </p>
                 </div>
 
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Program Highlights</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Program Highlights</h3>
                 <div className="space-y-4 mb-8">
                   <div className="flex items-start">
                     <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
@@ -62,7 +62,7 @@ const UniversityPrepCourse = () => {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">Academic Writing Excellence</h4>
+                      <h4 className="text-lg font-semibold text-gray-900 mb-1">Academic Writing Excellence</h4>
                       <p className="text-gray-600">Learn how to write university-level essays and research papers.</p>
                     </div>
                   </div>
@@ -74,7 +74,7 @@ const UniversityPrepCourse = () => {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">Study Skills & Time Management</h4>
+                      <h4 className="text-lg font-semibold text-gray-900 mb-1">Study Skills & Time Management</h4>
                       <p className="text-gray-600">Build effective study habits and time management techniques.</p>
                     </div>
                   </div>
@@ -86,7 +86,7 @@ const UniversityPrepCourse = () => {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">University Transition</h4>
+                      <h4 className="text-lg font-semibold text-gray-900 mb-1">University Transition</h4>
                       <p className="text-gray-600">Explore key differences between high school and university life.</p>
                     </div>
                   </div>

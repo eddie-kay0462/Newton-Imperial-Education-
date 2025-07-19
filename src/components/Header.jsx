@@ -297,7 +297,7 @@ const Header = () => {
                 </button>
                 
                 {activeDropdown === 'about' && (
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[680px] bg-gray-100 rounded-2xl shadow-2xl border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[680px] bg-gray-25 rounded-2xl shadow-lg border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
                     <div className="px-8 py-2">
                       <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
                         <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
@@ -350,7 +350,7 @@ const Header = () => {
                 </button>
                 
                 {activeDropdown === 'programs' && (
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[980px] bg-gray-100 rounded-2xl shadow-2xl border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[980px] bg-gray-25 rounded-2xl shadow-lg border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
                     <div className="px-8 py-2">
                       <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
                         <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
@@ -403,7 +403,7 @@ const Header = () => {
                 </button>
                 
                 {activeDropdown === 'students' && (
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[680px] bg-gray-100 rounded-2xl shadow-2xl border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[680px] bg-gray-25 rounded-2xl shadow-lg border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
                     <div className="px-8 py-2">
                       <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
                         <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
