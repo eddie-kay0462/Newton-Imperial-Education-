@@ -80,7 +80,7 @@ const SummerPrograms = () => {
       </section>
 
       {/* Program Details */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-25">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -92,7 +92,7 @@ const SummerPrograms = () => {
           </div>
 
           {/* Program Details Card */}
-          <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
+          <div className="bg-white rounded-lg shadow-md border border-gray-200/30 p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -129,9 +129,11 @@ const SummerPrograms = () => {
                 <ul className="space-y-3">
                   {program.highlights.map((highlight, index) => (
                     <li key={index} className="flex items-start">
-                      <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
+                      <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
                       <span className="text-gray-700">{highlight}</span>
                     </li>
                   ))}
@@ -167,7 +169,7 @@ const SummerPrograms = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {activities.map((activity, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+              <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-200/30 hover:shadow-md transition-shadow">
                 <div className="text-4xl mb-4">{activity.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   {activity.title}

@@ -80,7 +80,7 @@ const MentorsFrom = () => {
             {/* Left Navigation Arrow */}
             <button 
               onClick={prevSlide}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-14 h-14 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition-all duration-300 hover:border-primary-600 shadow-lg"
+              className="hidden sm:flex absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-14 h-14 bg-white border-2 border-gray-200 rounded-full items-center justify-center hover:bg-gray-50 transition-all duration-300 hover:border-primary-600 shadow-lg"
             >
               <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -90,7 +90,7 @@ const MentorsFrom = () => {
             {/* Right Navigation Arrow */}
             <button 
               onClick={nextSlide}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-14 h-14 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition-all duration-300 hover:border-primary-600 shadow-lg"
+              className="hidden sm:flex absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-14 h-14 bg-white border-2 border-gray-200 rounded-full items-center justify-center hover:bg-gray-50 transition-all duration-300 hover:border-primary-600 shadow-lg"
             >
               <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -100,7 +100,7 @@ const MentorsFrom = () => {
             {/* Mentor Cards */}
             <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 mx-0 lg:mx-20">
               {getVisibleMentors().map((mentor, index) => (
-                <div key={`${currentSlide}-${index}`} className="bg-white border border-gray-200 rounded-3xl p-8 lg:p-10 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div key={`${currentSlide}-${index}`} className="bg-white border border-gray-200 rounded-3xl p-8 lg:p-10 text-center hover:shadow-xl transition-all duration-300">
                   {/* Profile Icon */}
                   <div className="w-24 h-24 lg:w-28 lg:h-28 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg" style={{ backgroundColor: '#0F2A44' }}>
                     <svg className="w-12 h-12 lg:w-14 lg:h-14 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -125,7 +125,7 @@ const MentorsFrom = () => {
             </div>
 
             {/* Pagination Dots */}
-            <div className="flex justify-center mt-12 space-x-3">
+            <div className="hidden sm:flex justify-center mt-12 space-x-3">
               {mentors.map((_, index) => (
                 <button
                   key={index}

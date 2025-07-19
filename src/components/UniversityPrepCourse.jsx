@@ -33,11 +33,11 @@ const UniversityPrepCourse = () => {
       </section>
 
       {/* Main Content */}
-              <main className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 py-16">
+              <main className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 py-16 bg-gray-25">
         <div className="grid lg:grid-cols-3 gap-12">
           {/* Left Column - Program Details */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+            <div className="bg-white rounded-lg shadow-md border border-gray-200/30 p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Program Overview</h2>
               
               <div className="prose max-w-none">
@@ -56,9 +56,11 @@ const UniversityPrepCourse = () => {
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Program Highlights</h3>
                 <div className="space-y-4 mb-8">
                   <div className="flex items-start">
-                    <svg className="w-6 h-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+                    <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Academic Writing Excellence</h4>
                       <p className="text-gray-600">Learn how to write university-level essays and research papers.</p>
@@ -66,9 +68,11 @@ const UniversityPrepCourse = () => {
                   </div>
                   
                   <div className="flex items-start">
-                    <svg className="w-6 h-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+                    <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">Study Skills & Time Management</h4>
                       <p className="text-gray-600">Build effective study habits and time management techniques.</p>
@@ -76,9 +80,11 @@ const UniversityPrepCourse = () => {
                   </div>
                   
                   <div className="flex items-start">
-                    <svg className="w-6 h-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+                    <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     <div>
                       <h4 className="font-semibold text-gray-900">University Transition</h4>
                       <p className="text-gray-600">Explore key differences between high school and university life.</p>
@@ -86,7 +92,7 @@ const UniversityPrepCourse = () => {
                   </div>
                 </div>
 
-                <div className="bg-gray-50 rounded-lg p-6">
+                <div className="bg-gray-25 rounded-lg p-6">
                   <h3 className="text-lg font-semibold text-gray-900 mb-4">Ready to Start Your University Journey?</h3>
                   <p className="text-gray-600 mb-6">
                     Join hundreds of students who have successfully transitioned to university with our comprehensive preparation program.
@@ -106,7 +112,7 @@ const UniversityPrepCourse = () => {
 
           {/* Right Column - Course Details & Contact */}
           <div className="lg:col-span-1">
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 sticky top-24">
+            <div className="bg-white rounded-lg shadow-md border border-gray-200/30 p-6 sticky top-24">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Course Details</h3>
               
               <div className="space-y-4 mb-6">
@@ -145,33 +151,43 @@ const UniversityPrepCourse = () => {
                 <h4 className="font-semibold text-gray-900 mb-3">What's Included</h4>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-center">
-                    <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                    <div className="w-4 h-4 bg-[#0F2A44] rounded-full flex items-center justify-center mr-2 flex-shrink-0">
+                      <svg className="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     Weekly live webinars
                   </li>
                   <li className="flex items-center">
-                    <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                    <div className="w-4 h-4 bg-[#0F2A44] rounded-full flex items-center justify-center mr-2 flex-shrink-0">
+                      <svg className="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     Interactive assignments
                   </li>
                   <li className="flex items-center">
-                    <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                    <div className="w-4 h-4 bg-[#0F2A44] rounded-full flex items-center justify-center mr-2 flex-shrink-0">
+                      <svg className="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     Group discussions
                   </li>
                   <li className="flex items-center">
-                    <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                    <div className="w-4 h-4 bg-[#0F2A44] rounded-full flex items-center justify-center mr-2 flex-shrink-0">
+                      <svg className="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     Course materials
                   </li>
                   <li className="flex items-center">
-                    <svg className="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
+                    <div className="w-4 h-4 bg-[#0F2A44] rounded-full flex items-center justify-center mr-2 flex-shrink-0">
+                      <svg className="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
                     Certificate of completion
                   </li>
                 </ul>

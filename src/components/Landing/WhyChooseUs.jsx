@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-16 lg:py-24 bg-gray-50">
               <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-16">
@@ -99,13 +99,13 @@ const WhyChooseUs = () => {
               <div className="pt-4">
                 <Link
                   to="/why-choose-us"
-                  className="inline-flex items-center px-8 py-4 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg group"
+                  className="inline-flex items-center px-8 py-4 text-white font-semibold rounded-full transition-all duration-300 hover:shadow-lg group"
                   style={{ 
-                    backgroundColor: '#1A365D',
-                    borderColor: '#1A365D'
+                    backgroundColor: '#0F2A44',
+                    borderColor: '#0F2A44'
                   }}
-                  onMouseEnter={(e) => e.target.style.backgroundColor = '#0F2A44'}
-                  onMouseLeave={(e) => e.target.style.backgroundColor = '#1A365D'}
+                  onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
+                  onMouseLeave={(e) => e.target.style.backgroundColor = '#0F2A44'}
                 >
                   <span>Learn More</span>
                   <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">

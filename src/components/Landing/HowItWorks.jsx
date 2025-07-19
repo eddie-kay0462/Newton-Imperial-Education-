@@ -76,13 +76,13 @@ const HowItWorks = () => {
                       </div>
                       
                       {/* Step Icon */}
-                      <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2" style={{ backgroundColor: '#0F2A44' }}>
+                      <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300" style={{ backgroundColor: '#0F2A44' }}>
                         {step.icon}
                       </div>
                     </div>
                     
                     {/* Step Content */}
-                    <div className="bg-white border border-gray-200 rounded-2xl p-6 lg:p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-44 lg:h-48 flex flex-col justify-center">
+                    <div className="bg-white border border-gray-200 rounded-2xl p-6 lg:p-8 hover:shadow-xl transition-all duration-300 h-44 lg:h-48 flex flex-col justify-center">
                       <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
                         {step.title}
                       </h3>
@@ -109,10 +109,10 @@ const HowItWorks = () => {
                 href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-lg"
-                style={{ backgroundColor: '#8A774A' }}
+                className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg"
+                style={{ backgroundColor: '#0F2A44' }}
                 onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
-                onMouseLeave={(e) => e.target.style.backgroundColor = '#8A774A'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#0F2A44'}
               >
                 Get Started Today
               </a>

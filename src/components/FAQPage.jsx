@@ -129,13 +129,13 @@ const FAQPage = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-16 lg:py-24 bg-white">
+              {/* FAQ Section */}
+        <section className="py-16 lg:py-24 bg-gray-25">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-4xl mx-auto">
             <div className="space-y-6">
               {faqs.map((faq, index) => (
-                <div key={index} className="bg-white border border-gray-200 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <div key={index} className="bg-white border border-gray-200/30 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                   <button
                     onClick={() => toggleQuestion(index)}
                     className="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl"
@@ -176,7 +176,7 @@ const FAQPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-24 bg-gray-50">
+      <section className="py-16 lg:py-24 bg-gray-25">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
@@ -190,16 +190,16 @@ const FAQPage = () => {
                 href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-8 py-4 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-white"
-                style={{ backgroundColor: '#8A774A' }}
+                className="inline-flex items-center px-8 py-4 font-semibold rounded-full transition-all duration-300 hover:shadow-lg text-white"
+                style={{ backgroundColor: '#0F2A44' }}
                 onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
-                onMouseLeave={(e) => e.target.style.backgroundColor = '#8A774A'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#0F2A44'}
               >
                 Apply Now
               </a>
               <a
                 href="mailto:hello@newtonimperial.education"
-                className="inline-flex items-center px-8 py-4 border-2 border-primary-600 text-primary-600 font-semibold rounded-xl transition-all duration-300 hover:bg-primary-600 hover:text-white"
+                className="inline-flex items-center px-8 py-4 border-2 border-[#0F2A44] text-[#0F2A44] font-semibold rounded-full transition-all duration-300 hover:bg-[#0F2A44] hover:text-white"
               >
                 Contact Us
               </a>

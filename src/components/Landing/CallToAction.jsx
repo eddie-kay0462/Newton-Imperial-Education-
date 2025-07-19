@@ -2,8 +2,8 @@ import React from 'react';
 
 const CallToAction = () => {
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-br from-primary-600 to-primary-700 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-600/95 to-primary-700/95"></div>
+    <section className="py-20 lg:py-32 bg-gradient-to-br from-[#0F2A44] to-[#0a1f33] relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0F2A44]/95 to-[#0a1f33]/95"></div>
       
               <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28 relative z-10">
         <div className="max-w-screen-2xl mx-auto text-center">
@@ -20,14 +20,14 @@ const CallToAction = () => {
               href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-primary-600 hover:bg-gray-100 font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-lg inline-block"
+              className="bg-white text-[#0F2A44] hover:bg-gray-100 font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg inline-block"
             >
               Apply Now
             </a>
             
             <a 
               href="/#programs"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-semibold py-4 px-8 rounded-xl transition-all duration-300 text-lg inline-block"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#0F2A44] font-semibold py-4 px-8 rounded-full transition-all duration-300 text-lg inline-block"
             >
               Explore Programs
             </a>

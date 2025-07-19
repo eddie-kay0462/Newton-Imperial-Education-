@@ -71,7 +71,7 @@ const Header = () => {
   const getLinkClasses = (path, isMobile = false, hasDropdown = false) => {
     const baseClasses = isMobile 
       ? "block px-4 py-3 font-medium transition-all duration-300 text-base rounded-lg"
-      : "font-medium transition-all duration-300 text-base relative py-2";
+      : "font-medium transition-all duration-300 text-base relative py-2 flex items-center";
     
     const activeClasses = isMobile
       ? "text-primary-600 bg-primary-50 border-l-4 border-primary-600"
@@ -258,15 +258,15 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100">
-      <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
+      <div className="w-full max-w-none mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
         <div className="max-w-screen-2xl mx-auto">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center h-20 sm:h-24 md:h-28">
             {/* Logo */}
             <div className="flex items-center">
               <Link to="/" className="flex items-center">
                 <div className="flex flex-col justify-center">
-                  <span className="text-xs font-medium text-gray-500 leading-tight tracking-wider uppercase">Newton Imperial</span>
-                  <span className="text-2xl font-bold text-gray-900 leading-tight tracking-tight">Education</span>
+                  <span className="text-sm font-medium text-gray-500 leading-tight tracking-wider uppercase" style={{ fontSize: 'clamp(0.75rem, 1.5vw, 0.875rem)' }}>Newton Imperial</span>
+                  <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight tracking-tight" style={{ fontSize: 'clamp(1.25rem, 3vw, 2rem)' }}>Education</span>
                 </div>
               </Link>
             </div>
@@ -297,7 +297,7 @@ const Header = () => {
                 </button>
                 
                 {activeDropdown === 'about' && (
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[680px] bg-white rounded-2xl shadow-2xl border border-gray-200 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[680px] bg-gray-100 rounded-2xl shadow-2xl border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
                     <div className="px-8 py-2">
                       <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
                         <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
@@ -309,7 +309,7 @@ const Header = () => {
                         <a
                           key={index}
                           href={item.path}
-                          className="flex items-start p-4 text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-300 group rounded-xl hover:shadow-md hover:scale-102 transform"
+                          className="flex items-start p-4 text-gray-700 hover:text-primary-600 bg-white hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-300 group rounded-xl hover:shadow-md hover:scale-102 transform shadow-sm"
                           onClick={() => setActiveDropdown(null)}
                         >
                           <div className="flex items-center justify-center w-11 h-11 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl mr-4 group-hover:from-primary-100 group-hover:to-primary-200 group-hover:text-primary-600 transition-all duration-300 shadow-sm">
@@ -350,7 +350,7 @@ const Header = () => {
                 </button>
                 
                 {activeDropdown === 'programs' && (
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[980px] bg-white rounded-2xl shadow-2xl border border-gray-200 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[980px] bg-gray-100 rounded-2xl shadow-2xl border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
                     <div className="px-8 py-2">
                       <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
                         <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
@@ -362,7 +362,7 @@ const Header = () => {
                         <Link
                           key={index}
                           to={item.path}
-                          className="flex items-start p-4 text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-300 group rounded-xl hover:shadow-md hover:scale-102 transform"
+                          className="flex items-start p-4 text-gray-700 hover:text-primary-600 bg-white hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-300 group rounded-xl hover:shadow-md hover:scale-102 transform shadow-sm"
                           onClick={() => setActiveDropdown(null)}
                         >
                           <div className="flex items-center justify-center w-11 h-11 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl mr-4 group-hover:from-primary-100 group-hover:to-primary-200 group-hover:text-primary-600 transition-all duration-300 shadow-sm">
@@ -403,7 +403,7 @@ const Header = () => {
                 </button>
                 
                 {activeDropdown === 'students' && (
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[680px] bg-white rounded-2xl shadow-2xl border border-gray-200 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[680px] bg-gray-100 rounded-2xl shadow-2xl border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
                     <div className="px-8 py-2">
                       <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
                         <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
@@ -415,7 +415,7 @@ const Header = () => {
                         <a
                           key={index}
                           href={item.path}
-                          className="flex items-start p-4 text-gray-700 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-300 group rounded-xl hover:shadow-md hover:scale-102 transform"
+                          className="flex items-start p-4 text-gray-700 hover:text-primary-600 bg-white hover:bg-gradient-to-r hover:from-primary-50 hover:to-primary-100 transition-all duration-300 group rounded-xl hover:shadow-md hover:scale-102 transform shadow-sm"
                           onClick={() => setActiveDropdown(null)}
                         >
                           <div className="flex items-center justify-center w-11 h-11 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl mr-4 group-hover:from-primary-100 group-hover:to-primary-200 group-hover:text-primary-600 transition-all duration-300 shadow-sm">
@@ -441,10 +441,11 @@ const Header = () => {
             </nav>
 
             {/* CTA Buttons */}
-            <div className="hidden lg:flex items-center space-x-3">
+            <div className="hidden lg:flex items-center space-x-2 xl:space-x-3">
               <Link 
                 to="/FAQPage" 
-                className="text-gray-600 hover:text-primary-600 font-medium transition-all duration-300 text-base px-4 py-2 rounded-lg hover:bg-gray-50 relative after:content-[''] after:absolute after:bottom-0 after:left-4 after:right-4 after:h-0.5 after:bg-primary-600 after:transition-all after:duration-300 after:w-0 hover:after:w-3/4"
+                className="text-gray-600 hover:text-primary-600 font-medium transition-all duration-300 px-3 xl:px-4 py-2 rounded-lg hover:bg-gray-50 relative after:content-[''] after:absolute after:bottom-0 after:left-3 after:right-3 xl:after:left-4 xl:after:right-4 after:h-0.5 after:bg-primary-600 after:transition-all after:duration-300 after:w-0 hover:after:w-3/4"
+                style={{ fontSize: 'clamp(0.875rem, 1.5vw, 1rem)' }}
               >
                 FAQs
               </Link>
@@ -452,10 +453,10 @@ const Header = () => {
                 href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white font-semibold py-2.5 px-5 rounded-lg transition-all duration-300 text-base shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
-                style={{ backgroundColor: '#1A365D', borderColor: '#1A365D' }}
-                onMouseEnter={(e) => e.target.style.backgroundColor = '#0F2A44'}
-                onMouseLeave={(e) => e.target.style.backgroundColor = '#1A365D'}
+                className="text-white font-semibold py-3 xl:py-3.5 px-6 xl:px-8 rounded-full transition-all duration-300 shadow-sm hover:shadow-lg"
+                style={{ backgroundColor: '#0F2A44', borderColor: '#0F2A44', fontSize: 'clamp(0.875rem, 1.5vw, 1rem)' }}
+                onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#0F2A44'}
               >
                 Apply Now
               </a>
@@ -608,10 +609,10 @@ const Header = () => {
                   href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-white font-semibold py-3 px-5 rounded-lg transition-all duration-300 text-center text-base shadow-sm hover:shadow-md"
-                  style={{ backgroundColor: '#1A365D', borderColor: '#1A365D' }}
-                  onMouseEnter={(e) => e.target.style.backgroundColor = '#0F2A44'}
-                  onMouseLeave={(e) => e.target.style.backgroundColor = '#1A365D'}
+                  className="block w-full text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 text-center text-base shadow-sm hover:shadow-lg"
+                  style={{ backgroundColor: '#0F2A44', borderColor: '#0F2A44' }}
+                  onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
+                  onMouseLeave={(e) => e.target.style.backgroundColor = '#0F2A44'}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Apply Now

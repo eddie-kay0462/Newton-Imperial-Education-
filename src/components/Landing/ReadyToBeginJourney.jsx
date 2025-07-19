@@ -17,10 +17,10 @@ const ReadyToBeginJourney = () => {
                 href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-lg"
-                style={{ backgroundColor: '#8A774A' }}
+                className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg"
+                style={{ backgroundColor: '#0F2A44' }}
                 onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
-                onMouseLeave={(e) => e.target.style.backgroundColor = '#8A774A'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#0F2A44'}
               >
                 Apply Now
               </a>

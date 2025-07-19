@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const MentorInstitutions = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
   const institutions = [
     {
       name: "Oxford University",
@@ -13,11 +15,51 @@ const MentorInstitutions = () => {
       displayName: { first: "Cambridge", second: "University" },
       logo: "/school_logos/cambridge_logo.png",
       alt: "Cambridge University Logo"
+    },
+    {
+      name: "Princeton University",
+      displayName: { first: "Princeton", second: "University" },
+      logo: "/school_logos/princeton_logo.png",
+      alt: "Princeton University Logo"
+    },
+    {
+      name: "Harvard University",
+      displayName: { first: "Harvard", second: "University" },
+      logo: "/school_logos/harvard_logo.png",
+      alt: "Harvard University Logo"
+    },
+    {
+      name: "Massachusetts Institute of Technology",
+      displayName: { first: "MIT", second: "" },
+      logo: "/school_logos/mit_logo.jpg",
+      alt: "MIT Logo"
+    },
+    {
+      name: "Stanford University",
+      displayName: { first: "Stanford", second: "University" },
+      logo: "/school_logos/stanford_logo.png",
+      alt: "Stanford University Logo"
     }
   ];
 
+  const itemsPerSlide = 4;
+  const totalSlides = Math.ceil(institutions.length / itemsPerSlide);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
+
+  const getCurrentInstitutions = () => {
+    const startIndex = currentSlide * itemsPerSlide;
+    return institutions.slice(startIndex, startIndex + itemsPerSlide);
+  };
+
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section className="py-16 lg:py-24 bg-gray-25">
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-16">
@@ -29,31 +71,70 @@ const MentorInstitutions = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 max-w-4xl mx-auto">
-            {institutions.map((institution, index) => (
-              <div key={index} className="flex items-center justify-center group transition-all duration-300">
-                <div className="flex items-center space-x-6 lg:space-x-8">
-                  <div className="w-40 h-40 lg:w-48 lg:h-48 flex items-center justify-center flex-shrink-0">
+          {/* Carousel Container */}
+          <div className="relative max-w-7xl mx-auto">
+            {/* Institutions Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+              {getCurrentInstitutions().map((institution, index) => (
+                <div key={index} className="bg-white rounded-lg p-6 flex flex-col items-center justify-center group transition-all duration-300 hover:shadow-md">
+                  <div className="w-24 h-24 lg:w-32 lg:h-32 flex items-center justify-center flex-shrink-0 mb-4">
                     <img 
                       src={institution.logo} 
                       alt={institution.alt}
                       className="max-w-full max-h-full object-contain transition-all duration-300 group-hover:scale-105"
                     />
                   </div>
-                  <div className="text-left">
-                    <h3 className="text-xl lg:text-2xl font-bold text-gray-900 leading-tight uppercase">
+                  <div className="text-center">
+                    <h3 className="text-sm lg:text-base font-bold text-gray-900 leading-tight uppercase">
                       {institution.displayName.first}
                     </h3>
-                    <h3 className="text-xl lg:text-2xl font-bold text-gray-900 leading-tight uppercase">
-                      {institution.displayName.second}
-                    </h3>
+                    {institution.displayName.second && (
+                      <h3 className="text-sm lg:text-base font-bold text-gray-900 leading-tight uppercase">
+                        {institution.displayName.second}
+                      </h3>
+                    )}
                   </div>
                 </div>
+              ))}
+            </div>
+
+            {/* Navigation Arrows */}
+            <div className="flex justify-center items-center mt-12 space-x-8">
+              {/* Left Arrow */}
+              <button 
+                onClick={prevSlide}
+                className="w-16 h-16 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+              >
+                <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+
+              {/* Progress Indicators */}
+              <div className="flex space-x-2">
+                {Array.from({ length: totalSlides }, (_, index) => (
+                  <div
+                    key={index}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      index === currentSlide 
+                        ? 'bg-[#B8A67A] w-4' 
+                        : 'bg-gray-300'
+                    }`}
+                  />
+                ))}
               </div>
-            ))}
+
+              {/* Right Arrow */}
+              <button 
+                onClick={nextSlide}
+                className="w-16 h-16 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+              >
+                <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
           </div>
-
-
         </div>
       </div>
     </section>

@@ -117,7 +117,7 @@ const OurPrograms = () => {
             {/* Program Cards */}
             <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 mx-0 lg:mx-20">
               {getVisiblePrograms().map((program, index) => (
-                <div key={`${currentSlide}-${index}`} className="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                <div key={`${currentSlide}-${index}`} className="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
                   {/* Hero Image */}
                   <div 
                     className="w-full h-64 lg:h-72 bg-cover bg-center bg-no-repeat"

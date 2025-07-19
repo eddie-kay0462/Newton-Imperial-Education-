@@ -58,14 +58,14 @@ const SuccessStories = () => {
   const currentStory = stories[currentSlide];
 
   return (
-    <section id="success-stories" className="py-16 lg:py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section id="success-stories" className="py-16 lg:py-24 bg-gray-50">
               <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-gray-900 mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 5vw, 3.5rem)' }}>
               Success Stories
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4" style={{ fontSize: 'clamp(0.875rem, 2.5vw, 1.25rem)' }}>
               Hear from students who have transformed their academic journey through our programs
             </p>
           </div>
@@ -74,7 +74,7 @@ const SuccessStories = () => {
             {/* Left Navigation Arrow */}
             <button 
               onClick={prevSlide}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-14 h-14 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition-all duration-300 hover:border-primary-600 shadow-lg"
+              className="hidden sm:flex absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-14 h-14 bg-white border-2 border-gray-200 rounded-full items-center justify-center hover:bg-gray-50 transition-all duration-300 hover:border-primary-600 shadow-lg"
             >
               <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -84,7 +84,7 @@ const SuccessStories = () => {
             {/* Right Navigation Arrow */}
             <button 
               onClick={nextSlide}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-14 h-14 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition-all duration-300 hover:border-primary-600 shadow-lg"
+              className="hidden sm:flex absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-14 h-14 bg-white border-2 border-gray-200 rounded-full items-center justify-center hover:bg-gray-50 transition-all duration-300 hover:border-primary-600 shadow-lg"
             >
               <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -92,7 +92,7 @@ const SuccessStories = () => {
             </button>
 
             {/* Story Card */}
-            <div className="bg-white border border-gray-200 rounded-3xl p-10 lg:p-16 mx-0 lg:mx-20 shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="bg-white border border-gray-200/30 rounded-3xl p-10 lg:p-16 mx-0 lg:mx-20 shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="text-center mb-8">
                 {/* Profile Avatar */}
                 <div className="w-24 h-24 lg:w-28 lg:h-28 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
@@ -135,7 +135,7 @@ const SuccessStories = () => {
             </div>
 
             {/* Pagination Dots */}
-            <div className="flex justify-center mt-12 space-x-3">
+            <div className="hidden sm:flex justify-center mt-12 space-x-3">
               {stories.map((_, index) => (
                 <button
                   key={index}
@@ -151,53 +151,53 @@ const SuccessStories = () => {
           {/* Achievement Stats */}
           <div className="mt-20">
             <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-3xl p-12 lg:p-16">
-              <div className="text-center mb-12">
-                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <div className="text-center mb-8 sm:mb-12">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.25rem, 3vw, 1.875rem)' }}>
                   Student Achievements
                 </h3>
-                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-4" style={{ fontSize: 'clamp(0.875rem, 2vw, 1.125rem)' }}>
                   Our students consistently achieve remarkable academic success
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-4 gap-8 lg:gap-12">
-                <div className="text-center">
-                  <CounterAnimation 
-                    targetValue={150} 
-                    suffix="+" 
-                    duration={2000}
-                    className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2"
-                  />
-                  <div className="text-lg text-gray-600">Research Papers Published</div>
-                </div>
-                <div className="text-center">
-                  <CounterAnimation 
-                    targetValue={95} 
-                    suffix="%" 
-                    duration={2000}
-                    className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2"
-                  />
-                  <div className="text-lg text-gray-600">Top University Acceptance</div>
-                </div>
-                <div className="text-center">
-                  <CounterAnimation 
-                    targetValue={2.5} 
-                    prefix="$" 
-                    suffix="M" 
-                    duration={2000}
-                    className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2"
-                  />
-                  <div className="text-lg text-gray-600">In Scholarships Awarded</div>
-                </div>
-                <div className="text-center">
-                  <CounterAnimation 
-                    targetValue={50} 
-                    suffix="+" 
-                    duration={2000}
-                    className="text-3xl lg:text-4xl font-bold text-primary-600 mb-2"
-                  />
-                  <div className="text-lg text-gray-600">Awards Won</div>
-                </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 xl:gap-12">
+                                  <div className="text-center">
+                    <CounterAnimation 
+                      targetValue={150} 
+                      suffix="+" 
+                      duration={2000}
+                      className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-primary-600 mb-2"
+                    />
+                    <div className="text-xs sm:text-sm lg:text-base text-gray-600 px-1" style={{ fontSize: 'clamp(0.75rem, 1.5vw, 1rem)' }}>Research Papers Published</div>
+                  </div>
+                  <div className="text-center">
+                    <CounterAnimation 
+                      targetValue={95} 
+                      suffix="%" 
+                      duration={2000}
+                      className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-primary-600 mb-2"
+                    />
+                    <div className="text-xs sm:text-sm lg:text-base text-gray-600 px-1" style={{ fontSize: 'clamp(0.75rem, 1.5vw, 1rem)' }}>Top University Acceptance</div>
+                  </div>
+                  <div className="text-center">
+                    <CounterAnimation 
+                      targetValue={2.5} 
+                      prefix="$" 
+                      suffix="M" 
+                      duration={2000}
+                      className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-primary-600 mb-2"
+                    />
+                    <div className="text-xs sm:text-sm lg:text-base text-gray-600 px-1" style={{ fontSize: 'clamp(0.75rem, 1.5vw, 1rem)' }}>In Scholarships Awarded</div>
+                  </div>
+                  <div className="text-center">
+                    <CounterAnimation 
+                      targetValue={50} 
+                      suffix="+" 
+                      duration={2000}
+                      className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-primary-600 mb-2"
+                    />
+                    <div className="text-xs sm:text-sm lg:text-base text-gray-600 px-1" style={{ fontSize: 'clamp(0.75rem, 1.5vw, 1rem)' }}>Awards Won</div>
+                  </div>
               </div>
             </div>
           </div>

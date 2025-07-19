@@ -43,15 +43,12 @@ const Footer = () => {
         {/* Contact Information */}
         <div className="flex flex-wrap items-center gap-6 mb-8">
           <div className="flex items-center">
-            <div className="w-4 h-4 bg-primary-600 rounded-full mr-2"></div>
             <span className="text-gray-600">hello@newtonimperial.education</span>
           </div>
           <div className="flex items-center">
-            <div className="w-4 h-4 bg-primary-600 rounded-full mr-2"></div>
             <span className="text-gray-600">+44 7999 846221</span>
           </div>
           <div className="flex items-center">
-            <div className="w-4 h-4 bg-primary-600 rounded-full mr-2"></div>
             <span className="text-gray-600">Cambridge, MA 02139</span>
           </div>
         </div>

@@ -1,0 +1,277 @@
+/* Global Responsive Styles */
+/* Modern fluid typography and spacing system */
+
+/* Base responsive font sizes */
+:root {
+  --font-size-xs: clamp(0.75rem, 1.5vw, 0.875rem);
+  --font-size-sm: clamp(0.875rem, 2vw, 1rem);
+  --font-size-base: clamp(1rem, 2.5vw, 1.125rem);
+  --font-size-lg: clamp(1.125rem, 3vw, 1.25rem);
+  --font-size-xl: clamp(1.25rem, 3.5vw, 1.5rem);
+  --font-size-2xl: clamp(1.5rem, 4vw, 2rem);
+  --font-size-3xl: clamp(1.875rem, 5vw, 2.5rem);
+  --font-size-4xl: clamp(2.25rem, 6vw, 3rem);
+  --font-size-5xl: clamp(3rem, 7vw, 4rem);
+  --font-size-6xl: clamp(3.75rem, 8vw, 5rem);
+  
+  /* Responsive spacing */
+  --spacing-xs: clamp(0.25rem, 1vw, 0.5rem);
+  --spacing-sm: clamp(0.5rem, 2vw, 1rem);
+  --spacing-md: clamp(1rem, 3vw, 1.5rem);
+  --spacing-lg: clamp(1.5rem, 4vw, 2rem);
+  --spacing-xl: clamp(2rem, 5vw, 3rem);
+  --spacing-2xl: clamp(2.5rem, 6vw, 4rem);
+  --spacing-3xl: clamp(3rem, 7vw, 5rem);
+  
+  /* Responsive container widths */
+  --container-sm: min(90%, 640px);
+  --container-md: min(90%, 768px);
+  --container-lg: min(90%, 1024px);
+  --container-xl: min(90%, 1280px);
+  --container-2xl: min(90%, 1536px);
+}
+
+/* Typography utilities */
+.text-responsive-xs { font-size: var(--font-size-xs); }
+.text-responsive-sm { font-size: var(--font-size-sm); }
+.text-responsive-base { font-size: var(--font-size-base); }
+.text-responsive-lg { font-size: var(--font-size-lg); }
+.text-responsive-xl { font-size: var(--font-size-xl); }
+.text-responsive-2xl { font-size: var(--font-size-2xl); }
+.text-responsive-3xl { font-size: var(--font-size-3xl); }
+.text-responsive-4xl { font-size: var(--font-size-4xl); }
+.text-responsive-5xl { font-size: var(--font-size-5xl); }
+.text-responsive-6xl { font-size: var(--font-size-6xl); }
+
+/* Spacing utilities */
+.space-responsive-xs { gap: var(--spacing-xs); }
+.space-responsive-sm { gap: var(--spacing-sm); }
+.space-responsive-md { gap: var(--spacing-md); }
+.space-responsive-lg { gap: var(--spacing-lg); }
+.space-responsive-xl { gap: var(--spacing-xl); }
+.space-responsive-2xl { gap: var(--spacing-2xl); }
+.space-responsive-3xl { gap: var(--spacing-3xl); }
+
+/* Responsive grid utilities */
+.grid-responsive-1 { 
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+.grid-responsive-2 { 
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+.grid-responsive-3 { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.grid-responsive-4 { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-sm);
+}
+
+@media (min-width: 640px) {
+  .grid-responsive-2 { 
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-responsive-3 { 
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-responsive-4 { 
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-responsive-3 { 
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-responsive-4 { 
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Button responsive styles */
+.btn-responsive {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-base);
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.btn-responsive:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.btn-responsive.btn-primary {
+  background-color: #8A774A;
+  color: white;
+}
+
+.btn-responsive.btn-primary:hover {
+  background-color: #766542;
+}
+
+.btn-responsive.btn-secondary {
+  background-color: transparent;
+  color: #374151;
+  border: 2px solid #D1D5DB;
+}
+
+.btn-responsive.btn-secondary:hover {
+  border-color: #8A774A;
+  color: #8A774A;
+  background-color: #F9FAFB;
+}
+
+/* Container responsive styles */
+.container-responsive {
+  width: 100%;
+  max-width: var(--container-2xl);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+@media (min-width: 640px) {
+  .container-responsive {
+    padding: 0 var(--spacing-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-responsive {
+    padding: 0 var(--spacing-xl);
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-responsive {
+    padding: 0 var(--spacing-2xl);
+  }
+}
+
+/* Section responsive styles */
+.section-responsive {
+  padding: var(--spacing-2xl) 0;
+}
+
+@media (min-width: 768px) {
+  .section-responsive {
+    padding: var(--spacing-3xl) 0;
+  }
+}
+
+/* Card responsive styles */
+.card-responsive {
+  background: white;
+  border-radius: 1rem;
+  padding: var(--spacing-md);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(229, 231, 235, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card-responsive:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .card-responsive {
+    padding: var(--spacing-lg);
+    border-radius: 1.5rem;
+  }
+}
+
+/* Responsive image utilities */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Touch-friendly interactive elements */
+@media (hover: none) and (pointer: coarse) {
+  .btn-responsive {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-lg);
+  }
+  
+  .card-responsive:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .btn-responsive:hover {
+    transform: none;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .btn-responsive {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Print styles */
+@media print {
+  .btn-responsive {
+    display: none;
+  }
+  
+  .container-responsive {
+    max-width: none;
+    padding: 0;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+.btn-responsive:focus-visible {
+  outline: 2px solid #8A774A;
+  outline-offset: 2px;
+}
+
+/* Responsive aspect ratios */
+.aspect-ratio-responsive {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.aspect-ratio-responsive > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 
