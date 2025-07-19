@@ -76,7 +76,7 @@ const ResearchScholarPrograms = () => {
       </section>
 
       {/* Program Selection */}
-      <section className="py-16 bg-gray-25">
+      <section className="py-16 bg-gray-50 rounded-3xl mx-6 sm:mx-12 lg:mx-16 xl:mx-20 2xl:px-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -105,7 +105,7 @@ const ResearchScholarPrograms = () => {
           </div>
 
           {/* Program Details */}
-          <div className="bg-white rounded-lg shadow-md border border-gray-200/30 p-8 md:p-12">
+          <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -166,7 +166,7 @@ const ResearchScholarPrograms = () => {
       </section>
 
       {/* Research Areas */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50 rounded-3xl mx-6 sm:mx-12 lg:mx-16 xl:mx-20 2xl:px-28">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">

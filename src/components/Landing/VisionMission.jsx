@@ -2,7 +2,7 @@ import React from 'react';
 
 const VisionMission = () => {
   return (
-    <section id="vision-mission" className="py-12 lg:py-16 bg-gray-25">
+    <section id="vision-mission" className="py-12 lg:py-16 bg-gray-50 rounded-3xl mx-6 sm:mx-12 lg:mx-16 xl:mx-20 2xl:mx-28">
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-12">

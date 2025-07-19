@@ -196,7 +196,7 @@ const WhyChooseUsPage = () => {
       </section>
 
       {/* Credibility Section - Where Our Mentors Are From */}
-      <section className="py-16 lg:py-20 bg-gray-25">
+      <section className="py-16 lg:py-20 bg-gray-50 rounded-3xl mx-6 sm:mx-12 lg:mx-16 xl:mx-20 2xl:mx-28">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="text-center mb-12">
@@ -219,7 +219,7 @@ const WhyChooseUsPage = () => {
               {/* University Logos Grid */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
                 {getCurrentInstitutions().map((institution, index) => (
-                  <div key={index} className="bg-white rounded-lg p-6 flex flex-col items-center justify-center group transition-all duration-300 hover:shadow-md">
+                  <div key={index} className="bg-white rounded-lg p-6 flex flex-col items-center justify-center group transition-all duration-300 shadow-lg hover:shadow-xl">
                     <div className="w-24 h-24 lg:w-32 lg:h-32 flex items-center justify-center flex-shrink-0 mb-4">
                       <img 
                         src={institution.logo} 
@@ -273,7 +273,7 @@ const WhyChooseUsPage = () => {
             </div>
 
                          {/* Credibility Stats */}
-             <div className="bg-white rounded-2xl p-8 lg:p-12">
+             <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-sm">
                <div className="grid md:grid-cols-3 gap-8 lg:gap-12 text-center">
                  <div className="group">
                    <CounterAnimation 
@@ -319,7 +319,7 @@ const WhyChooseUsPage = () => {
       </section>
 
       {/* What You Will Gain Section */}
-      <section className="py-16 lg:py-24 bg-gray-25">
+      <section className="py-16 lg:py-24 bg-gray-50 rounded-3xl mx-6 sm:mx-12 lg:mx-16 xl:mx-20 2xl:mx-28">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="text-center mb-16">
@@ -332,7 +332,7 @@ const WhyChooseUsPage = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="bg-white border border-[#B8A67A] rounded-2xl p-6 text-center group hover:shadow-md transition-all duration-300">
+              <div className="bg-white border border-[#B8A67A] rounded-2xl p-6 text-center group shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -345,7 +345,7 @@ const WhyChooseUsPage = () => {
                 </p>
               </div>
 
-              <div className="bg-white border border-[#B8A67A] rounded-2xl p-6 text-center group hover:shadow-md transition-all duration-300">
+              <div className="bg-white border border-[#B8A67A] rounded-2xl p-6 text-center group shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -357,7 +357,7 @@ const WhyChooseUsPage = () => {
                 </p>
               </div>
 
-              <div className="bg-white border border-[#B8A67A] rounded-2xl p-6 text-center group hover:shadow-md transition-all duration-300">
+              <div className="bg-white border border-[#B8A67A] rounded-2xl p-6 text-center group shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -369,7 +369,7 @@ const WhyChooseUsPage = () => {
                 </p>
               </div>
 
-              <div className="bg-white border border-[#B8A67A] rounded-2xl p-6 text-center group hover:shadow-md transition-all duration-300">
+              <div className="bg-white border border-[#B8A67A] rounded-2xl p-6 text-center group shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 919.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -386,7 +386,7 @@ const WhyChooseUsPage = () => {
       </section>
 
       {/* Resources Section */}
-      <section className="py-16 lg:py-24 bg-gray-25">
+      <section className="py-16 lg:py-24 bg-gray-50 rounded-3xl mx-6 sm:mx-12 lg:mx-16 xl:mx-20 2xl:mx-28">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="text-center mb-16">
@@ -399,7 +399,7 @@ const WhyChooseUsPage = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white border border-[#B8A67A] rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 group">
+              <div className="bg-white border border-[#B8A67A] rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
                 <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -477,7 +477,7 @@ const WhyChooseUsPage = () => {
       </section>
 
       {/* Detailed Reasons Section */}
-      <section className="py-20 lg:py-32 bg-gray-25">
+      <section className="py-20 lg:py-32 bg-gray-50 rounded-3xl mx-6 sm:mx-12 lg:mx-16 xl:mx-20 2xl:mx-28">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="grid gap-16 lg:gap-20">
@@ -510,7 +510,7 @@ const WhyChooseUsPage = () => {
                   
                   {/* Visual Element */}
                   <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                    <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-12 lg:p-16">
+                    <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-12 lg:p-16 shadow-sm">
                       <div className="flex items-center justify-center">
                         <div className="w-32 h-32 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center">
                           <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-sm">

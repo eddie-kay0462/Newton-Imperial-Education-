@@ -58,8 +58,8 @@ const SuccessStories = () => {
   const currentStory = stories[currentSlide];
 
   return (
-    <section id="success-stories" className="py-16 lg:py-24 bg-gray-50">
-              <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
+    <section id="success-stories" className="py-16 lg:py-24 bg-gray-50 rounded-3xl mx-6 sm:mx-12 lg:mx-16 xl:mx-20 2xl:mx-28">
+      <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-gray-900 mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 5vw, 3.5rem)' }}>
@@ -92,7 +92,7 @@ const SuccessStories = () => {
             </button>
 
             {/* Story Card */}
-            <div className="bg-white border border-gray-200/30 rounded-3xl p-10 lg:p-16 mx-0 lg:mx-20 shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="bg-white border border-gray-100 rounded-3xl p-10 lg:p-16 mx-0 lg:mx-20 shadow-sm hover:shadow-md transition-all duration-300">
               <div className="text-center mb-8">
                 {/* Profile Avatar */}
                 <div className="w-24 h-24 lg:w-28 lg:h-28 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm">
@@ -150,7 +150,7 @@ const SuccessStories = () => {
 
           {/* Achievement Stats */}
           <div className="mt-20">
-            <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-3xl p-12 lg:p-16">
+            <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-3xl p-12 lg:p-16 shadow-sm">
               <div className="text-center mb-8 sm:mb-12">
                 <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.25rem, 3vw, 1.875rem)' }}>
                   Student Achievements

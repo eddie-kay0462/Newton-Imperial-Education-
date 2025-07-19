@@ -59,8 +59,8 @@ const MentorInstitutions = () => {
     return institutions.slice(startIndex, startIndex + itemsPerSlide);
   };
 
-  return (
-    <section className="py-16 lg:py-24 bg-gray-25">
+    return (
+    <section className="py-16 lg:py-24 bg-gray-50 rounded-3xl mx-6 sm:mx-12 lg:mx-16 xl:mx-20 2xl:mx-28">
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-16">
@@ -77,7 +77,7 @@ const MentorInstitutions = () => {
             {/* Institutions Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
               {getCurrentInstitutions().map((institution, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 flex flex-col items-center justify-center group transition-all duration-300 hover:shadow-md">
+                <div key={index} className="bg-white rounded-lg p-6 flex flex-col items-center justify-center group transition-all duration-300 shadow-sm hover:shadow-md">
                   <div className="w-24 h-24 lg:w-32 lg:h-32 flex items-center justify-center flex-shrink-0 mb-4">
                     <img 
                       src={institution.logo} 

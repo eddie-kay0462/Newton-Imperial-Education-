@@ -4,7 +4,7 @@ import CounterAnimation from '../CounterAnimation.jsx';
 
 const OurStudents = () => {
   return (
-    <section className="py-12 lg:py-16 bg-gray-25" id="our-students">
+    <section className="py-12 lg:py-16 bg-gray-50 rounded-3xl mx-6 sm:mx-12 lg:mx-16 xl:mx-20 2xl:mx-28" id="our-students">
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
@@ -71,7 +71,7 @@ const OurStudents = () => {
           </div>
 
           {/* Success Statistics */}
-            <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-3xl p-12 lg:p-16">
+            <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-3xl p-12 lg:p-16 shadow-sm">
               <div className="text-center mb-8 sm:mb-12">
                 <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 px-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.25rem, 3vw, 1.875rem)' }}>
                   Our Student Success
