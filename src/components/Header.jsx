@@ -148,7 +148,7 @@ const Header = () => {
       )
     },
     { 
-      name: 'Summer In-Person Programs', 
+      name: 'Summer Programs', 
       path: '/summer-programs',
       description: 'Immersive summer experiences at Cambridge and Oxford',
       icon: (
@@ -264,9 +264,16 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center">
               <Link to="/" className="flex items-center">
-                <div className="flex flex-col justify-center">
-                  <span className="text-sm font-medium text-gray-500 leading-tight tracking-wider uppercase" style={{ fontSize: 'clamp(0.75rem, 1.5vw, 0.875rem)' }}>Newton Imperial</span>
-                  <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight tracking-tight" style={{ fontSize: 'clamp(1.25rem, 3vw, 2rem)' }}>Education</span>
+                <div className="flex items-center space-x-2">
+                  <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-900 leading-tight tracking-tight relative" style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)' }}>
+                    NIE
+                    <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent opacity-60"></div>
+                    <div className="absolute -top-1 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent opacity-60"></div>
+                  </span>
+                  <div className="flex flex-col justify-center">
+                    <span className="text-sm font-medium text-gray-500 leading-tight tracking-wider uppercase" style={{ fontSize: 'clamp(0.75rem, 1.5vw, 0.875rem)', letterSpacing: '0.15em' }}>Newton Imperial</span>
+                    <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight tracking-tight" style={{ fontSize: 'clamp(1.25rem, 3vw, 2rem)' }}>Education</span>
+                  </div>
                 </div>
               </Link>
             </div>
@@ -378,6 +385,80 @@ const Header = () => {
                           </div>
                         </Link>
                       ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+
+
+              {/* Summer Experiences Dropdown */}
+              <div 
+                className="relative" 
+                ref={el => dropdownRefs.current.summerExperiences = el}
+                onMouseEnter={() => handleDropdownHover('summerExperiences')}
+                onMouseLeave={() => handleDropdownLeave('summerExperiences')}
+              >
+                <button className={getLinkClasses('/summer-programs', false, true)}>
+                  <span>Summer Experiences</span>
+                  <svg 
+                    className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === 'summerExperiences' ? 'rotate-180' : ''}`}
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                
+                {activeDropdown === 'summerExperiences' && (
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[600px] bg-gray-25 rounded-2xl shadow-lg border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                    <div className="px-8 py-2">
+                      <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
+                        <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
+                        Summer 2026 Experiences
+                      </h3>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4 px-8">
+                      <Link
+                        to="/summer-programs/cambridge"
+                        className="group relative overflow-hidden rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105"
+                        onClick={() => setActiveDropdown(null)}
+                      >
+                        <div className="relative h-48 bg-cover bg-center" style={{ backgroundImage: 'url(/campuses/cambridge-campus-1.png)' }}>
+                          <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                          <div className="absolute top-4 left-4">
+                            <h4 className="text-xl font-bold text-white mb-1">Cambridge</h4>
+                          </div>
+                          <div className="absolute bottom-4 left-4">
+                            <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md">
+                              <svg className="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17l9.2-9.2M17 17V7H7" />
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </Link>
+                      
+                      <Link
+                        to="/summer-programs/oxford"
+                        className="group relative overflow-hidden rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105"
+                        onClick={() => setActiveDropdown(null)}
+                      >
+                        <div className="relative h-48 bg-cover bg-center" style={{ backgroundImage: 'url(/campuses/oxford-campus-1.jpg)' }}>
+                          <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                          <div className="absolute top-4 left-4">
+                            <h4 className="text-xl font-bold text-white mb-1">Oxford</h4>
+                          </div>
+                          <div className="absolute bottom-4 left-4">
+                            <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md">
+                              <svg className="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17l9.2-9.2M17 17V7H7" />
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </Link>
                     </div>
                   </div>
                 )}
@@ -557,6 +638,45 @@ const Header = () => {
                   </div>
                 )}
               </div>
+
+              {/* Mobile Summer Experiences Dropdown */}
+              <div>
+                <button
+                  onClick={() => handleMobileDropdownToggle('summerExperiences')}
+                  className="flex items-center justify-between w-full px-4 py-3 text-gray-600 hover:text-primary-600 hover:bg-gray-50 rounded-lg font-medium transition-all duration-300 text-base"
+                >
+                  <span>Summer Experiences</span>
+                  <svg 
+                    className={`w-4 h-4 transition-transform duration-200 ${mobileDropdowns.summerExperiences ? 'rotate-180' : ''}`}
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                
+                {mobileDropdowns.summerExperiences && (
+                  <div className="ml-4 mt-2 space-y-1">
+                    <Link
+                      to="/summer-programs/cambridge"
+                      className="block px-4 py-2 text-gray-600 hover:text-primary-600 hover:bg-primary-50 rounded-lg text-sm font-medium transition-colors duration-200"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Cambridge Summer Program
+                    </Link>
+                    <Link
+                      to="/summer-programs/oxford"
+                      className="block px-4 py-2 text-gray-600 hover:text-primary-600 hover:bg-primary-50 rounded-lg text-sm font-medium transition-colors duration-200"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Oxford Summer Program
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+
 
               {/* Mobile Students Dropdown */}
               <div>

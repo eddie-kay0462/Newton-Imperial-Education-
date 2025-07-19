@@ -40,6 +40,18 @@ const MentorInstitutions = () => {
       displayName: { first: "Stanford", second: "University" },
       logo: "/school_logos/stanford_logo.png",
       alt: "Stanford University Logo"
+    },
+    {
+      name: "Peking University",
+      displayName: { first: "Peking", second: "University" },
+      logo: "/school_logos/peking_logo.png",
+      alt: "Peking University Logo"
+    },
+    {
+      name: "Tsinghua University",
+      displayName: { first: "Tsinghua", second: "University" },
+      logo: "/school_logos/tsinghua_logo.png",
+      alt: "Tsinghua University Logo"
     }
   ];
 

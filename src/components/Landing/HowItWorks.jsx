@@ -4,19 +4,23 @@ const HowItWorks = () => {
   const steps = [
     {
       number: 1,
-      title: "Apply"
+      title: "Check your eligibility",
+      description: "Ensure you meet the age, academic, and English proficiency requirements for your desired course."
     },
     {
       number: 2,
-      title: "Match with Mentor"
+      title: "Application process",
+      description: "Follow our easy online application process and take the first step toward an unforgettable experience."
     },
     {
       number: 3,
-      title: "Start Research"
+      title: "Secure your spot",
+      description: "Pay the programme deposit to secure your place. We encourage early enrolment as places are limited and in high demand."
     },
     {
       number: 4,
-      title: "Present & Publish"
+      title: "Receive hands-on guidance",
+      description: "Our team will then guide you through every step leading up to your programme's start date, including any required documentation and full payment."
     }
   ];
 
@@ -33,34 +37,38 @@ const HowItWorks = () => {
             </p>
           </div>
 
-          {/* Horizontal Timeline Design */}
-          <div className="relative max-w-7xl mx-auto">
-            {/* Horizontal Timeline Container */}
-            <div className="relative">
-              {/* Horizontal connecting line */}
-              <div className="hidden lg:block absolute top-20 left-0 right-0 h-0.5 bg-gradient-to-r from-gray-300 via-gray-400 to-gray-300 z-0"></div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Side - Steps */}
+            <div>
               
-              {/* Horizontal Timeline Steps */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 relative z-10">
+              {/* Steps Grid */}
+              <div className="grid grid-cols-2 gap-6">
                 {steps.map((step, index) => (
-                  <div key={index} className="text-center">
-                    {/* Step Number Circle */}
-                    <div className="inline-flex items-center justify-center relative mb-8">
-                      {/* Step Number Circle */}
-                      <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full flex items-center justify-center shadow-sm hover:shadow-md transition-all duration-300" style={{ backgroundColor: '#0F2A44' }}>
-                        <span className="text-2xl lg:text-3xl font-bold text-white">{step.number}</span>
-                      </div>
+                  <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+                    {/* Step Number */}
+                    <div className="w-12 h-12 bg-white border-2 border-[#0F2A44] rounded-full flex items-center justify-center mb-4">
+                      <span className="text-xl font-bold text-[#0F2A44]">{step.number}</span>
                     </div>
                     
                     {/* Step Content */}
-                    <div className="bg-white rounded-2xl p-8 lg:p-10 hover:shadow-md transition-all duration-300 flex flex-col justify-center min-h-[120px] lg:min-h-[140px]">
-                      <h3 className="text-2xl lg:text-3xl font-bold text-[#0F2A44] leading-tight" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
-                        {step.title}
-                      </h3>
-                    </div>
+                    <h3 className="text-lg font-bold text-gray-900 mb-3">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {step.description}
+                    </p>
                   </div>
                 ))}
               </div>
+            </div>
+
+            {/* Right Side - Image */}
+            <div className="relative">
+              <img 
+                src="/landing_page/how_it_works.png" 
+                alt="How It Works" 
+                className="rounded-2xl shadow-2xl w-full h-96 lg:h-[500px] object-cover"
+              />
             </div>
           </div>
 

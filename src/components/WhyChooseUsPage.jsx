@@ -42,6 +42,16 @@ const WhyChooseUsPage = () => {
       name: "Stanford University",
       logo: "/school_logos/stanford_logo.png",
       alt: "Stanford University Logo"
+    },
+    {
+      name: "Peking University",
+      logo: "/school_logos/peking_logo.png",
+      alt: "Peking University Logo"
+    },
+    {
+      name: "Tsinghua University",
+      logo: "/school_logos/tsinghua_logo.png",
+      alt: "Tsinghua University Logo"
     }
   ];
 

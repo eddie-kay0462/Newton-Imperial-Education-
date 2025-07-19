@@ -210,11 +210,11 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <div className="absolute -bottom-8 -right-8 bg-gradient-to-br from-[#B8A67A] to-[#C4B28A] rounded-3xl p-6 shadow-lg hidden lg:block transform hover:scale-105 transition-all duration-300">
+            <div className="absolute -bottom-8 -right-8 bg-gradient-to-br from-[#856F50] to-[#9A8B6A] rounded-3xl p-6 shadow-lg hidden lg:block transform hover:scale-105 transition-all duration-300">
               <div className="text-center">
                 <div className="text-3xl font-bold mb-2 text-white">100%</div>
                 <div className="text-sm text-white/90 font-medium">Scholarship Available</div>
-                <div className="w-12 h-1 bg-white/30 rounded-full mx-auto mt-3"></div>
+                <div className="w-12 h-1 bg-[#0F2A44] rounded-full mx-auto mt-3"></div>
               </div>
             </div>
           </div>

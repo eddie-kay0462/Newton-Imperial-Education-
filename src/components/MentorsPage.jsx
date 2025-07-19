@@ -54,6 +54,20 @@ const MentorsPage = () => {
       alt: "Stanford University Logo",
       description: "Founded in 1885, innovation hub in Silicon Valley",
       stats: "Ranked #3 in World University Rankings 2024"
+    },
+    {
+      name: "Peking University",
+      logo: "/school_logos/peking_logo.png",
+      alt: "Peking University Logo",
+      description: "Founded in 1898, China's premier comprehensive university",
+      stats: "Ranked #1 in China University Rankings 2024"
+    },
+    {
+      name: "Tsinghua University",
+      logo: "/school_logos/tsinghua_logo.png",
+      alt: "Tsinghua University Logo",
+      description: "Founded in 1911, China's leading research university",
+      stats: "Ranked #2 in China University Rankings 2024"
     }
   ];
 
