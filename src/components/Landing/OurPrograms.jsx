@@ -152,13 +152,13 @@ const OurPrograms = () => {
             </div>
 
             {/* Pagination Dots */}
-            <div className="flex justify-center mt-12 space-x-3">
+            <div className="flex justify-center mt-12 space-x-1.5">
               {programs.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`w-4 h-4 rounded-full transition-all duration-300 ${
-                    index === currentSlide ? 'bg-primary-600 scale-125' : 'bg-gray-300 hover:bg-gray-400'
+                  className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                    index === currentSlide ? 'bg-primary-600 scale-100' : 'bg-gray-300 hover:bg-gray-400'
                   }`}
                 />
               ))}

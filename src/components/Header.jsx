@@ -19,6 +19,7 @@ const Header = () => {
     // Clear any existing timeout
     if (hoverTimeouts.current[dropdownName]) {
       clearTimeout(hoverTimeouts.current[dropdownName]);
+      hoverTimeouts.current[dropdownName] = null;
     }
     setActiveDropdown(dropdownName);
   };
@@ -90,7 +91,7 @@ const Header = () => {
       : "after:w-0";
 
     const dropdownClasses = hasDropdown && !isMobile
-      ? "flex items-center space-x-1 cursor-pointer"
+      ? "flex items-center space-x-1 cursor-pointer min-w-0"
       : "";
 
     return `${baseClasses} ${isActiveLink(path) ? activeClasses : inactiveClasses} ${underlineClasses} ${activeUnderlineClasses} ${dropdownClasses}`;
@@ -292,9 +293,9 @@ const Header = () => {
                 onMouseLeave={() => handleDropdownLeave('about')}
               >
                 <button className={getLinkClasses('/#about', false, true)}>
-                  <span>About</span>
+                  <span className="flex-shrink-0">About</span>
                   <svg 
-                    className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === 'about' ? 'rotate-180' : ''}`}
+                    className={`w-4 h-4 flex-shrink-0 transition-transform duration-200 ${activeDropdown === 'about' ? 'rotate-180' : ''}`}
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -345,9 +346,9 @@ const Header = () => {
                 onMouseLeave={() => handleDropdownLeave('programs')}
               >
                 <button className={getLinkClasses('/#programs', false, true)}>
-                  <span>Programs</span>
+                  <span className="flex-shrink-0">Programs</span>
                   <svg 
-                    className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === 'programs' ? 'rotate-180' : ''}`}
+                    className={`w-4 h-4 flex-shrink-0 transition-transform duration-200 ${activeDropdown === 'programs' ? 'rotate-180' : ''}`}
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -400,9 +401,9 @@ const Header = () => {
                 onMouseLeave={() => handleDropdownLeave('summerExperiences')}
               >
                 <button className={getLinkClasses('/summer-programs', false, true)}>
-                  <span>Summer Experiences</span>
+                  <span className="flex-shrink-0">Summer Experiences</span>
                   <svg 
-                    className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === 'summerExperiences' ? 'rotate-180' : ''}`}
+                    className={`w-4 h-4 flex-shrink-0 transition-transform duration-200 ${activeDropdown === 'summerExperiences' ? 'rotate-180' : ''}`}
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -472,9 +473,9 @@ const Header = () => {
                 onMouseLeave={() => handleDropdownLeave('students')}
               >
                 <button className={getLinkClasses('/#students', false, true)}>
-                  <span>Students</span>
+                  <span className="flex-shrink-0">Students</span>
                   <svg 
-                    className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === 'students' ? 'rotate-180' : ''}`}
+                    className={`w-4 h-4 flex-shrink-0 transition-transform duration-200 ${activeDropdown === 'students' ? 'rotate-180' : ''}`}
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
