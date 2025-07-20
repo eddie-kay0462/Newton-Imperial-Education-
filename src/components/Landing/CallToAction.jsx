@@ -7,10 +7,10 @@ const CallToAction = () => {
       
               <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28 relative z-10">
         <div className="max-w-screen-2xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-white mb-6 sm:mb-8" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 3vw, 3.75rem)' }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-white mb-6 sm:mb-8 text-heading">
             Start Your Journey Today
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-100 mb-8 sm:mb-10 lg:mb-12 max-w-4xl mx-auto leading-relaxed px-4" style={{ fontSize: 'clamp(0.875rem, 1.5vw, 1.25rem)' }}>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-100 mb-8 sm:mb-10 lg:mb-12 max-w-4xl mx-auto text-body px-4">
             Join thousands of students who have transformed their academic future through our research programs. 
             Take the first step toward academic excellence and research success.
           </p>

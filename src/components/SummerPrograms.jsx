@@ -69,11 +69,11 @@ const SummerPrograms = () => {
       >
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
           <div className="text-center">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 sm:mb-4 lg:mb-6" style={{ fontSize: 'clamp(1.25rem, 3.5vw, 3rem)' }}>
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold mb-3 sm:mb-4 lg:mb-6 hero-title">
               Summer Programs
             </h1>
-            <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-200 max-w-3xl mx-auto px-4" style={{ fontSize: 'clamp(0.75rem, 2vw, 1.25rem)' }}>
-              Immersive summer learning experiences at prestigious <span className="font-black uppercase">Cambridge</span> and <span className="font-black uppercase">Oxford</span> locations
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-200 max-w-3xl mx-auto px-4 hero-subtitle">
+              Immersive summer learning experiences at prestigious <span className="font-semibold uppercase tracking-wide">Cambridge</span> and <span className="font-semibold uppercase tracking-wide">Oxford</span> locations
             </p>
           </div>
         </div>

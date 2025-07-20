@@ -131,7 +131,7 @@ const MentorsFrom = () => {
                   key={index}
                   onClick={() => goToSlide(index)}
                   className={`w-2 h-2 sm:w-1.5 sm:h-1.5 rounded-full transition-all duration-300 ${
-                    index === currentSlide ? 'bg-primary-600 scale-100' : 'bg-gray-300 hover:bg-gray-400'
+                    index === currentSlide ? 'bg-[#B8A67A] w-4' : 'bg-gray-300 hover:bg-gray-400'
                   }`}
                 />
               ))}

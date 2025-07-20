@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import './styles/responsive.css';
 
 @tailwind base;
@@ -14,48 +15,123 @@
   }
   
   body {
-    font-family: 'Poppins', system-ui, sans-serif;
+    font-family: 'Inter', 'Poppins', system-ui, sans-serif;
     line-height: 1.6;
     font-size: clamp(1rem, 2.5vw, 1.125rem);
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    color: #374151;
   }
   
+  /* Modern Typography Hierarchy */
   h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
+    font-family: 'Montserrat', system-ui, sans-serif;
     line-height: 1.2;
     margin: 0;
     padding: 0;
+    color: #0F2A44;
+    letter-spacing: -0.02em;
   }
   
   h1 {
     font-size: clamp(1.75rem, 5vw, 4rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
   }
   
   h2 {
     font-size: clamp(1.5rem, 4vw, 3rem);
+    font-weight: 600;
+    letter-spacing: -0.025em;
   }
   
   h3 {
     font-size: clamp(1.25rem, 3vw, 2rem);
+    font-weight: 500;
+    letter-spacing: -0.02em;
   }
   
   h4 {
     font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    font-weight: 500;
+    letter-spacing: -0.015em;
   }
   
   h5 {
     font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 500;
+    letter-spacing: -0.01em;
   }
   
   h6 {
     font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+    font-weight: 500;
+    letter-spacing: -0.005em;
   }
   
   p {
     margin: 0;
     padding: 0;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+  
+  /* Modern Button Typography */
+  button, .btn {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+  
+  /* Navigation Typography */
+  nav {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 500;
+  }
+  
+  /* Card and Section Typography */
+  .card-title {
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+  
+  .card-description {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  /* Hero Section Typography */
+  .hero-title {
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-subtitle {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Stats and Numbers */
+  .stat-number {
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  
+  .stat-label {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
   }
   
   img {
@@ -84,11 +160,11 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-[#0F2A44] hover:bg-[#766542] text-white font-semibold py-4 rounded-full transition-all duration-300 hover:shadow-lg;
+    @apply bg-[#BB945C] hover:bg-[#C8A56A] text-white font-medium py-4 rounded-full transition-all duration-300 hover:shadow-lg;
   }
   
   .btn-secondary {
-    @apply bg-white hover:bg-gray-50 text-[#0F2A44] font-semibold py-4 rounded-full border-2 border-[#0F2A44] transition-all duration-300 hover:shadow-lg;
+    @apply bg-white hover:bg-gray-50 text-[#0F2A44] font-medium py-4 rounded-full border-2 border-[#0F2A44] transition-all duration-300 hover:shadow-lg;
   }
 
   .card {
@@ -109,5 +185,26 @@
 
   .glass-effect {
     @apply backdrop-blur-sm bg-white/80 border border-white/20;
+  }
+  
+  /* Modern Typography Utilities */
+  .text-display {
+    @apply font-montserrat font-semibold tracking-tight;
+  }
+  
+  .text-heading {
+    @apply font-montserrat font-medium tracking-tight;
+  }
+  
+  .text-body {
+    @apply font-inter font-normal leading-relaxed;
+  }
+  
+  .text-caption {
+    @apply font-inter font-medium text-sm tracking-wide;
+  }
+  
+  .text-button {
+    @apply font-inter font-medium tracking-wide;
   }
 } 

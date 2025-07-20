@@ -74,10 +74,10 @@ const SuccessStories = () => {
       {/* Container with proper max-width and responsive padding */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 max-w-7xl">
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 2.8vw, 2.5rem)', color: '#0F2A44' }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6 text-heading">
             Success Stories
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1rem)' }}>
+          <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto text-body px-4">
             Hear from students who have transformed their academic journey through our programs
           </p>
         </div>
@@ -131,7 +131,7 @@ const SuccessStories = () => {
           </div>
 
           {/* Navigation Arrows */}
-          <div className="flex justify-center items-center mt-8 sm:mt-12 lg:mt-16 space-x-4">
+          <div className="flex justify-center items-center mt-8 sm:mt-12 lg:mt-16 space-x-8">
             {/* Left Arrow */}
             <button 
               onClick={prevSlide}
@@ -141,6 +141,20 @@ const SuccessStories = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
+
+            {/* Progress Indicators */}
+            <div className="flex space-x-2">
+              {stories.map((_, index) => (
+                <div
+                  key={index}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    index === currentSlide
+                      ? 'bg-[#B8A67A] w-4' 
+                      : 'bg-gray-300'
+                  }`}
+                />
+              ))}
+            </div>
 
             {/* Right Arrow */}
             <button 

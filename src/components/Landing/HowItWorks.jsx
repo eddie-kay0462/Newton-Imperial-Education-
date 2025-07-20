@@ -49,10 +49,10 @@ const HowItWorks = () => {
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6 text-gray-900" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 2.8vw, 2.5rem)' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6 text-gray-900 text-heading">
               How It Works
             </h2>
-            <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1rem)' }}>
+            <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto text-body px-4">
               Our streamlined process makes it easy to get started with your research journey
             </p>
           </div>
@@ -77,10 +77,10 @@ const HowItWorks = () => {
                     {/* Step Card */}
                     <div className="flex-1 bg-white rounded-xl p-4 sm:p-6 lg:p-8 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
                       <div className="flex-1">
-                        <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">
+                        <h3 className="text-lg sm:text-xl lg:text-2xl font-medium text-gray-900 mb-2 sm:mb-3 card-title">
                           {step.title}
                         </h3>
-                        <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
+                        <p className="text-sm sm:text-base lg:text-lg text-gray-600 card-description">
                           {step.description}
                         </p>
                       </div>
@@ -94,20 +94,20 @@ const HowItWorks = () => {
           {/* CTA Section */}
           <div className="mt-16 sm:mt-20 lg:mt-24 text-center">
             <div className="bg-[#0F2A44] rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 xl:p-16">
-              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-white mb-4 sm:mb-6 text-heading">
                 Ready to Start Your Research Journey?
               </h3>
-              <p className="text-sm sm:text-base lg:text-lg text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto text-body">
                 Join hundreds of students who have already begun their path to academic excellence
               </p>
               <a 
                 href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-full transition-all duration-300 hover:shadow-lg text-sm sm:text-base lg:text-lg"
-                style={{ backgroundColor: '#766542' }}
-                onMouseEnter={(e) => e.target.style.backgroundColor = '#8a7a5a'}
-                onMouseLeave={(e) => e.target.style.backgroundColor = '#766542'}
+                className="inline-block text-white font-medium py-3 sm:py-4 px-6 sm:px-8 rounded-full transition-all duration-300 hover:shadow-lg text-sm sm:text-base lg:text-lg text-button"
+                style={{ backgroundColor: '#BB945C' }}
+                onMouseEnter={(e) => e.target.style.backgroundColor = '#C8A56A'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#BB945C'}
               >
                 Get Started Today
               </a>

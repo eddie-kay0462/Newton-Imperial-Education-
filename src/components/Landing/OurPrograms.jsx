@@ -98,10 +98,10 @@ const OurPrograms = () => {
       {/* Container with proper max-width and responsive padding */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 max-w-7xl">
         <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 2.8vw, 2.5rem)', color: '#0F2A44' }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6 text-heading">
             Our Programs
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1rem)' }}>
+          <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto text-body px-4">
             Discover our comprehensive range of educational programs designed to unlock your potential and prepare you for success.
           </p>
         </div>
@@ -124,16 +124,16 @@ const OurPrograms = () => {
                 />
                 {/* Content */}
                 <div className="p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col flex-1 min-h-[260px] lg:min-h-[320px] lg:h-[320px]">
-                  <h3 className="text-lg sm:text-xl lg:text-xl xl:text-2xl font-bold text-gray-900 mb-2" style={{ fontSize: 'clamp(1.125rem, 1.8vw, 1.5rem)' }}>
+                  <h3 className="text-lg sm:text-xl lg:text-xl xl:text-2xl font-medium text-gray-900 mb-2 card-title">
                     {program.title}
                   </h3>
-                  <p className="text-base sm:text-lg xl:text-lg text-gray-600 leading-relaxed mb-4 sm:mb-6 line-clamp-3">
+                  <p className="text-base sm:text-lg xl:text-lg text-gray-600 mb-4 sm:mb-6 line-clamp-3 card-description">
                     {program.description}
                   </p>
                   <div className="mt-auto flex justify-start lg:justify-end">
                     <Link 
                       to={program.link}
-                      className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-[#0F2A44] text-white font-semibold rounded-full hover:bg-[#766542] transition-all duration-300 text-sm sm:text-base shadow-md hover:shadow-lg transform hover:-translate-y-0.5 w-fit self-end"
+                      className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 border-2 border-[#0F2A44] text-[#0F2A44] font-medium rounded-full hover:bg-[#0F2A44] hover:text-white transition-all duration-300 text-sm sm:text-base shadow-md hover:shadow-lg transform hover:-translate-y-0.5 w-fit self-end text-button"
                     >
                       Learn More
                       <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -148,7 +148,7 @@ const OurPrograms = () => {
 
           {/* Navigation Arrows: show on mobile/tablet, and on desktop for 3-card paging */}
           {window.innerWidth < 1024 ? (
-            <div className="flex justify-center items-center mt-6 sm:mt-8 md:mt-12 lg:mt-16 space-x-3 sm:space-x-4">
+            <div className="flex justify-center items-center mt-6 sm:mt-8 md:mt-12 lg:mt-16 space-x-8">
               {/* Left Arrow */}
               <button 
                 onClick={prevSlide}
@@ -158,6 +158,21 @@ const OurPrograms = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
+
+              {/* Progress Indicators */}
+              <div className="flex space-x-2">
+                {Array.from({ length: Math.ceil(programs.length / (window.innerWidth < 640 ? 1 : 2)) }, (_, index) => (
+                  <div
+                    key={index}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      index === Math.floor(currentSlide / (window.innerWidth < 640 ? 1 : 2))
+                        ? 'bg-[#B8A67A] w-4' 
+                        : 'bg-gray-300'
+                    }`}
+                  />
+                ))}
+              </div>
+
               {/* Right Arrow */}
               <button 
                 onClick={nextSlide}
@@ -169,7 +184,7 @@ const OurPrograms = () => {
               </button>
             </div>
           ) : (
-            <div className="flex justify-center items-center mt-8 lg:mt-12 space-x-4">
+            <div className="flex justify-center items-center mt-8 lg:mt-12 space-x-8">
               <button
                 onClick={prevDesktopPage}
                 className="w-12 h-12 bg-white border-2 border-[#0F2A44] rounded-full flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
@@ -178,6 +193,21 @@ const OurPrograms = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
+
+              {/* Progress Indicators */}
+              <div className="flex space-x-2">
+                {Array.from({ length: totalPages }, (_, index) => (
+                  <div
+                    key={index}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      index === desktopPage
+                        ? 'bg-[#B8A67A] w-4' 
+                        : 'bg-gray-300'
+                    }`}
+                  />
+                ))}
+              </div>
+
               <button
                 onClick={nextDesktopPage}
                 className="w-12 h-12 bg-white border-2 border-[#0F2A44] rounded-full flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"

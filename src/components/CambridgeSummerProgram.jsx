@@ -26,10 +26,10 @@ const CambridgeSummerProgram = () => {
           <div className="max-w-screen-2xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="text-white">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 drop-shadow-lg" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold mb-6 sm:mb-8 drop-shadow-lg hero-title">
                   Cambridge Summer School Experience
                 </h1>
-                <p className="text-lg sm:text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed drop-shadow-md">
+                <p className="text-lg sm:text-xl md:text-2xl text-gray-100 mb-8 hero-subtitle drop-shadow-md">
                   Immerse yourself in the historic halls of the University of Cambridge, where centuries of academic excellence meet cutting-edge research opportunities.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-start sm:justify-center lg:justify-start">
@@ -37,13 +37,13 @@ const CambridgeSummerProgram = () => {
                     href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block text-white font-semibold py-3 px-8 md:px-10 rounded-full transition-all duration-300 hover:shadow-lg text-base bg-[#B8A67A] hover:bg-[#9A8B6A] w-full sm:w-auto md:w-auto min-w-[120px] md:min-w-[140px] text-center"
+                    className="inline-block text-white font-medium py-3 px-8 md:px-10 rounded-full transition-all duration-300 hover:shadow-lg text-base bg-[#BB945C] hover:bg-[#C8A56A] w-full sm:w-auto md:w-auto min-w-[120px] md:min-w-[140px] text-center text-button"
                   >
                     Apply
                   </a>
                   <a 
                     href="#faq-section"
-                    className="inline-block text-white font-semibold py-3 px-6 md:px-8 rounded-full transition-all duration-300 hover:shadow-lg text-base border-2 border-white hover:bg-white hover:text-[#0F2A44] w-full sm:w-auto md:w-auto min-w-[120px] md:min-w-[140px] text-center"
+                    className="inline-block text-white font-medium py-3 px-6 md:px-8 rounded-full transition-all duration-300 hover:shadow-lg text-base border-2 border-white hover:bg-white hover:text-[#0F2A44] w-full sm:w-auto md:w-auto min-w-[120px] md:min-w-[140px] text-center text-button"
                   >
                     Learn More
                   </a>
@@ -66,10 +66,10 @@ const CambridgeSummerProgram = () => {
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6 text-heading">
                 Program Overview
               </h2>
-              <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto text-body">
                 Experience the prestigious academic environment of Cambridge University through our comprehensive summer program
               </p>
             </div>
@@ -81,8 +81,8 @@ const CambridgeSummerProgram = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Duration</h3>
-                <p className="text-gray-600">2-4 weeks intensive program with flexible scheduling options</p>
+                <h3 className="text-xl font-medium text-gray-900 mb-4 card-title">Duration</h3>
+                <p className="text-gray-600 card-description">2-4 weeks intensive program with flexible scheduling options</p>
               </div>
 
               <div className="bg-gray-50 rounded-2xl p-8 text-center">
@@ -91,8 +91,8 @@ const CambridgeSummerProgram = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 515.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 919.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Mentorship</h3>
-                <p className="text-gray-600">Direct guidance from Cambridge PhD candidates and researchers</p>
+                <h3 className="text-xl font-medium text-gray-900 mb-4 card-title">Mentorship</h3>
+                <p className="text-gray-600 card-description">Direct guidance from Cambridge PhD candidates and researchers</p>
               </div>
 
               <div className="bg-gray-50 rounded-2xl p-8 text-center">
@@ -101,8 +101,8 @@ const CambridgeSummerProgram = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Research</h3>
-                <p className="text-gray-600">Hands-on research projects with publication opportunities</p>
+                <h3 className="text-xl font-medium text-gray-900 mb-4 card-title">Research</h3>
+                <p className="text-gray-600 card-description">Hands-on research projects with publication opportunities</p>
               </div>
             </div>
           </div>

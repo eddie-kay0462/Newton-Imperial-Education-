@@ -75,16 +75,16 @@ const HeroSection = () => {
                     Applications are Open for our upcoming cohorts
                   </div>
                   
-                  <h1 id="hero-heading" className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold leading-tight" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', color: '#0F2A44' }}>
+                  <h1 id="hero-heading" className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold leading-tight text-gray-900 hero-title">
                     Research Opportunities
                     <br />
-                    <span style={{ color: '#0F2A44' }}>
+                    <span className="text-gray-900">
                       with world's top 1% researchers
                     </span>
                   </h1>
                   
-                  <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl text-gray-600 max-w-2xl leading-relaxed">
-                    Connect with top-tier researchers from <span className="font-black uppercase">Cambridge</span>, <span className="font-black uppercase">Oxford</span>, <span className="font-black uppercase">MIT</span>, and <span className="font-black uppercase">Harvard</span>. 
+                  <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl text-gray-600 max-w-2xl hero-subtitle">
+                    Connect with top-tier researchers from <span className="font-semibold uppercase tracking-wide">Cambridge</span>, <span className="font-semibold uppercase tracking-wide">Oxford</span>, <span className="font-semibold uppercase tracking-wide">MIT</span>, and <span className="font-semibold uppercase tracking-wide">Harvard</span>. 
                     Transform your academic journey with world-class mentorship and research opportunities.
                   </p>
                 </div>
@@ -94,7 +94,7 @@ const HeroSection = () => {
                   {/* Trust Indicators */}
                   <div ref={statsRef} className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8 shadow-sm border border-gray-100">
                     <div className="text-center mb-4 sm:mb-6">
-                      <h3 className="text-xs sm:text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">
+                      <h3 className="text-xs sm:text-sm font-medium text-gray-500 uppercase tracking-wider mb-2">
                         Trusted by Students Worldwide
                       </h3>
                     </div>
@@ -107,9 +107,9 @@ const HeroSection = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                             </svg>
                           </div>
-                          <div className="text-xs sm:text-sm lg:text-sm text-gray-700 font-medium">Research Papers</div>
+                          <div className="text-xs sm:text-sm lg:text-sm text-gray-700 font-medium stat-label">Research Papers</div>
                         </div>
-                        <div className="text-base sm:text-lg lg:text-lg xl:text-xl font-bold text-[#0F2A44]">{researchPapers}</div>
+                        <div className="text-base sm:text-lg lg:text-lg xl:text-xl font-semibold text-[#0F2A44] stat-number">{researchPapers}</div>
                       </div>
                       
                       <div className="flex items-center justify-between">
@@ -119,9 +119,9 @@ const HeroSection = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                             </svg>
                           </div>
-                          <div className="text-xs sm:text-sm lg:text-sm text-gray-700 font-medium">Research Mentors</div>
+                          <div className="text-xs sm:text-sm lg:text-sm text-gray-700 font-medium stat-label">Research Mentors</div>
                         </div>
-                        <div className="text-base sm:text-lg lg:text-lg xl:text-xl font-bold text-[#0F2A44]">{researchMentors}</div>
+                        <div className="text-base sm:text-lg lg:text-lg xl:text-xl font-semibold text-[#0F2A44] stat-number">{researchMentors}</div>
                       </div>
                       
                       <div className="flex items-center justify-between">
@@ -131,9 +131,9 @@ const HeroSection = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                             </svg>
                           </div>
-                          <div className="text-xs sm:text-sm lg:text-sm text-gray-700 font-medium">Complete Program Success</div>
+                          <div className="text-xs sm:text-sm lg:text-sm text-gray-700 font-medium stat-label">Complete Program Success</div>
                         </div>
-                        <div className="text-base sm:text-lg lg:text-lg xl:text-xl font-bold text-[#0F2A44]">{successRate}</div>
+                        <div className="text-base sm:text-lg lg:text-lg xl:text-xl font-semibold text-[#0F2A44] stat-number">{successRate}</div>
                       </div>
                     </div>
                   </div>
@@ -144,7 +144,7 @@ const HeroSection = () => {
                       href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full text-white font-semibold py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-500 ease-in-out hover:shadow-lg text-center block group relative overflow-hidden text-sm sm:text-sm lg:text-base"
+                      className="w-full text-white font-medium py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-500 ease-in-out hover:shadow-lg text-center block group relative overflow-hidden text-sm sm:text-sm lg:text-base text-button"
                       style={{ 
                         backgroundColor: '#0F2A44', 
                         background: 'linear-gradient(135deg, #0F2A44 0%, #0F2A44 100%)'
@@ -167,7 +167,7 @@ const HeroSection = () => {
                     </a>
                     <a 
                       href="/#programs"
-                      className="w-full border-2 border-gray-300 hover:border-[#0F2A44] text-gray-700 hover:text-[#0F2A44] font-semibold py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-300 hover:shadow-lg text-center block hover:bg-gray-50 group text-sm sm:text-sm lg:text-base"
+                      className="w-full border-2 border-gray-300 hover:border-[#0F2A44] text-gray-700 hover:text-[#0F2A44] font-medium py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-300 hover:shadow-lg text-center block hover:bg-gray-50 group text-sm sm:text-sm lg:text-base text-button"
                     >
                       <span className="flex items-center justify-center gap-2">
                         Explore Programs

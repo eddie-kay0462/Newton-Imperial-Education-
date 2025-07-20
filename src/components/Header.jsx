@@ -291,8 +291,8 @@ const Header = () => {
                   
                   {/* Text */}
                   <div className="hidden lg:flex flex-col justify-center">
-                    <span className="text-sm font-medium text-gray-500 leading-tight tracking-wider uppercase" style={{ fontSize: 'clamp(0.75rem, 1.3vw, 0.875rem)', letterSpacing: '0.15em' }}>Newton Imperial</span>
-                    <span className="text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 leading-tight tracking-tight" style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)' }}>Education</span>
+                    <span className="text-sm font-medium text-gray-500 leading-tight tracking-wider uppercase text-caption" style={{ fontSize: 'clamp(0.75rem, 1.3vw, 0.875rem)', letterSpacing: '0.15em' }}>Newton Imperial</span>
+                    <span className="text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold text-gray-900 leading-tight tracking-tight text-heading" style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)' }}>Education</span>
                   </div>
                 </div>
               </Link>
@@ -568,10 +568,10 @@ const Header = () => {
                 href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white font-semibold py-3 xl:py-3.5 px-6 xl:px-8 rounded-full transition-all duration-300 shadow-sm hover:shadow-lg"
-                style={{ backgroundColor: '#0F2A44', borderColor: '#0F2A44', fontSize: 'clamp(0.875rem, 1.5vw, 1rem)' }}
-                onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
-                onMouseLeave={(e) => e.target.style.backgroundColor = '#0F2A44'}
+                className="text-white font-medium py-3 xl:py-3.5 px-6 xl:px-8 rounded-full transition-all duration-300 shadow-sm hover:shadow-lg text-button"
+                style={{ backgroundColor: '#BB945C', borderColor: '#BB945C', fontSize: 'clamp(0.875rem, 1.5vw, 1rem)' }}
+                onMouseEnter={(e) => e.target.style.backgroundColor = '#C8A56A'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#BB945C'}
               >
                 Apply Now
               </a>
@@ -583,10 +583,10 @@ const Header = () => {
                 href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white font-semibold py-2 px-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-lg text-sm"
-                style={{ backgroundColor: '#0F2A44', borderColor: '#0F2A44' }}
-                onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
-                onMouseLeave={(e) => e.target.style.backgroundColor = '#0F2A44'}
+                className="text-white font-medium py-2 px-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-lg text-sm text-button"
+                style={{ backgroundColor: '#BB945C', borderColor: '#BB945C' }}
+                onMouseEnter={(e) => e.target.style.backgroundColor = '#C8A56A'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#BB945C'}
               >
                 Apply Now
               </a>
@@ -772,10 +772,10 @@ const Header = () => {
                   href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 text-center text-base shadow-sm hover:shadow-lg"
-                  style={{ backgroundColor: '#0F2A44', borderColor: '#0F2A44' }}
-                  onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
-                  onMouseLeave={(e) => e.target.style.backgroundColor = '#0F2A44'}
+                  className="block w-full text-white font-medium py-3 px-6 rounded-full transition-all duration-300 text-center text-base shadow-sm hover:shadow-lg text-button"
+                  style={{ backgroundColor: '#BB945C', borderColor: '#BB945C' }}
+                  onMouseEnter={(e) => e.target.style.backgroundColor = '#C8A56A'}
+                  onMouseLeave={(e) => e.target.style.backgroundColor = '#BB945C'}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Apply Now
