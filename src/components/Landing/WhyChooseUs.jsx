@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
             <div className="relative order-2 lg:order-1 flex justify-center lg:justify-end">
               <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden w-full max-w-[420px] lg:max-w-[480px] xl:max-w-[540px] min-h-[320px] lg:min-h-[360px] xl:min-h-[400px]">
                 <img 
-                  src="/landing_page/why_choose_us.png"
+                  src="/landing_page/why_choose_us.jpg"
                   alt="Why Choose Newton Imperial Education"
                   className="w-full h-full object-cover"
                   style={{ aspectRatio: '4/3' }}

@@ -72,7 +72,7 @@ const HeroSection = () => {
                 <div className="space-y-6 sm:space-y-8 lg:space-y-10">
                   <div className="inline-flex items-center px-3 py-2 sm:px-4 sm:py-2 bg-green-50 border border-green-200 rounded-full text-green-700 font-semibold text-xs sm:text-sm animate-pulse hover:animate-none transition-all duration-300 hover:scale-105 hover:shadow-md">
                     <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-ping"></span>
-                    Applications are Open for our upcoming cohorts
+                    Applications are open for our upcoming cohorts
                   </div>
                   
                   <h1 id="hero-heading" className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold leading-tight text-gray-900 hero-title">
@@ -84,7 +84,7 @@ const HeroSection = () => {
                   </h1>
                   
                   <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl text-gray-600 max-w-2xl hero-subtitle">
-                    Connect with top-tier researchers from <span className="font-semibold uppercase tracking-wide">Cambridge</span>, <span className="font-semibold uppercase tracking-wide">Oxford</span>, <span className="font-semibold uppercase tracking-wide">MIT</span>, and <span className="font-semibold uppercase tracking-wide">Harvard</span>. 
+                    <span className="font-semibold">Newton Imperial Education</span> (<span className="italic">NIE</span>) connects you with top-tier researchers from <span className="font-semibold uppercase tracking-wide">Cambridge</span>, <span className="font-semibold uppercase tracking-wide">Oxford</span>, <span className="font-semibold uppercase tracking-wide">MIT</span>, and <span className="font-semibold uppercase tracking-wide">Harvard</span>. 
                     Transform your academic journey with world-class mentorship and research opportunities.
                   </p>
                 </div>
@@ -186,7 +186,7 @@ const HeroSection = () => {
               <div className="relative max-w-none mx-auto lg:mx-4 xl:mx-6 2xl:mx-8">
                 <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm">
                   <img 
-                    src="/landing_page/kids_in_classroom.png"
+                    src="/landing_page/kids_in_classroom.jpg"
                     alt="Students engaged in learning at Newton Imperial Education"
                     className="w-full h-auto object-cover"
                     style={{ 

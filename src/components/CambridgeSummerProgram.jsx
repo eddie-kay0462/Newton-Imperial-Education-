@@ -210,6 +210,181 @@ const CambridgeSummerProgram = () => {
         </div>
       </section>
 
+      {/* Iconic Cambridge Locations */}
+      <section className="py-16 lg:py-24 bg-gray-50">
+        <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
+          <div className="max-w-screen-2xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                Iconic Cambridge Locations
+              </h2>
+              <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                Discover the historic landmarks and research facilities that make Cambridge a center of academic excellence
+              </p>
+            </div>
+
+            <div className="space-y-16 lg:space-y-20">
+              {/* Bodleian Library */}
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div className="order-2 lg:order-1">
+                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                    The Bodleian Library
+                  </h3>
+                  <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
+                    One of the oldest libraries in Europe, the Bodleian Library houses over 13 million printed items, including rare manuscripts, 
+                    first editions, and priceless historical documents. Founded in 1602, it serves as the main research library of the University of Oxford 
+                    and is a treasure trove of knowledge spanning centuries.
+                  </p>
+                  <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
+                    During your summer experience, you'll have the opportunity to visit this architectural marvel and access its vast collection 
+                    for your research projects. The library's stunning Gothic architecture and rich academic atmosphere provide the perfect 
+                    environment for scholarly pursuits.
+                  </p>
+                  <div className="flex flex-wrap gap-4">
+                    <div className="flex items-center text-sm md:text-base text-gray-600">
+                      <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                      </svg>
+                      <span>13+ million items</span>
+                    </div>
+                    <div className="flex items-center text-sm md:text-base text-gray-600">
+                      <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>Est. 1602</span>
+                    </div>
+                    <div className="flex items-center text-sm md:text-base text-gray-600">
+                      <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                      <span>Gothic Architecture</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="order-1 lg:order-2">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                      <img 
+                        src="/cambridge_pics/bodleian_library1.jpg"
+                        alt="Bodleian Library Exterior View"
+                        className="w-full h-48 md:h-64 lg:h-72 object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                    </div>
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                      <img 
+                        src="/cambridge_pics/bodleian_library2.jpg"
+                        alt="Bodleian Library Interior"
+                        className="w-full h-48 md:h-64 lg:h-72 object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Cavendish Laboratory */}
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div className="order-1">
+                  <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/cambridge_pics/cavendish_lab_cambridge.jpg"
+                      alt="Cavendish Laboratory Cambridge"
+                      className="w-full h-64 md:h-80 lg:h-96 object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                  </div>
+                </div>
+                <div className="order-2">
+                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                    Cavendish Laboratory
+                  </h3>
+                  <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
+                    The Cavendish Laboratory is the Department of Physics at the University of Cambridge and one of the most prestigious 
+                    physics research institutions in the world. Since its establishment in 1874, it has been the birthplace of numerous 
+                    groundbreaking discoveries in physics.
+                  </p>
+                  <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
+                    The laboratory has produced 30 Nobel Prize winners, including the discovery of the electron by J.J. Thomson, 
+                    the structure of DNA by Watson and Crick, and the development of X-ray crystallography. During your summer program, 
+                    you'll have the opportunity to learn about cutting-edge research being conducted in this historic facility.
+                  </p>
+                  <div className="flex flex-wrap gap-4">
+                    <div className="flex items-center text-sm md:text-base text-gray-600">
+                      <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                      </svg>
+                      <span>30 Nobel Prizes</span>
+                    </div>
+                    <div className="flex items-center text-sm md:text-base text-gray-600">
+                      <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>Est. 1874</span>
+                    </div>
+                    <div className="flex items-center text-sm md:text-base text-gray-600">
+                      <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                      </svg>
+                      <span>Physics Research</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Senate House */}
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div className="order-2 lg:order-1">
+                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                    Senate House
+                  </h3>
+                  <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
+                    The Senate House is the administrative center of the University of Cambridge and one of its most iconic buildings. 
+                    Built between 1722 and 1730, this magnificent neoclassical structure serves as the venue for important university 
+                    ceremonies, including degree congregations and formal events.
+                  </p>
+                  <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
+                    With its grand architecture and rich history, the Senate House represents the academic excellence and tradition 
+                    that Cambridge is renowned for. During your summer program, you'll have the opportunity to attend events in this 
+                    historic building and experience the formal academic atmosphere that has inspired generations of scholars.
+                  </p>
+                  <div className="flex flex-wrap gap-4">
+                    <div className="flex items-center text-sm md:text-base text-gray-600">
+                      <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                      <span>Neoclassical Design</span>
+                    </div>
+                    <div className="flex items-center text-sm md:text-base text-gray-600">
+                      <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span>Built 1722-1730</span>
+                    </div>
+                    <div className="flex items-center text-sm md:text-base text-gray-600">
+                      <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 515.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 919.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                      <span>University Ceremonies</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="order-1 lg:order-2">
+                  <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                    <img 
+                      src="/cambridge_pics/senate_house_cambridge.jpg"
+                      alt="Senate House Cambridge"
+                      className="w-full h-64 md:h-80 lg:h-96 object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
             {/* FAQ Section */}
       <section id="faq-section" className="py-16 lg:py-24 bg-gray-50">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
