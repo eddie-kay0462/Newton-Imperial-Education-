@@ -510,9 +510,7 @@ const Header = () => {
                   </div>
                 )}
               </div>
-              <a href="/#contact" className={getLinkClasses('/#contact')}>
-                Contact
-              </a>
+
             </nav>
 
             {/* CTA Buttons */}
@@ -719,13 +717,7 @@ const Header = () => {
                   </div>
                 )}
               </div>
-              <a
-                href="/#contact"
-                className={getLinkClasses('/#contact', true)}
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Contact
-              </a>
+
               <div className="px-4 py-3 border-t border-gray-200 mt-2">
                 <Link 
                   to="/FAQPage"
