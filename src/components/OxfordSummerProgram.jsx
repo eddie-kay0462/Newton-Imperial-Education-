@@ -142,7 +142,7 @@ const OxfordSummerProgram = () => {
                 <img 
                   src="/school_logos/oxford_logo.png" 
                   alt="Oxford University Logo" 
-                  className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-md mx-auto"
+                  className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[280px] xl:max-w-[320px] 2xl:max-w-md mx-auto"
                 />
               </div>
             </div>
@@ -204,6 +204,207 @@ const OxfordSummerProgram = () => {
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-4">Social Events</h3>
                 <p className="text-gray-600">Connect with international students and mentors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Iconic Oxford Locations */}
+      <section className="py-16 lg:py-24 bg-gray-50">
+        <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
+          <div className="max-w-screen-2xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                Iconic Oxford Locations
+              </h2>
+              <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                Discover the historic landmarks and cultural treasures that make Oxford a center of academic and cultural excellence
+              </p>
+            </div>
+
+            <div className="space-y-16 lg:space-y-20">
+              {/* Bodleian Library */}
+              <div className="space-y-8 lg:space-y-12 2xl:space-y-0">
+                {/* Content - Side by side on 2xl+, vertical on smaller screens */}
+                <div className="2xl:grid 2xl:grid-cols-2 2xl:gap-12 2xl:items-center">
+                  <div className="text-center 2xl:text-left">
+                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                      The Bodleian Library
+                    </h3>
+                    <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed max-w-4xl mx-auto 2xl:max-w-none">
+                      One of the oldest libraries in Europe, the Bodleian Library houses over 13 million printed items, including rare manuscripts, 
+                      first editions, and priceless historical documents. Founded in 1602, it serves as the main research library of the University of Oxford 
+                      and is a treasure trove of knowledge spanning centuries.
+                    </p>
+                    <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed max-w-4xl mx-auto 2xl:max-w-none">
+                      During your summer experience, you'll have the opportunity to visit this architectural marvel and access its vast collection 
+                      for your research projects. The library's stunning Gothic architecture and rich academic atmosphere provide the perfect 
+                      environment for scholarly pursuits.
+                    </p>
+                    <div className="flex flex-wrap gap-4 justify-center 2xl:justify-start mb-8 lg:mb-12 2xl:mb-0">
+                      <div className="flex items-center text-sm md:text-base text-gray-600">
+                        <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                        <span>13+ million items</span>
+                      </div>
+                      <div className="flex items-center text-sm md:text-base text-gray-600">
+                        <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>Est. 1602</span>
+                      </div>
+                      <div className="flex items-center text-sm md:text-base text-gray-600">
+                        <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                        <span>Gothic Architecture</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Images - Side by side on 2xl+, vertical on smaller screens */}
+                  <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto 2xl:max-w-none 2xl:grid-cols-2">
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                      <img 
+                        src="/oxford_pics/bodleian_library1.jpg"
+                        alt="Bodleian Library Exterior View"
+                        className="w-full h-64 md:h-80 lg:h-96 2xl:h-80 object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                      <div className="absolute bottom-4 left-4 text-white text-sm font-medium">
+                        Exterior View
+                      </div>
+                    </div>
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                      <img 
+                        src="/oxford_pics/bodleian_library2.jpg"
+                        alt="Bodleian Library Interior"
+                        className="w-full h-64 md:h-80 lg:h-96 2xl:h-80 object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                      <div className="absolute bottom-4 left-4 text-white text-sm font-medium">
+                        Interior View
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bridge of Sighs */}
+              <div className="space-y-8 lg:space-y-12 2xl:space-y-0">
+                {/* Content - Side by side on 2xl+, vertical on smaller screens */}
+                <div className="2xl:grid 2xl:grid-cols-2 2xl:gap-12 2xl:items-center">
+                  <div className="text-center 2xl:text-left">
+                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                      Bridge of Sighs
+                    </h3>
+                    <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed max-w-4xl mx-auto 2xl:max-w-none">
+                      The Bridge of Sighs, officially known as Hertford Bridge, is one of Oxford's most iconic landmarks. 
+                      Built in 1914, this elegant covered bridge connects two parts of Hertford College across New College Lane, 
+                      creating a picturesque scene that has become synonymous with Oxford's architectural beauty.
+                    </p>
+                    <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed max-w-4xl mx-auto 2xl:max-w-none">
+                      Named after the famous Bridge of Sighs in Venice, this architectural gem is a popular spot for students 
+                      and visitors alike. During your summer program, you'll have the opportunity to walk across this historic bridge 
+                      and experience the charm of Oxford's medieval streets and college architecture.
+                    </p>
+                    <div className="flex flex-wrap gap-4 justify-center 2xl:justify-start mb-8 lg:mb-12 2xl:mb-0">
+                      <div className="flex items-center text-sm md:text-base text-gray-600">
+                        <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>Built 1914</span>
+                      </div>
+                      <div className="flex items-center text-sm md:text-base text-gray-600">
+                        <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Hertford College</span>
+                      </div>
+                      <div className="flex items-center text-sm md:text-base text-gray-600">
+                        <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                        <span>Covered Bridge</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Image - Side by side on 2xl+, vertical on smaller screens */}
+                  <div className="max-w-4xl mx-auto 2xl:max-w-none">
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                      <img 
+                        src="/oxford_pics/bridge_of_sigh.jpg"
+                        alt="Bridge of Sighs Oxford"
+                        className="w-full h-64 md:h-80 lg:h-96 2xl:h-80 object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                      <div className="absolute bottom-4 left-4 text-white text-sm font-medium">
+                        Hertford Bridge
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Sheldonian Theatre */}
+              <div className="space-y-8 lg:space-y-12 2xl:space-y-0">
+                {/* Content - Side by side on 2xl+, vertical on smaller screens */}
+                <div className="2xl:grid 2xl:grid-cols-2 2xl:gap-12 2xl:items-center">
+                  <div className="text-center 2xl:text-left">
+                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                      Sheldonian Theatre
+                    </h3>
+                    <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed max-w-4xl mx-auto 2xl:max-w-none">
+                      The Sheldonian Theatre is the official ceremonial hall of the University of Oxford and one of its most architecturally 
+                      significant buildings. Designed by Sir Christopher Wren and completed in 1669, this magnificent structure serves as 
+                      the venue for university ceremonies, including degree congregations, lectures, and concerts.
+                    </p>
+                    <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed max-w-4xl mx-auto 2xl:max-w-none">
+                      With its stunning classical architecture and rich history, the Sheldonian Theatre represents the academic excellence 
+                      and tradition that Oxford is renowned for. During your summer program, you'll have the opportunity to attend events 
+                      in this historic venue and experience the formal academic atmosphere that has inspired generations of scholars.
+                    </p>
+                    <div className="flex flex-wrap gap-4 justify-center 2xl:justify-start mb-8 lg:mb-12 2xl:mb-0">
+                      <div className="flex items-center text-sm md:text-base text-gray-600">
+                        <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>Built 1669</span>
+                      </div>
+                      <div className="flex items-center text-sm md:text-base text-gray-600">
+                        <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                        <span>Christopher Wren</span>
+                      </div>
+                      <div className="flex items-center text-sm md:text-base text-gray-600">
+                        <svg className="w-5 h-5 text-[#0F2A44] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                        </svg>
+                        <span>University Ceremonies</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Image - Side by side on 2xl+, vertical on smaller screens */}
+                  <div className="max-w-4xl mx-auto 2xl:max-w-none">
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                      <img 
+                        src="/oxford_pics/sheldonian_theatre.jpg"
+                        alt="Sheldonian Theatre Oxford"
+                        className="w-full h-64 md:h-80 lg:h-96 2xl:h-80 object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                      <div className="absolute bottom-4 left-4 text-white text-sm font-medium">
+                        Ceremonial Hall
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
