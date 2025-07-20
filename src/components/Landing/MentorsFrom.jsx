@@ -64,14 +64,14 @@ const MentorsFrom = () => {
   };
 
   return (
-    <section id="mentors" className="py-16 lg:py-24 bg-gray-50 rounded-3xl mx-6 sm:mx-12 lg:mx-16 xl:mx-20 2xl:mx-28">
-      <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
-        <div className="max-w-screen-2xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+    <section id="mentors" className="py-12 sm:py-16 lg:py-24 bg-gray-50 rounded-2xl sm:rounded-3xl mx-2 sm:mx-6 lg:mx-8 xl:mx-4 2xl:mx-2 section-container">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-12 2xl:px-16 wide-container">
+        <div className="max-w-none mx-auto">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 2.8vw, 2.5rem)' }}>
               Where Do Our Mentors Come From?
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1rem)' }}>
               Meet our exceptional mentors from the world's leading research institutions
             </p>
           </div>
@@ -80,9 +80,9 @@ const MentorsFrom = () => {
             {/* Left Navigation Arrow */}
             <button 
               onClick={prevSlide}
-              className="hidden sm:flex absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-16 h-16 bg-white border-2 border-[#0F2A44] rounded-full items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+              className="hidden lg:flex absolute left-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 lg:w-16 lg:h-16 bg-white border-2 border-[#0F2A44] rounded-full items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
             >
-              <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 lg:w-6 lg:h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
@@ -90,33 +90,33 @@ const MentorsFrom = () => {
             {/* Right Navigation Arrow */}
             <button 
               onClick={nextSlide}
-              className="hidden sm:flex absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-16 h-16 bg-white border-2 border-[#0F2A44] rounded-full items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+              className="hidden lg:flex absolute right-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 lg:w-16 lg:h-16 bg-white border-2 border-[#0F2A44] rounded-full items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
             >
-              <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 lg:w-6 lg:h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
 
             {/* Mentor Cards */}
-            <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 mx-0 lg:mx-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 2xl:gap-12 mx-0 lg:mx-2 xl:mx-1 2xl:mx-0 wide-grid card-grid-wide">
               {getVisibleMentors().map((mentor, index) => (
-                <div key={`${currentSlide}-${index}`} className="bg-white border border-gray-100 rounded-3xl p-8 lg:p-10 text-center shadow-sm hover:shadow-md transition-all duration-300">
+                <div key={`${currentSlide}-${index}`} className={`bg-white border border-gray-100 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 xl:p-12 2xl:p-14 text-center shadow-sm hover:shadow-md transition-all duration-300 min-h-[300px] lg:min-h-[380px] xl:min-h-[400px] 2xl:min-h-[420px] wide-mentor-card ${index >= 2 ? 'hidden lg:block' : ''}`}>
                   {/* Profile Icon */}
-                  <div className="w-24 h-24 lg:w-28 lg:h-28 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg" style={{ backgroundColor: '#0F2A44' }}>
-                    <svg className="w-12 h-12 lg:w-14 lg:h-14 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 rounded-full flex items-center justify-center mx-auto mb-6 sm:mb-8 shadow-lg" style={{ backgroundColor: '#0F2A44' }}>
+                    <svg className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8c0 2.208-1.79 4-3.998 4-2.208 0-3.998-1.792-3.998-4s1.79-4 3.998-4c2.208 0 3.998 1.792 3.998 4z"/>
                     </svg>
                   </div>
                   
                   {/* Mentor Info */}
                   <div className="text-center">
-                    <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">
+                    <h3 className="text-lg sm:text-xl lg:text-xl xl:text-2xl font-bold text-gray-900 mb-2" style={{ fontSize: 'clamp(1.125rem, 1.8vw, 1.5rem)' }}>
                       {mentor.role}
                     </h3>
-                    <p className="text-lg font-black text-primary-600 mb-4 uppercase">
+                    <p className="text-base sm:text-lg xl:text-lg font-black text-primary-600 mb-3 sm:mb-4 uppercase" style={{ fontSize: 'clamp(1rem, 1.6vw, 1.125rem)' }}>
                       {mentor.institution}
                     </p>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-sm sm:text-base xl:text-base text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1.4vw, 1rem)' }}>
                       {mentor.description}
                     </p>
                   </div>
@@ -124,13 +124,13 @@ const MentorsFrom = () => {
               ))}
             </div>
 
-            {/* Pagination Dots */}
-            <div className="hidden sm:flex justify-center mt-12 space-x-1.5">
+            {/* Pagination Dots - Hidden on tablets */}
+            <div className="hidden xl:flex justify-center mt-8 sm:mt-12 space-x-1.5">
               {mentors.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                  className={`w-2 h-2 sm:w-1.5 sm:h-1.5 rounded-full transition-all duration-300 ${
                     index === currentSlide ? 'bg-primary-600 scale-100' : 'bg-gray-300 hover:bg-gray-400'
                   }`}
                 />

@@ -263,24 +263,17 @@ const Header = () => {
         <div className="max-w-screen-2xl mx-auto">
           <div className="flex justify-between items-center h-20 sm:h-24 md:h-28">
             {/* Logo */}
-            <div className="flex items-center">
+            <div className="flex items-center ml-4 lg:ml-6 xl:ml-8">
               <Link to="/" className="flex items-center">
-                <div className="flex items-center space-x-2">
-                  <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-gray-900 leading-tight tracking-tight relative" style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)' }}>
-                    NIE
-                    <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent opacity-60"></div>
-                    <div className="absolute -top-1 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent opacity-60"></div>
-                  </span>
-                  <div className="flex flex-col justify-center">
-                    <span className="text-sm font-medium text-gray-500 leading-tight tracking-wider uppercase" style={{ fontSize: 'clamp(0.75rem, 1.5vw, 0.875rem)', letterSpacing: '0.15em' }}>Newton Imperial</span>
-                    <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight tracking-tight" style={{ fontSize: 'clamp(1.25rem, 3vw, 2rem)' }}>Education</span>
-                  </div>
+                <div className="flex flex-col justify-center">
+                  <span className="text-sm font-medium text-gray-500 leading-tight tracking-wider uppercase" style={{ fontSize: 'clamp(0.75rem, 1.3vw, 0.875rem)', letterSpacing: '0.15em' }}>Newton Imperial</span>
+                  <span className="text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 leading-tight tracking-tight" style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)' }}>Education</span>
                 </div>
               </Link>
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-8">
+            <nav className="hidden lg:flex items-center space-x-4 lg:space-x-6 xl:space-x-8 2xl:space-x-10">
               <Link to="/" className={getLinkClasses('/')}>
                 Home
               </Link>
@@ -305,7 +298,7 @@ const Header = () => {
                 </button>
                 
                 {activeDropdown === 'about' && (
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[680px] bg-gray-25 rounded-2xl shadow-lg border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[600px] lg:w-[680px] bg-gray-25 rounded-2xl shadow-lg border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
                     <div className="px-8 py-2">
                       <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
                         <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
@@ -358,14 +351,14 @@ const Header = () => {
                 </button>
                 
                 {activeDropdown === 'programs' && (
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[980px] bg-gray-25 rounded-2xl shadow-lg border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[800px] lg:w-[900px] xl:w-[980px] 2xl:w-[1100px] bg-gray-25 rounded-2xl shadow-lg border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
                     <div className="px-8 py-2">
                       <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
                         <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
                         Our Programs
                       </h3>
                     </div>
-                    <div className="grid grid-cols-3 gap-3 px-8">
+                    <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-3 px-8">
                       {programsDropdownItems.map((item, index) => (
                         <Link
                           key={index}
@@ -413,7 +406,7 @@ const Header = () => {
                 </button>
                 
                 {activeDropdown === 'summerExperiences' && (
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[600px] bg-gray-25 rounded-2xl shadow-lg border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[500px] lg:w-[600px] bg-gray-25 rounded-2xl shadow-lg border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
                     <div className="px-8 py-2">
                       <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
                         <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
@@ -523,7 +516,7 @@ const Header = () => {
             </nav>
 
             {/* CTA Buttons */}
-            <div className="hidden lg:flex items-center space-x-2 xl:space-x-3">
+            <div className="hidden xl:flex items-center space-x-2 xl:space-x-3">
               <Link 
                 to="/FAQPage" 
                 className="text-gray-600 hover:text-primary-600 font-medium transition-all duration-300 px-3 xl:px-4 py-2 rounded-lg hover:bg-gray-50 relative after:content-[''] after:absolute after:bottom-0 after:left-3 after:right-3 xl:after:left-4 xl:after:right-4 after:h-0.5 after:bg-primary-600 after:transition-all after:duration-300 after:w-0 hover:after:w-3/4"
@@ -537,6 +530,21 @@ const Header = () => {
                 rel="noopener noreferrer"
                 className="text-white font-semibold py-3 xl:py-3.5 px-6 xl:px-8 rounded-full transition-all duration-300 shadow-sm hover:shadow-lg"
                 style={{ backgroundColor: '#0F2A44', borderColor: '#0F2A44', fontSize: 'clamp(0.875rem, 1.5vw, 1rem)' }}
+                onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#0F2A44'}
+              >
+                Apply Now
+              </a>
+            </div>
+
+            {/* Mobile/Tablet Apply Now Button */}
+            <div className="xl:hidden mr-4">
+              <a 
+                href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white font-semibold py-2 px-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-lg text-sm"
+                style={{ backgroundColor: '#0F2A44', borderColor: '#0F2A44' }}
                 onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
                 onMouseLeave={(e) => e.target.style.backgroundColor = '#0F2A44'}
               >
@@ -565,7 +573,7 @@ const Header = () => {
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
           <div className="lg:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+            <div className="px-4 pt-4 pb-6 space-y-2 bg-white border-t border-gray-200">
               <Link
                 to="/"
                 className={getLinkClasses('/', true)}

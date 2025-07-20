@@ -69,6 +69,7 @@ const OurPrograms = () => {
 
   const getVisiblePrograms = () => {
     const visiblePrograms = [];
+    // Always show 3 cards, but CSS will handle the display
     for (let i = 0; i < 3; i++) {
       const index = (currentSlide + i) % programs.length;
       visiblePrograms.push(programs[index]);
@@ -77,14 +78,14 @@ const OurPrograms = () => {
   };
 
   return (
-    <section className="py-16 lg:py-24 bg-gray-50 rounded-3xl mx-6 sm:mx-12 lg:mx-16 xl:mx-20 2xl:mx-28" id="programs">
-      <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
-        <div className="max-w-screen-2xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+    <section className="py-12 sm:py-16 lg:py-24 bg-gray-50 rounded-2xl sm:rounded-3xl mx-2 sm:mx-6 lg:mx-8 xl:mx-4 2xl:mx-2 section-container" id="programs">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-12 2xl:px-16 wide-container">
+        <div className="max-w-none mx-auto">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 2.8vw, 2.5rem)' }}>
               Our Programs
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1rem)' }}>
               Discover our comprehensive range of educational programs designed to unlock your potential and prepare you for success.
             </p>
           </div>
@@ -97,9 +98,9 @@ const OurPrograms = () => {
             {/* Left Navigation Arrow */}
             <button 
               onClick={prevSlide}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-16 h-16 bg-white border-2 border-[#0F2A44] rounded-full flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+              className="hidden lg:flex absolute left-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 lg:w-16 lg:h-16 bg-white border-2 border-[#0F2A44] rounded-full flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
             >
-              <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 lg:w-6 lg:h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
@@ -107,57 +108,59 @@ const OurPrograms = () => {
             {/* Right Navigation Arrow */}
             <button 
               onClick={nextSlide}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-16 h-16 bg-white border-2 border-[#0F2A44] rounded-full flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+              className="hidden lg:flex absolute right-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 lg:w-16 lg:h-16 bg-white border-2 border-[#0F2A44] rounded-full flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
             >
-              <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 lg:w-6 lg:h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
 
             {/* Program Cards */}
-            <div className="grid lg:grid-cols-3 gap-8 lg:gap-12 mx-0 lg:mx-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 2xl:gap-12 mx-2 lg:mx-4 xl:mx-6 2xl:mx-8 wide-grid card-grid-wide">
               {getVisiblePrograms().map((program, index) => (
-                <div key={`${currentSlide}-${index}`} className="bg-white border border-gray-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+                <div key={`${currentSlide}-${index}`} className={`bg-white border border-gray-100 rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col min-h-[400px] lg:min-h-[420px] xl:min-h-[440px] 2xl:min-h-[450px] wide-card ${index >= 2 ? 'hidden lg:block' : ''}`}>
                   {/* Hero Image */}
                   <div 
-                    className="w-full h-64 lg:h-72 bg-cover bg-center bg-no-repeat"
+                    className="w-full h-48 sm:h-56 md:h-60 lg:h-56 xl:h-60 2xl:h-64 bg-cover bg-center bg-no-repeat wide-image"
                     style={{
                       backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('${program.image}')`
                     }}
                   />
                   
                   {/* Content */}
-                  <div className="p-8 lg:p-10 flex flex-col flex-grow text-left">
-                    <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-6 leading-tight">
+                  <div className="p-6 sm:p-8 lg:p-8 xl:p-10 flex flex-col flex-grow text-left">
+                    <h3 className="text-lg sm:text-xl lg:text-xl xl:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight" style={{ fontSize: 'clamp(1.125rem, 1.8vw, 1.5rem)' }}>
                       {program.title}
                     </h3>
-                    <p className="text-gray-600 mb-8 leading-relaxed flex-grow text-base lg:text-lg">
+                    <p className="text-sm sm:text-base lg:text-base xl:text-lg text-gray-600 mb-6 sm:mb-8 leading-relaxed flex-grow" style={{ fontSize: 'clamp(0.875rem, 1.4vw, 1rem)' }}>
                       {program.description}
                     </p>
-                    {program.link === "#" ? (
-                      <button className="w-full py-4 px-6 border-2 border-primary-600 text-primary-600 font-semibold rounded-xl hover:bg-primary-600 hover:text-white transition-all duration-300 text-base lg:text-lg">
-                        Learn More
-                      </button>
-                    ) : (
-                      <Link 
-                        to={program.link}
-                        className="w-full py-4 px-6 border-2 border-primary-600 text-primary-600 font-semibold rounded-xl hover:bg-primary-600 hover:text-white transition-all duration-300 text-center block text-base lg:text-lg"
-                      >
-                        Learn More
-                      </Link>
-                    )}
+                    <div className="mt-auto pt-4">
+                      {program.link === "#" ? (
+                        <button className="w-full py-3 sm:py-4 px-4 sm:px-6 border-2 border-primary-600 text-primary-600 font-semibold rounded-xl hover:bg-primary-600 hover:text-white transition-all duration-300 text-sm sm:text-base lg:text-base" style={{ fontSize: 'clamp(0.875rem, 1.6vw, 0.9rem)' }}>
+                          Learn More
+                        </button>
+                      ) : (
+                        <Link 
+                          to={program.link}
+                          className="w-full py-3 sm:py-4 px-4 sm:px-6 border-2 border-primary-600 text-primary-600 font-semibold rounded-xl hover:bg-primary-600 hover:text-white transition-all duration-300 text-center block text-sm sm:text-base lg:text-base" style={{ fontSize: 'clamp(0.875rem, 1.6vw, 0.9rem)' }}
+                        >
+                          Learn More
+                        </Link>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
 
-            {/* Pagination Dots */}
-            <div className="flex justify-center mt-12 space-x-1.5">
+            {/* Pagination Dots - Hidden on tablets */}
+            <div className="hidden xl:flex justify-center mt-8 sm:mt-12 space-x-1.5">
               {programs.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                  className={`w-2 h-2 sm:w-1.5 sm:h-1.5 rounded-full transition-all duration-300 ${
                     index === currentSlide ? 'bg-primary-600 scale-100' : 'bg-gray-300 hover:bg-gray-400'
                   }`}
                 />
