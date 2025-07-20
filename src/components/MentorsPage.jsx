@@ -335,6 +335,157 @@ const MentorsPage = () => {
         </div>
       </section>
 
+      {/* Become a Mentor Section */}
+      <section className="py-16 lg:py-20 bg-gray-50 rounded-3xl mx-6 sm:mx-12 lg:mx-16 xl:mx-20 2xl:mx-28">
+        <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
+          <div className="max-w-screen-2xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                Become a Mentor
+              </h2>
+              <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Join our network of distinguished mentors and help shape the next generation of researchers and scholars
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Left Side - Content */}
+              <div className="space-y-6">
+                <div className="bg-white rounded-2xl p-8 shadow-sm">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Become a Mentor?</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-gray-700">Share your expertise with motivated students worldwide</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-gray-700">Contribute to cutting-edge research projects</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-gray-700">Expand your professional network and collaborations</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-gray-700">Make a lasting impact on students' academic careers</span>
+                    </li>
+                  </ul>
+                </div>
+
+                                 <div className="bg-white rounded-2xl p-8 shadow-sm">
+                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Requirements</h3>
+                   <ul className="space-y-3">
+                     <li className="flex items-start">
+                       <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                         </svg>
+                       </div>
+                       <span className="text-gray-700">PhD or equivalent research experience</span>
+                     </li>
+                     <li className="flex items-start">
+                       <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                         </svg>
+                       </div>
+                       <span className="text-gray-700">Strong publication record in your field</span>
+                     </li>
+                     <li className="flex items-start">
+                       <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                         </svg>
+                       </div>
+                       <span className="text-gray-700">Experience in mentoring or teaching</span>
+                     </li>
+                     <li className="flex items-start">
+                       <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                         </svg>
+                       </div>
+                       <span className="text-gray-700">Commitment to student development</span>
+                     </li>
+                   </ul>
+                 </div>
+              </div>
+
+              {/* Right Side - Application Form */}
+              <div className="bg-white rounded-2xl p-8 shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-6">Apply to Become a Mentor</h3>
+                <p className="text-gray-600 mb-6">
+                  To join our mentor network, please send your CV and personal details to our email address. We'll review your application and get back to you within 5-7 business days.
+                </p>
+                
+                                 <div className="space-y-6">
+                   <div className="bg-[#0F2A44] rounded-xl p-8 text-center">
+                     <div className="flex items-center justify-center mb-4">
+                       <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                       </svg>
+                     </div>
+                     <h4 className="text-xl font-semibold text-white mb-3">Email Your Application</h4>
+                     <p className="text-gray-200 text-base mb-6">Send your CV and details to:</p>
+                     <div className="flex justify-center">
+                       <a 
+                         href="mailto:mentors@newtonimperial.com" 
+                         className="inline-block bg-white text-[#0F2A44] font-semibold py-4 px-8 rounded-lg hover:bg-gray-100 transition-all duration-300 text-base text-center min-w-[280px]"
+                       >
+                         mentors@newtonimperial.com
+                       </a>
+                     </div>
+                   </div>
+
+                                     <div className="bg-gray-50 rounded-xl p-8">
+                     <h4 className="font-semibold text-gray-900 mb-4 text-lg">Please Include:</h4>
+                     <ul className="space-y-3 text-base text-gray-600">
+                       <li className="flex items-start">
+                         <span className="w-2 h-2 bg-[#0F2A44] rounded-full mr-4 mt-2.5 flex-shrink-0"></span>
+                         <span>Your CV/Resume with research experience</span>
+                       </li>
+                       <li className="flex items-start">
+                         <span className="w-2 h-2 bg-[#0F2A44] rounded-full mr-4 mt-2.5 flex-shrink-0"></span>
+                         <span>List of publications and research interests</span>
+                       </li>
+                       <li className="flex items-start">
+                         <span className="w-2 h-2 bg-[#0F2A44] rounded-full mr-4 mt-2.5 flex-shrink-0"></span>
+                         <span>Mentoring/teaching experience</span>
+                       </li>
+                       <li className="flex items-start">
+                         <span className="w-2 h-2 bg-[#0F2A44] rounded-full mr-4 mt-2.5 flex-shrink-0"></span>
+                         <span>Preferred subjects and availability</span>
+                       </li>
+                       <li className="flex items-start">
+                         <span className="w-2 h-2 bg-[#0F2A44] rounded-full mr-4 mt-2.5 flex-shrink-0"></span>
+                         <span>Brief statement of interest in mentoring</span>
+                       </li>
+                     </ul>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 lg:py-20 bg-gradient-to-br from-[#0F2A44] to-[#1a3a5a]">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
