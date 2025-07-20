@@ -13,13 +13,12 @@ const SummerPrograms = () => {
     title: "Summer In-Person Program",
     duration: "2 weeks",
     price: "£9,000",
-    status: "(Future Program)",
-    overview: "This in-person program will take place during the summer in prestigious locations like **CAMBRIDGE** and **OXFORD**, offering a mix of academic workshops and cultural engagement. Experience world-class education in historic settings while building lifelong connections with peers from around the globe.",
-    format: "Hands-on workshops in **OXFORD** and **CAMBRIDGE** historical laboratories and libraries, academic seminars, cultural excursions, and networking with university faculty.",
+    overview: "This in-person program will take place during the summer in prestigious locations like Cambridge and Oxford, offering a mix of academic workshops and cultural engagement. Experience world-class education in historic settings while building lifelong connections with peers from around the globe.",
+    format: "Hands-on workshops in Oxford and Cambridge historical laboratories and libraries, academic seminars, cultural excursions, and networking with university faculty.",
     highlights: [
       "Experience life on the best university campus.",
       "Build a network with fellow students from around the world.",
-      "Participate in exclusive lectures and activities at **CAMBRIDGE** and **OXFORD**."
+      "Participate in exclusive lectures and activities at Cambridge and Oxford."
     ]
   };
 
@@ -106,15 +105,10 @@ const SummerPrograms = () => {
                     <span className="text-xs sm:text-sm md:text-base" style={{ fontSize: 'clamp(0.75rem, 1.8vw, 1rem)' }}>{program.duration}</span>
                   </div>
                   <div className="flex items-center text-primary-600 font-semibold">
-                    <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 mr-1 sm:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                    </svg>
                     <span className="text-xs sm:text-sm md:text-base" style={{ fontSize: 'clamp(0.75rem, 1.8vw, 1rem)' }}>{program.price}</span>
                   </div>
                 </div>
-                <p className="text-xs sm:text-sm text-gray-500 mb-2 sm:mb-3 lg:mb-4 italic" style={{ fontSize: 'clamp(0.75rem, 1.4vw, 0.875rem)' }}>
-                  {program.status}
-                </p>
+
                 <p className="text-xs sm:text-sm md:text-base text-gray-700 mb-3 sm:mb-4 lg:mb-6 leading-relaxed" style={{ fontSize: 'clamp(0.75rem, 1.6vw, 1rem)' }}>
                   {program.overview}
                 </p>
