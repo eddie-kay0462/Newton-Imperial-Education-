@@ -23,10 +23,10 @@ const WhoShouldJoin = () => {
       >
         <div className="relative max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-6">
               Who Should Join Our Programs?
             </h1>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+            <p className="text-lg xl:text-xl text-gray-200 max-w-3xl mx-auto">
               Discover if our programs are the right fit for your academic journey and career goals
             </p>
           </div>
@@ -41,7 +41,7 @@ const WhoShouldJoin = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Designed for Ambitious Students
             </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base lg:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Our programs are designed for high school and college students eager to explore higher education, develop research skills, and build academic networks. Whether you're at the beginning of your academic journey or looking for advanced research opportunities, we have something for everyone.
             </p>
           </div>
@@ -167,7 +167,7 @@ const WhoShouldJoin = () => {
               <h3 className="text-3xl font-bold text-gray-900 mb-4">
                 Our Student Success
               </h3>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-base lg:text-lg text-gray-600 max-w-3xl mx-auto">
                 See how our students have transformed their academic journeys
               </p>
             </div>
@@ -180,7 +180,7 @@ const WhoShouldJoin = () => {
                   duration={2000}
                   className="text-4xl font-bold text-primary-600 mb-2"
                 />
-                <div className="text-lg text-gray-600">University Acceptance Rate</div>
+                <div className="text-base lg:text-lg text-gray-600">University Acceptance Rate</div>
               </div>
               <div className="text-center">
                 <CounterAnimation 
@@ -189,7 +189,7 @@ const WhoShouldJoin = () => {
                   duration={2000}
                   className="text-4xl font-bold text-primary-600 mb-2"
                 />
-                <div className="text-lg text-gray-600">Students Mentored</div>
+                <div className="text-base lg:text-lg text-gray-600">Students Mentored</div>
               </div>
               <div className="text-center">
                 <CounterAnimation 
@@ -198,7 +198,7 @@ const WhoShouldJoin = () => {
                   duration={2000}
                   className="text-4xl font-bold text-primary-600 mb-2"
                 />
-                <div className="text-lg text-gray-600">Research Papers Published</div>
+                <div className="text-base lg:text-lg text-gray-600">Research Papers Published</div>
               </div>
               <div className="text-center">
                 <CounterAnimation 
@@ -207,7 +207,7 @@ const WhoShouldJoin = () => {
                   duration={2000}
                   className="text-4xl font-bold text-primary-600 mb-2"
                 />
-                <div className="text-lg text-gray-600">Countries Represented</div>
+                <div className="text-base lg:text-lg text-gray-600">Countries Represented</div>
               </div>
             </div>
           </div>
@@ -219,7 +219,7 @@ const WhoShouldJoin = () => {
             </h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h4 className="text-xl font-semibold text-gray-900 mb-4">Academic Requirements</h4>
+                <h4 className="text-lg font-semibold text-gray-900 mb-4">Academic Requirements</h4>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start">
                     <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
@@ -256,7 +256,7 @@ const WhoShouldJoin = () => {
                 </ul>
               </div>
               <div>
-                <h4 className="text-xl font-semibold text-gray-900 mb-4">Personal Qualities</h4>
+                <h4 className="text-lg font-semibold text-gray-900 mb-4">Personal Qualities</h4>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start">
                     <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
@@ -301,7 +301,7 @@ const WhoShouldJoin = () => {
               <h3 className="text-3xl font-bold mb-4">
                 Ready to Join Our Community?
               </h3>
-              <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-lg xl:text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
                 Take the first step toward transforming your academic journey with world-class mentorship and research opportunities.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -309,13 +309,13 @@ const WhoShouldJoin = () => {
                   href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors"
+                  className="inline-block bg-white text-primary-600 font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors"
                 >
                   Apply Now
                 </a>
                 <Link 
                   to="/#programs"
-                  className="inline-block border-2 border-white text-white font-semibold py-3 px-8 rounded-lg hover:bg-white/10 transition-colors"
+                  className="inline-block border-2 border-white text-white font-semibold py-3 px-6 rounded-lg hover:bg-white/10 transition-colors"
                 >
                   Explore Programs
                 </Link>

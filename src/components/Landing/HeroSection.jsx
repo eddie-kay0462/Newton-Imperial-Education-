@@ -68,14 +68,14 @@ const HeroSection = () => {
           <header className="pt-8 sm:pt-12 lg:pt-16 xl:pt-20 2xl:pt-24 pb-8 sm:pb-12 lg:pb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 2xl:gap-24 items-center">
               {/* Left Side - Main Content */}
-              <div className="space-y-6 sm:space-y-8 lg:space-y-10">
+              <div className="space-y-6 sm:space-y-8 lg:space-y-10 lg:ml-6 xl:ml-8">
                 <div className="space-y-6 sm:space-y-8">
                   <div className="inline-flex items-center px-3 py-2 sm:px-4 sm:py-2 bg-green-50 border border-green-200 rounded-full text-green-700 font-semibold text-xs sm:text-sm animate-pulse hover:animate-none transition-all duration-300 hover:scale-105 hover:shadow-md">
                     <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-ping"></span>
                     Applications are Open for our upcoming cohorts
                   </div>
                   
-                  <h1 id="hero-heading" className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold leading-tight" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', color: '#0F2A44' }}>
+                  <h1 id="hero-heading" className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold leading-tight" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', color: '#0F2A44' }}>
                     Research Opportunities
                     <br />
                     <span style={{ color: '#0F2A44' }}>
@@ -83,7 +83,7 @@ const HeroSection = () => {
                     </span>
                   </h1>
                   
-                  <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                  <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl text-gray-600 max-w-2xl leading-relaxed">
                     Connect with top-tier researchers from <span className="font-black uppercase">Cambridge</span>, <span className="font-black uppercase">Oxford</span>, <span className="font-black uppercase">MIT</span>, and <span className="font-black uppercase">Harvard</span>. 
                     Transform your academic journey with world-class mentorship and research opportunities.
                   </p>
@@ -100,41 +100,41 @@ const HeroSection = () => {
                     </h3>
                   </div>
                   
-                  <div className="space-y-3 sm:space-y-4 lg:space-y-5">
+                  <div className="space-y-3 sm:space-y-4 lg:space-y-4">
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
-                        <div className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 bg-[#0F2A44] rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
-                          <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 lg:w-4 lg:h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="flex items-center gap-2 sm:gap-3 lg:gap-3">
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 lg:w-6 lg:h-6 bg-[#0F2A44] rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
+                          <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 lg:w-3 lg:h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
-                        <div className="text-xs sm:text-sm lg:text-base text-gray-700 font-medium">Research Papers</div>
+                        <div className="text-xs sm:text-sm lg:text-sm text-gray-700 font-medium">Research Papers</div>
                       </div>
-                      <div className="text-base sm:text-lg lg:text-xl xl:text-2xl font-bold text-[#0F2A44]">{researchPapers}</div>
+                      <div className="text-base sm:text-lg lg:text-lg xl:text-xl font-bold text-[#0F2A44]">{researchPapers}</div>
                     </div>
                     
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
-                        <div className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 bg-[#0F2A44] rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
-                          <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 lg:w-4 lg:h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="flex items-center gap-2 sm:gap-3 lg:gap-3">
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 lg:w-6 lg:h-6 bg-[#0F2A44] rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
+                          <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 lg:w-3 lg:h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
-                        <div className="text-xs sm:text-sm lg:text-base text-gray-700 font-medium">Research Mentors</div>
+                        <div className="text-xs sm:text-sm lg:text-sm text-gray-700 font-medium">Research Mentors</div>
                       </div>
-                      <div className="text-base sm:text-lg lg:text-xl xl:text-2xl font-bold text-[#0F2A44]">{researchMentors}</div>
+                      <div className="text-base sm:text-lg lg:text-lg xl:text-xl font-bold text-[#0F2A44]">{researchMentors}</div>
                     </div>
                     
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
-                        <div className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 bg-[#0F2A44] rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
-                          <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 lg:w-4 lg:h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="flex items-center gap-2 sm:gap-3 lg:gap-3">
+                        <div className="w-5 h-5 sm:w-6 sm:h-6 lg:w-6 lg:h-6 bg-[#0F2A44] rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
+                          <svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 lg:w-3 lg:h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
-                        <div className="text-xs sm:text-sm lg:text-base text-gray-700 font-medium">Complete Program Success</div>
+                        <div className="text-xs sm:text-sm lg:text-sm text-gray-700 font-medium">Complete Program Success</div>
                       </div>
-                      <div className="text-base sm:text-lg lg:text-xl xl:text-2xl font-bold text-[#0F2A44]">{successRate}</div>
+                      <div className="text-base sm:text-lg lg:text-lg xl:text-xl font-bold text-[#0F2A44]">{successRate}</div>
                     </div>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ const HeroSection = () => {
                     href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 lg:px-10 rounded-full transition-all duration-500 ease-in-out hover:shadow-lg text-center block group relative overflow-hidden text-sm sm:text-base lg:text-lg"
+                    className="w-full text-white font-semibold py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-500 ease-in-out hover:shadow-lg text-center block group relative overflow-hidden text-sm sm:text-sm lg:text-base"
                     style={{ 
                       backgroundColor: '#0F2A44', 
                       background: 'linear-gradient(135deg, #0F2A44 0%, #0F2A44 100%)'
@@ -161,18 +161,18 @@ const HeroSection = () => {
                   >
                     <span className="flex items-center justify-center gap-2">
                       Apply Now
-                      <svg className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-3 h-3 sm:w-3 sm:h-3 lg:w-4 lg:h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
                     </span>
                   </a>
                   <a 
                     href="/#programs"
-                    className="w-full border-2 border-gray-300 hover:border-[#0F2A44] text-gray-700 hover:text-[#0F2A44] font-semibold py-3 sm:py-4 px-6 sm:px-8 lg:px-10 rounded-full transition-all duration-300 hover:shadow-lg text-center block hover:bg-gray-50 group text-sm sm:text-base lg:text-lg"
+                    className="w-full border-2 border-gray-300 hover:border-[#0F2A44] text-gray-700 hover:text-[#0F2A44] font-semibold py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-300 hover:shadow-lg text-center block hover:bg-gray-50 group text-sm sm:text-sm lg:text-base"
                   >
                     <span className="flex items-center justify-center gap-2">
                       Explore Programs
-                      <svg className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-3 h-3 sm:w-3 sm:h-3 lg:w-4 lg:h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
                     </span>

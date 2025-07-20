@@ -142,7 +142,7 @@ const CambridgeSummerProgram = () => {
                 <img 
                   src="/school_logos/cambridge_logo.png" 
                   alt="Cambridge University Logo" 
-                  className="w-full max-w-md mx-auto"
+                  className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-md mx-auto"
                 />
               </div>
             </div>

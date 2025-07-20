@@ -5,6 +5,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [mobileDropdowns, setMobileDropdowns] = useState({});
+  const [hoverTimeout, setHoverTimeout] = useState(null);
   const location = useLocation();
   const dropdownRefs = useRef({});
 
@@ -29,6 +30,22 @@ const Header = () => {
     }));
   };
 
+  // Improved hover handlers with delay
+  const handleMouseEnter = (dropdownName) => {
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+      setHoverTimeout(null);
+    }
+    setActiveDropdown(dropdownName);
+  };
+
+  const handleMouseLeave = (dropdownName) => {
+    const timeout = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 150); // 150ms delay to prevent accidental closing
+    setHoverTimeout(timeout);
+  };
+
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -42,6 +59,14 @@ const Header = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [activeDropdown]);
 
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (hoverTimeout) {
+        clearTimeout(hoverTimeout);
+      }
+    };
+  }, [hoverTimeout]);
 
 
   // Helper function to check if a link is active
@@ -249,9 +274,26 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center ml-4 lg:ml-6 xl:ml-8">
               <Link to="/" className="flex items-center">
-                <div className="flex flex-col justify-center">
-                  <span className="text-sm font-medium text-gray-500 leading-tight tracking-wider uppercase" style={{ fontSize: 'clamp(0.75rem, 1.3vw, 0.875rem)', letterSpacing: '0.15em' }}>Newton Imperial</span>
-                  <span className="text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 leading-tight tracking-tight" style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)' }}>Education</span>
+                <div className="flex items-center space-x-3">
+                  {/* NIE Initials Logo */}
+                  <div className="relative">
+                    {/* Top decorative line */}
+                    <div className="absolute -top-2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
+                    
+                    {/* NIE initials */}
+                    <div className="bg-[#0F2A44] text-white font-bold rounded-lg px-3 py-2 text-center shadow-md">
+                      <span className="text-lg sm:text-xl lg:text-xl xl:text-2xl" style={{ fontSize: 'clamp(1.125rem, 2vw, 1.5rem)' }}>NIE</span>
+                    </div>
+                    
+                    {/* Bottom decorative line */}
+                    <div className="absolute -bottom-2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
+                  </div>
+                  
+                  {/* Text */}
+                  <div className="hidden lg:flex flex-col justify-center">
+                    <span className="text-sm font-medium text-gray-500 leading-tight tracking-wider uppercase" style={{ fontSize: 'clamp(0.75rem, 1.3vw, 0.875rem)', letterSpacing: '0.15em' }}>Newton Imperial</span>
+                    <span className="text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-gray-900 leading-tight tracking-tight" style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)' }}>Education</span>
+                  </div>
                 </div>
               </Link>
             </div>
@@ -266,8 +308,8 @@ const Header = () => {
               <div 
                 className="relative" 
                 ref={el => dropdownRefs.current.about = el}
-                onMouseEnter={() => setActiveDropdown('about')}
-                onMouseLeave={() => setActiveDropdown(null)}
+                onMouseEnter={() => handleMouseEnter('about')}
+                onMouseLeave={() => handleMouseLeave('about')}
               >
                 <button 
                   className={getLinkClasses('/#about', false, true)}
@@ -285,6 +327,8 @@ const Header = () => {
                 
                 {activeDropdown === 'about' && (
                   <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[600px] lg:w-[680px] bg-gray-25 rounded-2xl shadow-lg border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                    {/* Invisible gap filler to prevent hover issues */}
+                    <div className="absolute -top-3 left-0 right-0 h-3"></div>
                     <div className="px-8 py-2">
                       <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
                         <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
@@ -321,8 +365,8 @@ const Header = () => {
               <div 
                 className="relative" 
                 ref={el => dropdownRefs.current.programs = el}
-                onMouseEnter={() => setActiveDropdown('programs')}
-                onMouseLeave={() => setActiveDropdown(null)}
+                onMouseEnter={() => handleMouseEnter('programs')}
+                onMouseLeave={() => handleMouseLeave('programs')}
               >
                 <button 
                   className={getLinkClasses('/#programs', false, true)}
@@ -340,6 +384,8 @@ const Header = () => {
                 
                 {activeDropdown === 'programs' && (
                   <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[800px] lg:w-[900px] xl:w-[980px] 2xl:w-[1100px] bg-gray-25 rounded-2xl shadow-lg border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                    {/* Invisible gap filler to prevent hover issues */}
+                    <div className="absolute -top-3 left-0 right-0 h-3"></div>
                     <div className="px-8 py-2">
                       <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
                         <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
@@ -378,8 +424,8 @@ const Header = () => {
               <div 
                 className="relative" 
                 ref={el => dropdownRefs.current.summerExperiences = el}
-                onMouseEnter={() => setActiveDropdown('summerExperiences')}
-                onMouseLeave={() => setActiveDropdown(null)}
+                onMouseEnter={() => handleMouseEnter('summerExperiences')}
+                onMouseLeave={() => handleMouseLeave('summerExperiences')}
               >
                 <button 
                   className={getLinkClasses('/summer-programs', false, true)}
@@ -397,6 +443,8 @@ const Header = () => {
                 
                 {activeDropdown === 'summerExperiences' && (
                   <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[500px] lg:w-[600px] bg-gray-25 rounded-2xl shadow-lg border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                    {/* Invisible gap filler to prevent hover issues */}
+                    <div className="absolute -top-3 left-0 right-0 h-3"></div>
                     <div className="px-8 py-2">
                       <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
                         <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
@@ -452,8 +500,8 @@ const Header = () => {
               <div 
                 className="relative"
                 ref={el => dropdownRefs.current.students = el}
-                onMouseEnter={() => setActiveDropdown('students')}
-                onMouseLeave={() => setActiveDropdown(null)}
+                onMouseEnter={() => handleMouseEnter('students')}
+                onMouseLeave={() => handleMouseLeave('students')}
               >
                 <button 
                   className={getLinkClasses('/#students', false, true)}
@@ -471,6 +519,8 @@ const Header = () => {
                 
                 {activeDropdown === 'students' && (
                   <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[680px] bg-gray-25 rounded-2xl shadow-lg border border-gray-200/30 py-8 z-50 backdrop-blur-sm animate-in fade-in-0 zoom-in-95 duration-200">
+                    {/* Invisible gap filler to prevent hover issues */}
+                    <div className="absolute -top-3 left-0 right-0 h-3"></div>
                     <div className="px-8 py-2">
                       <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6 flex items-center">
                         <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>

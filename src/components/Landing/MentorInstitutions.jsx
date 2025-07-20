@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const MentorInstitutions = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(1); // Start with Cambridge (index 1)
   
   const institutions = [
     {
@@ -55,20 +55,23 @@ const MentorInstitutions = () => {
     }
   ];
 
-  const itemsPerSlide = 4;
-  const totalSlides = Math.ceil(institutions.length / itemsPerSlide);
-
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+    setCurrentSlide((prev) => (prev + 1) % institutions.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+    setCurrentSlide((prev) => (prev - 1 + institutions.length) % institutions.length);
   };
 
-  const getCurrentInstitutions = () => {
-    const startIndex = currentSlide * itemsPerSlide;
-    return institutions.slice(startIndex, startIndex + itemsPerSlide);
+  const getVisibleInstitutions = () => {
+    // Show 1 on mobile, 2 on tablet, 4 on desktop
+    const itemsToShow = window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 4;
+    const visibleInstitutions = [];
+    for (let i = 0; i < itemsToShow; i++) {
+      const index = (currentSlide + i) % institutions.length;
+      visibleInstitutions.push(institutions[index]);
+    }
+    return visibleInstitutions;
   };
 
     return (
@@ -76,10 +79,10 @@ const MentorInstitutions = () => {
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', color: '#0F2A44' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 2.8vw, 2.5rem)', color: '#0F2A44' }}>
               Our Mentors Are From Top Institutions
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1rem)' }}>
               Learn from experts who have studied and worked at the world's most prestigious universities
             </p>
           </div>
@@ -87,9 +90,9 @@ const MentorInstitutions = () => {
           {/* Carousel Container */}
           <div className="relative max-w-7xl mx-auto">
             {/* Institutions Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
-              {getCurrentInstitutions().map((institution, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 flex flex-col items-center justify-center group transition-all duration-300 shadow-sm hover:shadow-md">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 max-w-4xl mx-auto">
+              {getVisibleInstitutions().map((institution, index) => (
+                <div key={`${currentSlide}-${index}`} className={`bg-white rounded-lg p-6 flex flex-col items-center justify-center group transition-all duration-300 shadow-sm hover:shadow-md ${index >= 1 ? 'hidden sm:block' : ''} ${index >= 2 ? 'hidden lg:block' : ''}`}>
                   <div className="w-24 h-24 lg:w-32 lg:h-32 flex items-center justify-center flex-shrink-0 mb-4">
                     <img 
                       src={institution.logo} 
@@ -98,7 +101,7 @@ const MentorInstitutions = () => {
                     />
                   </div>
                   <div className="text-center">
-                    <h3 className="text-sm lg:text-base font-bold text-gray-900 leading-tight uppercase">
+                    <h3 className="text-lg sm:text-xl lg:text-xl xl:text-2xl font-bold text-gray-900 mb-2" style={{ fontSize: 'clamp(1.125rem, 1.8vw, 1.5rem)' }}>
                       {institution.displayName.first}
                     </h3>
                     {institution.displayName.second && (
@@ -124,12 +127,12 @@ const MentorInstitutions = () => {
               </button>
 
               {/* Progress Indicators */}
-              <div className="flex space-x-2">
-                {Array.from({ length: totalSlides }, (_, index) => (
+              <div className="flex space-x-2 hidden sm:flex">
+                {Array.from({ length: Math.ceil(institutions.length / (window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 4)) }, (_, index) => (
                   <div
                     key={index}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      index === currentSlide 
+                      index === Math.floor(currentSlide / (window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 4))
                         ? 'bg-[#B8A67A] w-4' 
                         : 'bg-gray-300'
                     }`}
@@ -152,7 +155,7 @@ const MentorInstitutions = () => {
             <div className="text-center mt-16">
               <Link 
                 to="/mentors"
-                className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg"
+                className="inline-block text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-full transition-all duration-300 hover:shadow-lg text-sm sm:text-base lg:text-lg"
                 style={{ backgroundColor: '#0F2A44' }}
                 onMouseEnter={(e) => e.target.style.backgroundColor = '#766542'}
                 onMouseLeave={(e) => e.target.style.backgroundColor = '#0F2A44'}

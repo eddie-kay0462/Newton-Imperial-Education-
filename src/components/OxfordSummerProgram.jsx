@@ -26,10 +26,10 @@ const OxfordSummerProgram = () => {
           <div className="max-w-screen-2xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="text-white">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 drop-shadow-lg" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
-                  Oxford Summer School Experience
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold mb-6 sm:mb-8 drop-shadow-lg" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                  Oxford Summer Program
                 </h1>
-                <p className="text-lg sm:text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed drop-shadow-md">
+                <p className="text-lg sm:text-lg md:text-xl lg:text-xl xl:text-2xl text-gray-100 mb-8 leading-relaxed drop-shadow-md">
                   Experience the academic excellence of the University of Oxford, where tradition meets innovation in one of the world's most prestigious institutions.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -37,13 +37,13 @@ const OxfordSummerProgram = () => {
                     href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg bg-[#B8A67A] hover:bg-[#9A8B6A]"
+                    className="inline-block text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 hover:shadow-lg text-base bg-[#B8A67A] hover:bg-[#9A8B6A]"
                   >
                     Apply Now for Summer 2026
                   </a>
                   <a 
                     href="#faq-section"
-                    className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg border-2 border-white hover:bg-white hover:text-[#0F2A44]"
+                    className="inline-block text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 hover:shadow-lg text-base border-2 border-white hover:bg-white hover:text-[#0F2A44]"
                   >
                     Learn More
                   </a>
@@ -66,10 +66,10 @@ const OxfordSummerProgram = () => {
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
                 Program Overview
               </h2>
-              <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
                 Immerse yourself in the prestigious academic environment of Oxford University through our comprehensive summer program
               </p>
             </div>
@@ -81,7 +81,7 @@ const OxfordSummerProgram = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Duration</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-4">Duration</h3>
                 <p className="text-gray-600">2-4 weeks intensive program with flexible scheduling options</p>
               </div>
 
@@ -91,7 +91,7 @@ const OxfordSummerProgram = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 515.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 919.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Mentorship</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-4">Mentorship</h3>
                 <p className="text-gray-600">Direct guidance from Oxford PhD candidates and researchers</p>
               </div>
 
@@ -101,7 +101,7 @@ const OxfordSummerProgram = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Research</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-4">Research</h3>
                 <p className="text-gray-600">Hands-on research projects with publication opportunities</p>
               </div>
             </div>
@@ -115,15 +115,15 @@ const OxfordSummerProgram = () => {
           <div className="max-w-screen-2xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
                   A Legacy of Academic Excellence
                 </h2>
-                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                <p className="text-base lg:text-lg text-gray-600 mb-6 leading-relaxed">
                   Founded in 1096, the University of Oxford is the oldest university in the English-speaking world. 
                   With over 900 years of academic tradition, Oxford has produced 72 Nobel laureates and countless 
                   influential leaders, thinkers, and innovators.
                 </p>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                <p className="text-base lg:text-lg text-gray-600 mb-8 leading-relaxed">
                   Our summer program gives you the unique opportunity to study in the same halls as great minds like 
                   J.R.R. Tolkien, C.S. Lewis, and Stephen Hawking, while working on cutting-edge research projects.
                 </p>
@@ -142,7 +142,7 @@ const OxfordSummerProgram = () => {
                 <img 
                   src="/school_logos/oxford_logo.png" 
                   alt="Oxford University Logo" 
-                  className="w-full max-w-md mx-auto"
+                  className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-md mx-auto"
                 />
               </div>
             </div>
@@ -155,10 +155,10 @@ const OxfordSummerProgram = () => {
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
                 Campus Life & Experience
               </h2>
-              <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
                 Immerse yourself in the authentic Oxford experience with accommodation, dining, and cultural activities
               </p>
             </div>
@@ -171,7 +171,7 @@ const OxfordSummerProgram = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5a2 2 0 012-2h4a2 2 0 012 2v2H8V5z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">College Accommodation</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-4">College Accommodation</h3>
                 <p className="text-gray-600">Stay in historic college rooms with modern amenities</p>
               </div>
 
@@ -181,7 +181,7 @@ const OxfordSummerProgram = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Formal Dining</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-4">Formal Dining</h3>
                 <p className="text-gray-600">Experience traditional formal hall dinners</p>
               </div>
 
@@ -192,7 +192,7 @@ const OxfordSummerProgram = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">City Tours</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-4">City Tours</h3>
                 <p className="text-gray-600">Explore Oxford's historic architecture and landmarks</p>
               </div>
 
@@ -202,7 +202,7 @@ const OxfordSummerProgram = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 515.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 919.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Social Events</h3>
+                <h3 className="text-lg font-bold text-gray-900 mb-4">Social Events</h3>
                 <p className="text-gray-600">Connect with international students and mentors</p>
               </div>
             </div>
@@ -215,10 +215,10 @@ const OxfordSummerProgram = () => {
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
                 Frequently Asked Questions
               </h2>
-              <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
                 Everything you need to know about our Oxford Summer Program
               </p>
             </div>
@@ -254,10 +254,10 @@ const OxfordSummerProgram = () => {
                   <div key={index} className="bg-white border border-gray-200/30 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
                     <button
                       onClick={() => toggleQuestion(index)}
-                      className="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl"
+                      className="w-full px-6 py-4 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-2xl"
                     >
                       <div className="flex items-center justify-between">
-                        <h3 className="text-lg md:text-xl font-semibold text-gray-900 pr-4">
+                        <h3 className="text-base lg:text-lg font-semibold text-gray-900 pr-4">
                           {faq.question}
                         </h3>
                         <div className="flex-shrink-0">
@@ -280,7 +280,7 @@ const OxfordSummerProgram = () => {
                         openQuestion === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                       }`}
                     >
-                      <div className="px-8 pb-6">
+                      <div className="px-6 pb-4">
                         <div className="pt-4 border-t border-gray-100">
                           <p className="text-gray-600 leading-relaxed text-base md:text-lg">
                             {faq.answer}
@@ -300,10 +300,10 @@ const OxfordSummerProgram = () => {
       <section className="py-16 lg:py-24 bg-gradient-to-br from-[#0F2A44] to-[#1a3a5a]">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+            <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-white mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
               Applications Open for Summer 2026
             </h2>
-            <p className="text-lg md:text-xl text-gray-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-100 mb-8 max-w-3xl mx-auto leading-relaxed">
               Don't miss this opportunity to experience the prestigious Oxford University environment. 
               Limited spots available - apply early to secure your place.
             </p>

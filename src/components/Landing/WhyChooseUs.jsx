@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', color: '#0F2A44' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 2.8vw, 2.5rem)', color: '#0F2A44' }}>
               Why Choose NIE
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1rem)' }}>
@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
             {/* Right Side - Content */}
                           <div className="space-y-4 sm:space-y-6 order-1 lg:order-2">
                 <div className="space-y-3 sm:space-y-4">
-                  <div className="space-y-2 sm:space-y-3 text-gray-600 text-justify" style={{ lineHeight: '1.4' }}>
+                  <div className="space-y-2 sm:space-y-3 text-gray-600 text-left lg:text-justify" style={{ lineHeight: '1.4' }}>
                   <p className="text-sm sm:text-base lg:text-base" style={{ fontSize: 'clamp(0.875rem, 1.6vw, 1rem)' }}>
                     At Newton Imperial Education, we believe every student deserves access to world-class education and mentorship. Our programs are designed to unlock your potential and prepare you for success in top universities and beyond.
                   </p>

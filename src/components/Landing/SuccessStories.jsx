@@ -74,10 +74,10 @@ const SuccessStories = () => {
       {/* Container with proper max-width and responsive padding */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 max-w-7xl">
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mb-4 sm:mb-6 lg:mb-8" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', color: '#0F2A44' }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 2.8vw, 2.5rem)', color: '#0F2A44' }}>
             Success Stories
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
+          <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1rem)' }}>
             Hear from students who have transformed their academic journey through our programs
           </p>
         </div>
@@ -109,10 +109,10 @@ const SuccessStories = () => {
               
               {/* Student Info */}
               <div className="text-center">
-                <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-900 mb-2 sm:mb-3">
+                <h3 className="text-lg sm:text-xl lg:text-xl xl:text-2xl font-bold text-gray-900 mb-2" style={{ fontSize: 'clamp(1.125rem, 1.8vw, 1.5rem)' }}>
                   {currentStory.name}
                 </h3>
-                <p className="text-base sm:text-lg lg:text-xl xl:text-2xl font-semibold text-primary-600 mb-2 sm:mb-3">
+                <p className="text-base sm:text-lg xl:text-lg font-black text-primary-600 mb-3 sm:mb-4 uppercase" style={{ fontSize: 'clamp(1rem, 1.6vw, 1.125rem)' }}>
                   {currentStory.role}
                 </p>
                 <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-4 sm:mb-6">

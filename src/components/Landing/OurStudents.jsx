@@ -8,10 +8,10 @@ const OurStudents = () => {
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mb-4 sm:mb-6 px-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 5vw, 3.5rem)', color: '#0F2A44' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 2.8vw, 2.5rem)', color: '#0F2A44' }}>
               Who Should Join Our Programs?
             </h2>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-6 sm:mb-8 px-4" style={{ fontSize: 'clamp(0.875rem, 2.5vw, 1.25rem)' }}>
+            <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1rem)' }}>
               Our programs are designed for high school and college students eager to explore higher education, develop research skills, and build academic networks. Whether you're at the beginning of your academic journey or looking for advanced research opportunities, we have something for everyone.
             </p>
           </div>
@@ -20,7 +20,7 @@ const OurStudents = () => {
           <div className="bg-white rounded-xl shadow-sm p-8 md:p-12 mb-16">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                <h3 className="text-lg sm:text-xl lg:text-xl xl:text-2xl font-bold text-gray-900 mb-2" style={{ fontSize: 'clamp(1.125rem, 1.8vw, 1.5rem)' }}>
                   Perfect for Ambitious Students
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">

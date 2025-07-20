@@ -147,10 +147,10 @@ const MentorsPage = () => {
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         <div className="relative z-10 w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 sm:mb-8 drop-shadow-lg" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 sm:mb-8 drop-shadow-lg" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
               Meet Our World-Class Mentors
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
+            <p className="text-lg sm:text-lg md:text-xl lg:text-xl xl:text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
               Learn from PhD candidates and professors from the world's most prestigious universities
             </p>
           </div>
@@ -162,10 +162,10 @@ const MentorsPage = () => {
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
                 Our Mentors' Credentials
               </h2>
-              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                 Numbers that speak to the quality and expertise of our mentor network
               </p>
             </div>
@@ -176,7 +176,7 @@ const MentorsPage = () => {
                   targetValue={120} 
                   suffix="+" 
                   duration={2000}
-                  className="text-4xl lg:text-5xl font-bold text-[#0F2A44] mb-4"
+                  className="text-3xl lg:text-4xl font-bold text-[#0F2A44] mb-4"
                 />
                 <div className="text-lg text-gray-600 font-medium">PhD Mentors</div>
               </div>
@@ -186,7 +186,7 @@ const MentorsPage = () => {
                   targetValue={500} 
                   suffix="+" 
                   duration={2000}
-                  className="text-4xl lg:text-5xl font-bold text-[#0F2A44] mb-4"
+                  className="text-3xl lg:text-4xl font-bold text-[#0F2A44] mb-4"
                 />
                 <div className="text-lg text-gray-600 font-medium">Research Papers Published</div>
               </div>
@@ -196,7 +196,7 @@ const MentorsPage = () => {
                   targetValue={50} 
                   suffix="+" 
                   duration={2000}
-                  className="text-4xl lg:text-5xl font-bold text-[#0F2A44] mb-4"
+                  className="text-3xl lg:text-4xl font-bold text-[#0F2A44] mb-4"
                 />
                 <div className="text-lg text-gray-600 font-medium">Research Grants</div>
               </div>
@@ -206,7 +206,7 @@ const MentorsPage = () => {
                       targetValue={100} 
                       suffix="%" 
                       duration={2000}
-                      className="text-4xl lg:text-5xl font-bold text-[#0F2A44] mb-4"
+                      className="text-3xl lg:text-4xl font-bold text-[#0F2A44] mb-4"
                     />
                 <div className="text-lg text-gray-600 font-medium">Complete Program Success</div>
               </div>
@@ -220,10 +220,10 @@ const MentorsPage = () => {
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
                 Featured Mentors
               </h2>
-              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                 Meet some of our distinguished mentors who are actively guiding students
               </p>
             </div>
@@ -233,11 +233,11 @@ const MentorsPage = () => {
                 <div key={index} className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
                   <div className="text-center mb-6">
                     <div className="w-24 h-24 bg-gradient-to-br from-[#0F2A44] to-[#1a3a5a] rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-2xl font-bold text-white">
+                      <span className="text-xl font-bold text-white">
                         {mentor.name.split(' ').map(n => n[0]).join('')}
                       </span>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">{mentor.name}</h3>
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">{mentor.name}</h3>
                     <p className="text-[#0F2A44] font-semibold mb-1">{mentor.field}</p>
                     <p className="text-gray-600 text-sm">{mentor.institution}</p>
                   </div>
@@ -264,10 +264,10 @@ const MentorsPage = () => {
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
                 Our Partner Institutions
               </h2>
-              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                 We collaborate with the world's most prestigious universities
               </p>
             </div>
@@ -286,7 +286,7 @@ const MentorsPage = () => {
                           className="max-w-full max-h-full object-contain transition-all duration-300 group-hover:scale-105"
                         />
                       </div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-3">{institution.name}</h3>
+                      <h3 className="text-lg font-bold text-gray-900 mb-3">{institution.name}</h3>
                       <p className="text-gray-600 text-sm mb-3">{institution.description}</p>
                       <p className="text-[#0F2A44] font-semibold text-sm">{institution.stats}</p>
                     </div>
@@ -339,10 +339,10 @@ const MentorsPage = () => {
       <section className="py-16 lg:py-20 bg-gradient-to-br from-[#0F2A44] to-[#1a3a5a]">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+            <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-white mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
               Ready to Learn from the Best?
             </h2>
-            <p className="text-lg md:text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed mb-8">
+            <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed mb-8">
               Join our programs and get mentored by world-class researchers from top universities
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
