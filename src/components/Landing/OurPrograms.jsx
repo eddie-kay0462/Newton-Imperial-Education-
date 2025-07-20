@@ -74,11 +74,11 @@ const OurPrograms = () => {
   };
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 xl:py-24 bg-gray-50 rounded-2xl sm:rounded-3xl mx-4 sm:mx-6 lg:mx-8 xl:mx-12 2xl:mx-16" id="programs">
+    <section className="py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 bg-gray-50 rounded-2xl sm:rounded-3xl mx-4 sm:mx-6 lg:mx-8 xl:mx-12 2xl:mx-16" id="programs">
       {/* Container with proper max-width and responsive padding */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 max-w-7xl">
-        <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mb-4 sm:mb-6 lg:mb-8" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', color: '#0F2A44' }}>
+        <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold mb-3 sm:mb-4 md:mb-6 lg:mb-8" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', color: '#0F2A44' }}>
             Our Programs
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
@@ -92,23 +92,23 @@ const OurPrograms = () => {
           onMouseLeave={() => setIsPaused(false)}
         >
           {/* Program Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 xl:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
             {getVisiblePrograms().map((program, index) => (
-              <div key={`${currentSlide}-${index}`} className={`bg-white border border-gray-100 rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col ${index >= 2 ? 'hidden lg:block' : ''}`}>
+              <div key={`${currentSlide}-${index}`} className={`bg-white border border-gray-100 rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col ${index >= 2 ? 'hidden lg:block' : ''}`}>
                 {/* Hero Image */}
                 <div 
-                  className="w-full h-48 sm:h-56 lg:h-60 xl:h-64 bg-cover bg-center bg-no-repeat flex-shrink-0"
+                  className="w-full h-40 sm:h-48 md:h-56 lg:h-60 xl:h-64 bg-cover bg-center bg-no-repeat flex-shrink-0"
                   style={{
                     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('${program.image}')`
                   }}
                 />
                 
                 {/* Content */}
-                <div className="p-6 sm:p-8 lg:p-10 flex flex-col flex-1">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight" style={{ minHeight: '3rem', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                <div className="p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col flex-1">
+                  <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-6 leading-tight" style={{ minHeight: '2.5rem', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                     {program.title}
                   </h3>
-                  <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
+                  <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed">
                     {program.description}
                   </p>
                 </div>
@@ -117,13 +117,13 @@ const OurPrograms = () => {
           </div>
 
           {/* Navigation Arrows */}
-          <div className="flex justify-center items-center mt-8 sm:mt-12 lg:mt-16 space-x-4">
+          <div className="flex justify-center items-center mt-6 sm:mt-8 md:mt-12 lg:mt-16 space-x-3 sm:space-x-4">
             {/* Left Arrow */}
             <button 
               onClick={prevSlide}
-              className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white border-2 border-[#0F2A44] rounded-full flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white border-2 border-[#0F2A44] rounded-full flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
             >
-              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
@@ -131,22 +131,22 @@ const OurPrograms = () => {
             {/* Right Arrow */}
             <button 
               onClick={nextSlide}
-              className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white border-2 border-[#0F2A44] rounded-full flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white border-2 border-[#0F2A44] rounded-full flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
             >
-              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
           </div>
 
           {/* Centralized Learn More Button */}
-          <div className="text-center mt-12 sm:mt-16 lg:mt-20">
+          <div className="text-center mt-8 sm:mt-12 md:mt-16 lg:mt-20">
             <Link 
               to="/programs"
-              className="inline-flex items-center px-8 sm:px-10 lg:px-12 py-4 sm:py-5 lg:py-6 bg-[#0F2A44] text-white font-semibold rounded-full hover:bg-[#766542] transition-all duration-300 text-lg sm:text-xl lg:text-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="inline-flex items-center px-6 sm:px-8 md:px-10 lg:px-12 py-3 sm:py-4 md:py-5 lg:py-6 bg-[#0F2A44] text-white font-semibold rounded-full hover:bg-[#766542] transition-all duration-300 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Learn More About Our Programs
-              <svg className="w-5 h-5 sm:w-6 sm:h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 ml-2 sm:ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>

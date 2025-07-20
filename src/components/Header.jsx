@@ -7,7 +7,6 @@ const Header = () => {
   const [mobileDropdowns, setMobileDropdowns] = useState({});
   const location = useLocation();
   const dropdownRefs = useRef({});
-  const hoverTimeouts = useRef({});
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -15,20 +14,12 @@ const Header = () => {
     setMobileDropdowns({});
   };
 
-  const handleDropdownHover = (dropdownName) => {
-    // Clear any existing timeout
-    if (hoverTimeouts.current[dropdownName]) {
-      clearTimeout(hoverTimeouts.current[dropdownName]);
-      hoverTimeouts.current[dropdownName] = null;
-    }
-    setActiveDropdown(dropdownName);
-  };
-
-  const handleDropdownLeave = (dropdownName) => {
-    // Add a small delay before hiding
-    hoverTimeouts.current[dropdownName] = setTimeout(() => {
+  const handleDropdownClick = (dropdownName) => {
+    if (activeDropdown === dropdownName) {
       setActiveDropdown(null);
-    }, 150);
+    } else {
+      setActiveDropdown(dropdownName);
+    }
   };
 
   const handleMobileDropdownToggle = (dropdownName) => {
@@ -51,14 +42,7 @@ const Header = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [activeDropdown]);
 
-  // Cleanup timeouts on unmount
-  useEffect(() => {
-    return () => {
-      Object.values(hoverTimeouts.current).forEach(timeout => {
-        if (timeout) clearTimeout(timeout);
-      });
-    };
-  }, []);
+
 
   // Helper function to check if a link is active
   const isActiveLink = (path) => {
@@ -282,13 +266,15 @@ const Header = () => {
               <div 
                 className="relative" 
                 ref={el => dropdownRefs.current.about = el}
-                onMouseEnter={() => handleDropdownHover('about')}
-                onMouseLeave={() => handleDropdownLeave('about')}
+                onMouseEnter={() => setActiveDropdown('about')}
+                onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className={getLinkClasses('/#about', false, true)}>
+                <button 
+                  className={getLinkClasses('/#about', false, true)}
+                >
                   <span className="flex-shrink-0">About</span>
                   <svg 
-                    className={`w-4 h-4 flex-shrink-0 transition-transform duration-200 ${activeDropdown === 'about' ? 'rotate-180' : ''}`}
+                    className={`w-4 h-4 flex-shrink-0 transition-transform duration-500 ease-in-out ${activeDropdown === 'about' ? 'rotate-180' : ''}`}
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -335,13 +321,15 @@ const Header = () => {
               <div 
                 className="relative" 
                 ref={el => dropdownRefs.current.programs = el}
-                onMouseEnter={() => handleDropdownHover('programs')}
-                onMouseLeave={() => handleDropdownLeave('programs')}
+                onMouseEnter={() => setActiveDropdown('programs')}
+                onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className={getLinkClasses('/#programs', false, true)}>
+                <button 
+                  className={getLinkClasses('/#programs', false, true)}
+                >
                   <span className="flex-shrink-0">Programs</span>
                   <svg 
-                    className={`w-4 h-4 flex-shrink-0 transition-transform duration-200 ${activeDropdown === 'programs' ? 'rotate-180' : ''}`}
+                    className={`w-4 h-4 flex-shrink-0 transition-transform duration-500 ease-in-out ${activeDropdown === 'programs' ? 'rotate-180' : ''}`}
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -390,13 +378,15 @@ const Header = () => {
               <div 
                 className="relative" 
                 ref={el => dropdownRefs.current.summerExperiences = el}
-                onMouseEnter={() => handleDropdownHover('summerExperiences')}
-                onMouseLeave={() => handleDropdownLeave('summerExperiences')}
+                onMouseEnter={() => setActiveDropdown('summerExperiences')}
+                onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className={getLinkClasses('/summer-programs', false, true)}>
+                <button 
+                  className={getLinkClasses('/summer-programs', false, true)}
+                >
                   <span className="flex-shrink-0">Summer Experiences</span>
                   <svg 
-                    className={`w-4 h-4 flex-shrink-0 transition-transform duration-200 ${activeDropdown === 'summerExperiences' ? 'rotate-180' : ''}`}
+                    className={`w-4 h-4 flex-shrink-0 transition-transform duration-500 ease-in-out ${activeDropdown === 'summerExperiences' ? 'rotate-180' : ''}`}
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -462,13 +452,15 @@ const Header = () => {
               <div 
                 className="relative"
                 ref={el => dropdownRefs.current.students = el}
-                onMouseEnter={() => handleDropdownHover('students')}
-                onMouseLeave={() => handleDropdownLeave('students')}
+                onMouseEnter={() => setActiveDropdown('students')}
+                onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className={getLinkClasses('/#students', false, true)}>
+                <button 
+                  className={getLinkClasses('/#students', false, true)}
+                >
                   <span className="flex-shrink-0">Students</span>
                   <svg 
-                    className={`w-4 h-4 flex-shrink-0 transition-transform duration-200 ${activeDropdown === 'students' ? 'rotate-180' : ''}`}
+                    className={`w-4 h-4 flex-shrink-0 transition-transform duration-500 ease-in-out ${activeDropdown === 'students' ? 'rotate-180' : ''}`}
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
