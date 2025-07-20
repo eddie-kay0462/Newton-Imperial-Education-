@@ -32,18 +32,18 @@ const CambridgeSummerProgram = () => {
                 <p className="text-lg sm:text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed drop-shadow-md">
                   Immerse yourself in the historic halls of the University of Cambridge, where centuries of academic excellence meet cutting-edge research opportunities.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 justify-start sm:justify-center lg:justify-start">
                   <a 
                     href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg bg-[#B8A67A] hover:bg-[#9A8B6A]"
+                    className="inline-block text-white font-semibold py-3 px-8 md:px-10 rounded-full transition-all duration-300 hover:shadow-lg text-base bg-[#B8A67A] hover:bg-[#9A8B6A] w-full sm:w-auto md:w-auto min-w-[120px] md:min-w-[140px] text-center"
                   >
-                    Apply Now for Summer 2026
+                    Apply
                   </a>
                   <a 
                     href="#faq-section"
-                    className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg border-2 border-white hover:bg-white hover:text-[#0F2A44]"
+                    className="inline-block text-white font-semibold py-3 px-6 md:px-8 rounded-full transition-all duration-300 hover:shadow-lg text-base border-2 border-white hover:bg-white hover:text-[#0F2A44] w-full sm:w-auto md:w-auto min-w-[120px] md:min-w-[140px] text-center"
                   >
                     Learn More
                   </a>

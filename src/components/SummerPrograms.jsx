@@ -142,15 +142,24 @@ const SummerPrograms = () => {
             </div>
 
             <div className="mt-4 sm:mt-6 lg:mt-8 text-center">
-              <a 
-                href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-primary-600 text-white font-semibold py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg hover:bg-primary-700 transition-colors text-xs sm:text-sm md:text-base w-full sm:w-auto"
-                style={{ fontSize: 'clamp(0.75rem, 1.8vw, 1rem)' }}
-              >
-                Express Interest
-              </a>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 justify-center items-center max-w-md sm:max-w-lg lg:max-w-xl mx-auto">
+                <a 
+                  href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#766542] text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 lg:px-10 rounded-full hover:bg-[#8a7a5a] transition-colors text-sm sm:text-base lg:text-lg w-full sm:w-auto lg:w-auto flex-shrink-0"
+                  style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1.125rem)' }}
+                >
+                  Apply Now
+                </a>
+                <a 
+                  href="/summer-programs"
+                  className="inline-block bg-transparent border-2 border-[#0F2A44] text-[#0F2A44] font-semibold py-2.5 sm:py-3 px-4 sm:px-6 lg:px-8 rounded-full hover:bg-[#0F2A44] hover:text-white transition-colors text-sm sm:text-base lg:text-lg w-full sm:w-auto lg:w-auto flex-shrink-0"
+                  style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1.125rem)' }}
+                >
+                  Learn More
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -197,7 +206,7 @@ const SummerPrograms = () => {
             href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-primary-600 font-semibold py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg hover:bg-gray-100 transition-colors text-xs sm:text-sm md:text-base w-full sm:w-auto"
+            className="inline-block bg-[#766542] text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 lg:px-10 rounded-full hover:bg-[#8a7a5a] transition-colors text-sm sm:text-base lg:text-lg w-full sm:w-auto"
             style={{ fontSize: 'clamp(0.75rem, 1.8vw, 1rem)' }}
           >
             Apply Now

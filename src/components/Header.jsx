@@ -272,11 +272,11 @@ const Header = () => {
         <div className="max-w-screen-2xl mx-auto">
           <div className="flex justify-between items-center h-20 sm:h-24 md:h-28">
             {/* Logo */}
-            <div className="flex items-center ml-4 lg:ml-6 xl:ml-8">
+            <div className="flex items-center ml-2 lg:ml-4 xl:ml-6">
               <Link to="/" className="flex items-center">
                 <div className="flex items-center space-x-3">
                   {/* NIE Initials Logo */}
-                  <div className="relative">
+                  <div className="relative inline-flex lg:hidden">
                     {/* Top decorative line */}
                     <div className="absolute -top-2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
                     
