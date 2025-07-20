@@ -446,10 +446,10 @@ const MentorsPage = () => {
                      <p className="text-gray-200 text-base mb-6">Send your CV and details to:</p>
                      <div className="flex justify-center">
                        <a 
-                         href="mailto:mentors@newtonimperial.com" 
+                         href="mailto:hello@newtonimperial.education" 
                          className="inline-block bg-white text-[#0F2A44] font-semibold py-4 px-8 rounded-lg hover:bg-gray-100 transition-all duration-300 text-base text-center min-w-[280px]"
                        >
-                         mentors@newtonimperial.com
+                         hello@newtonimperial.education
                        </a>
                      </div>
                    </div>
