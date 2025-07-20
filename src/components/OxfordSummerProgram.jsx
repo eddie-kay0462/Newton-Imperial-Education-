@@ -51,7 +51,7 @@ const OxfordSummerProgram = () => {
               </div>
               <div className="relative">
                 <img 
-                  src="/campuses/oxford-campus-1.jpg" 
+                  src="/campuses/oxford-campus.jpg" 
                   alt="Oxford University Campus" 
                   className="rounded-2xl shadow-2xl w-full h-96 lg:h-[500px] object-cover"
                 />

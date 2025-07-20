@@ -457,7 +457,7 @@ const Header = () => {
                         className="group relative overflow-hidden rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105"
                         onClick={() => setActiveDropdown(null)}
                       >
-                        <div className="relative h-48 bg-cover bg-center" style={{ backgroundImage: 'url(/campuses/cambridge-campus-1.png)' }}>
+                        <div className="relative h-48 bg-cover bg-center" style={{ backgroundImage: 'url(/campuses/cambridge-campus.jpg)' }}>
                           <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
                           <div className="absolute top-4 left-4">
                             <h4 className="text-xl font-bold text-white mb-1">Cambridge</h4>
@@ -477,7 +477,7 @@ const Header = () => {
                         className="group relative overflow-hidden rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105"
                         onClick={() => setActiveDropdown(null)}
                       >
-                        <div className="relative h-48 bg-cover bg-center" style={{ backgroundImage: 'url(/campuses/oxford-campus-1.jpg)' }}>
+                        <div className="relative h-48 bg-cover bg-center" style={{ backgroundImage: 'url(/campuses/oxford-campus.jpg)' }}>
                           <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
                           <div className="absolute top-4 left-4">
                             <h4 className="text-xl font-bold text-white mb-1">Oxford</h4>
