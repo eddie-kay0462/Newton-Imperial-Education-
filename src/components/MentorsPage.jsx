@@ -43,7 +43,7 @@ const MentorsPage = () => {
     },
     {
       name: "Massachusetts Institute of Technology",
-      logo: "/school_logos/mit_logo.jpg",
+      logo: "/school_logos/mit_logo.png",
       alt: "MIT Logo",
       description: "Founded in 1861, world leader in science and technology",
       stats: "Ranked #1 in Engineering & Technology 2024"
@@ -283,7 +283,7 @@ const MentorsPage = () => {
                         <img 
                           src={institution.logo} 
                           alt={institution.alt}
-                          className="max-w-full max-h-full object-contain transition-all duration-300 group-hover:scale-105"
+                          className="school-logo-img max-w-full max-h-full object-contain transition-all duration-300 group-hover:scale-105"
                         />
                       </div>
                       <h3 className="text-lg font-bold text-gray-900 mb-3">{institution.name}</h3>

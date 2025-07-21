@@ -240,31 +240,15 @@
   outline: none;
 } 
 
-/* Section min-height utility for full viewport visibility */
-.min-h-section {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.school-logo-img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  display: block;
 }
-
 @media (max-width: 640px) {
-  .min-h-section {
-    min-height: 100dvh;
-    min-height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
-  }
-}
-
-section {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-@media (max-width: 640px) {
-  section {
-    min-height: 100dvh;
-    min-height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  .school-logo-img {
+    width: 64px;
+    height: 64px;
   }
 } 

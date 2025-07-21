@@ -30,12 +30,12 @@ const WhyChooseUsPage = () => {
     },
     {
       name: "Harvard University",
-      logo: "/school_logos/harvard_logo.png",
+      logo: "/school_logos/harvard_logo.png", 
       alt: "Harvard University Logo"
     },
     {
       name: "Massachusetts Institute of Technology",
-      logo: "/school_logos/mit_logo.jpg",
+      logo: "/school_logos/mit_logo.png",
       alt: "MIT Logo"
     },
     {

@@ -32,7 +32,7 @@ const MentorInstitutions = () => {
     {
       name: "Massachusetts Institute of Technology",
       displayName: { first: "MIT", second: "" },
-      logo: "/school_logos/mit_logo.jpg",
+      logo: "/school_logos/mit_logo.png",
       alt: "MIT Logo"
     },
     {
