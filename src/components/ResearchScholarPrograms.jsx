@@ -16,7 +16,7 @@ const ResearchScholarPrograms = () => {
       title: "The Newton Scholar",
       duration: "12 weeks",
       price: "$3,900",
-      overview: "The Newton Scholar is a 12-week intensive program, where you will work with PhD candidates and researchers from top universities like **OXFORD**, **CAMBRIDGE**, **MIT**, and **HARVARD**. This program is perfect for students who want to gain a deeper understanding of academic research.",
+      overview: "The Newton Scholar is a 12-week intensive program, where you will work with PhD candidates and researchers from top universities like OXFORD, CAMBRIDGE, MIT, and HARVARD. This program is perfect for students who want to gain a deeper understanding of academic research.",
       format: "Weekly mentorship sessions, research tasks, and project presentations.",
       highlights: [
         "Conduct research in your field of interest.",

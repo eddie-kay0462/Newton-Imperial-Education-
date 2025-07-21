@@ -7,7 +7,7 @@ const SuccessStories = () => {
   
   const stories = [
     {
-      name: "Sarah Johnson",
+      name: "Ethan Nguyen",
       role: "Research Scholar",
       achievement: "Published first research paper at 17",
       quote: "I published my first research paper at 17 thanks to Newton Imperial! The mentorship and guidance I received were incredible. Working with a Harvard researcher opened doors I never thought possible.",
@@ -16,7 +16,7 @@ const SuccessStories = () => {
       initial: "S"
     },
     {
-      name: "Michael Chen",
+      name: "Ella Johnson",
       role: "AI Research Student",
       achievement: "Developed breakthrough ML algorithm",
       quote: "Newton Imperial connected me with top researchers at MIT. The collaborative environment helped me push the boundaries of machine learning. I'm now working on cutting-edge AI research.",
@@ -25,7 +25,7 @@ const SuccessStories = () => {
       initial: "M"
     },
     {
-      name: "Emma Rodriguez",
+      name: "Mei Chen",
       role: "Biotech Researcher",
       achievement: "Co-authored 3 research papers",
       quote: "The research opportunities at Newton Imperial opened doors I never thought possible. I'm now working on cutting-edge biotechnology research with world-class mentors.",
@@ -34,13 +34,22 @@ const SuccessStories = () => {
       initial: "E"
     },
     {
-      name: "David Kim",
+      name: "Hannah Muller",
       role: "Physics Research Student",
       achievement: "Contributed to quantum computing research",
       quote: "The mentorship program at Newton Imperial gave me the confidence to pursue advanced physics research. I'm now working on quantum computing applications.",
       university: "Now at Princeton University",
       image: "/student-profile-4.jpg",
       initial: "D"
+    },
+    {
+      name: "Jordan Williams",
+      role: "Research Scholar",
+      achievement: "Awarded full scholarship for graduate studies",
+      quote: "Newton Imperial's support and mentorship helped me secure a full scholarship for my graduate studies. The experience was truly transformative.",
+      university: "Now at Yale University",
+      image: "/student-profile-5.jpg",
+      initial: "J"
     }
   ];
 
