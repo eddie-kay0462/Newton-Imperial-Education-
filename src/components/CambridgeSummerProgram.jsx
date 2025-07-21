@@ -26,7 +26,7 @@ const CambridgeSummerProgram = () => {
           <div className="max-w-screen-2xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="text-white">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold mb-6 sm:mb-8 drop-shadow-lg hero-title">
+                <h1 className="font-hero font-normal text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-6 sm:mb-8 drop-shadow-lg hero-title">
                   Cambridge Summer School Experience
                 </h1>
                 <p className="text-lg sm:text-xl md:text-2xl text-gray-100 mb-8 hero-subtitle drop-shadow-md">

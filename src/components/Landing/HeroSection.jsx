@@ -75,7 +75,7 @@ const HeroSection = () => {
                     Applications are open for our upcoming cohorts
                   </div>
                   
-                  <h1 id="hero-heading" className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold leading-tight text-gray-900 hero-title">
+                  <h1 id="hero-heading" className="font-hero font-normal text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight text-gray-900 hero-title">
                     Research Opportunities
                     <br />
                     <span className="text-gray-900">

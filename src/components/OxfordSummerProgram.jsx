@@ -26,7 +26,7 @@ const OxfordSummerProgram = () => {
           <div className="max-w-screen-2xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="text-white">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold mb-6 sm:mb-8 drop-shadow-lg text-white hero-title">
+                <h1 className="font-hero font-normal text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl mb-6 sm:mb-8 drop-shadow-lg text-white hero-title">
                   Oxford Summer Program
                 </h1>
                 <p className="text-lg sm:text-lg md:text-xl lg:text-xl xl:text-2xl text-gray-100 mb-8 hero-subtitle drop-shadow-md">

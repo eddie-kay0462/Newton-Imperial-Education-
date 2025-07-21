@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-br from-white via-blue-50 to-indigo-50 border-t border-gray-200 section-container">
-      <div className="max-w-none mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-4 2xl:px-2 py-8 sm:py-12 wide-container">
+    <footer className="w-full bg-gradient-to-br from-blue-50 via-blue-100 to-indigo-100 border-t border-gray-200 p-0 m-0">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 xl:px-4 2xl:px-2 py-8 sm:py-12">
         {/* Navigation Columns */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 mb-6 sm:mb-8">
           {/* Programs Column */}
@@ -15,6 +15,32 @@ const Footer = () => {
               <li><a href="#" className="text-sm sm:text-base text-gray-600 hover:text-primary-700 transition-colors" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>Mentors</a></li>
               <li><a href="#" className="text-sm sm:text-base text-gray-600 hover:text-primary-700 transition-colors" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>Application Process</a></li>
             </ul>
+            <ul className="space-y-1.5 sm:space-y-2 mt-4">
+              <li className="flex gap-3 mt-2">
+                <a
+                  href="https://www.instagram.com/newtonimperial.research"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="text-gray-500 hover:text-[#E4405F] transition-colors text-xl"
+                >
+                  <svg fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.25.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/newtonimperial/about/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="text-gray-500 hover:text-[#0077B5] transition-colors text-xl"
+                >
+                  <svg fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+                    <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
 
           {/* Resources Column */}
@@ -25,6 +51,32 @@ const Footer = () => {
               <li><a href="#" className="text-sm sm:text-base text-gray-600 hover:text-primary-700 transition-colors" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>FAQ</a></li>
               <li><a href="#" className="text-sm sm:text-base text-gray-600 hover:text-primary-700 transition-colors" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>Scholar Stories</a></li>
               <li><a href="#" className="text-sm sm:text-base text-gray-600 hover:text-primary-700 transition-colors" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>Application Process</a></li>
+            </ul>
+            <ul className="space-y-1.5 sm:space-y-2 mt-4">
+              <li className="flex gap-3 mt-2">
+                <a
+                  href="https://www.instagram.com/newtonimperial.research"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="text-gray-500 hover:text-[#E4405F] transition-colors text-xl"
+                >
+                  <svg fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.25.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/newtonimperial/about/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="text-gray-500 hover:text-[#0077B5] transition-colors text-xl"
+                >
+                  <svg fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
+                    <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -67,16 +119,6 @@ const Footer = () => {
             <button className="px-4 sm:px-6 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors font-semibold text-sm sm:text-base" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>
               Subscribe
             </button>
-          </div>
-        </div>
-
-        {/* Social Media Section */}
-        <div className="text-center mb-6 sm:mb-8">
-          <p className="text-sm sm:text-base text-gray-600 mb-4" style={{ fontSize: 'clamp(0.875rem, 2vw, 1rem)' }}>Follow our Educational Community</p>
-          <div className="flex justify-center space-x-3 sm:space-x-4">
-            {[1, 2, 3, 4].map((index) => (
-              <div key={index} className="w-6 h-6 sm:w-8 sm:h-8 bg-primary-600 hover:bg-primary-700 rounded-full transition-colors cursor-pointer"></div>
-            ))}
           </div>
         </div>
 

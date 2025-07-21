@@ -219,24 +219,39 @@ const ResearchScholarPrograms = () => {
         </div>
       </section>
 
-      {/* CTA Section - Mobile Optimized */}
-      <section className="py-8 sm:py-12 lg:py-16 bg-primary-600 text-white">
+      {/* CTA Section */}
+      <section className="py-8 sm:py-12 lg:py-16 bg-[#0F2A44] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 text-center">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3 lg:mb-4" style={{ fontSize: 'clamp(1.25rem, 3vw, 2rem)' }}>
             Ready to Start Your Research Journey?
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-100 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1.25rem)' }}>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1.25rem)' }}>
             Join hundreds of students who have transformed their academic careers through our research programs
           </p>
-          <a 
-            href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-white text-primary-600 font-semibold py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg hover:bg-gray-100 transition-colors text-xs sm:text-sm md:text-base w-full sm:w-auto"
-            style={{ fontSize: 'clamp(0.75rem, 1.8vw, 1rem)' }}
-          >
-            Apply Now
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a 
+              href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg bg-[#B8A67A] hover:bg-[#9A8B6A]"
+            >
+              Apply Now
+            </a>
+            <Link 
+              to="/find-a-course"
+              className="group inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg bg-transparent hover:bg-white hover:text-[#0F2A44] border-2 border-white"
+            >
+              Find What Courses Are Available
+              <svg 
+                className="inline-block ml-2 w-4 h-4 transform transition-transform duration-300 group-hover:rotate-180" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -245,4 +260,4 @@ const ResearchScholarPrograms = () => {
   );
 };
 
-export default ResearchScholarPrograms; 
+export default ResearchScholarPrograms;

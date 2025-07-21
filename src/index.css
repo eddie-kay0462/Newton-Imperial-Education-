@@ -15,7 +15,7 @@
   }
   
   body {
-    font-family: 'Inter', 'Poppins', system-ui, sans-serif;
+    font-family: 'Lora', serif;
     line-height: 1.6;
     font-size: clamp(1rem, 2.5vw, 1.125rem);
     font-weight: 400;
@@ -252,3 +252,15 @@
     height: 64px;
   }
 } 
+
+body, html {
+  font-family: 'Lora', Georgia, serif !important;
+}
+.font-hero {
+  font-family: 'Lora', Georgia, serif !important;
+  font-weight: 300 !important;
+}
+.font-sans, .font-inter {
+  font-family: 'Lora', Georgia, serif !important;
+}
+/* Usage: All text now uses Lora by default for a consistent, elegant look. */ 

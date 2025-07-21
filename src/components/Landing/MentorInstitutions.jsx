@@ -12,6 +12,7 @@ const MentorInstitutions = () => {
       alt: "Oxford University Logo"
     },
     {
+
       name: "University of Cambridge",
       displayName: { first: "Cambridge", second: "University" },
       logo: "/school_logos/cambridge_logo.png",

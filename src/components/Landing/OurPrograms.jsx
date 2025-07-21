@@ -220,6 +220,15 @@ const OurPrograms = () => {
           )}
         </div>
       </div>
+      {/* Add this after the carousel/cards, before the closing tag of the main container */}
+      <div className="flex justify-center mt-10">
+        <Link
+          to="/find-a-course"
+          className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg bg-[#0F2A44] hover:bg-[#1a3a5a]"
+        >
+          Find a Course
+        </Link>
+      </div>
     </section>
   );
 };

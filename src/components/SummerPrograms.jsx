@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
+import { Link } from 'react-router-dom';
 
 const SummerPrograms = () => {
   useEffect(() => {
@@ -59,7 +60,7 @@ const SummerPrograms = () => {
     <div className="min-h-screen bg-gray-25">
       <Header />
       {/* Hero Section */}
-      <section
+      <section 
         className="relative text-white py-8 sm:py-12 lg:py-16 xl:py-20 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
@@ -68,7 +69,7 @@ const SummerPrograms = () => {
       >
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
           <div className="text-center">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold mb-3 sm:mb-4 lg:mb-6 hero-title">
+            <h1 className="font-hero font-normal text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-3 sm:mb-4 lg:mb-6 hero-title">
               Summer Programs
             </h1>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-200 max-w-3xl mx-auto px-4 hero-subtitle">
@@ -93,13 +94,8 @@ const SummerPrograms = () => {
                 <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-4 sm:mb-6" style={{ fontSize: 'clamp(1.125rem, 2.2vw, 1.5rem)' }}>Program Highlights</h3>
                 <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                   {program.highlights.map((highlight, idx) => (
-                    <li key={idx} className="flex items-start">
-                      <div className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 flex-shrink-0">
-                        <svg className="w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      <span className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed" style={{ fontSize: 'clamp(0.75rem, 1.6vw, 1rem)' }}>{highlight}</span>
+                    <li key={idx} className="flex items-start text-gray-700 text-xs sm:text-sm md:text-base lg:text-lg">
+                      <span className="mr-2 text-primary-600 font-bold">•</span> {highlight}
                     </li>
                   ))}
                 </ul>
@@ -119,7 +115,7 @@ const SummerPrograms = () => {
                     Join this exclusive summer program and immerse yourself in centuries of academic excellence.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                    <a
+                    <a 
                       href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -221,9 +217,46 @@ const SummerPrograms = () => {
           </div>
         </div>
       </main>
+
+      {/* CTA Section */}
+      <section className="py-8 sm:py-12 lg:py-16 bg-[#0F2A44] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 text-center">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3 lg:mb-4" style={{ fontSize: 'clamp(1.25rem, 3vw, 2rem)' }}>
+            Ready to Experience Cambridge and Oxford?
+          </h2>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1.25rem)' }}>
+            Join this exclusive summer program and immerse yourself in centuries of academic excellence
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a 
+              href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg bg-[#B8A67A] hover:bg-[#9A8B6A]"
+            >
+              Apply Now
+            </a>
+            <Link 
+              to="/find-a-course"
+              className="group inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg bg-transparent hover:bg-white hover:text-[#0F2A44] border-2 border-white"
+            >
+              Find What Courses Are Available
+              <svg 
+                className="inline-block ml-2 w-4 h-4 transform transition-transform duration-300 group-hover:rotate-180" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
 };
 
-export default SummerPrograms; 
+export default SummerPrograms;

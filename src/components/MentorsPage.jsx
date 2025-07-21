@@ -228,7 +228,7 @@ const MentorsPage = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12">
               {mentors.map((mentor, index) => (
                 <div key={index} className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
                   <div className="text-center mb-6">
@@ -274,61 +274,112 @@ const MentorsPage = () => {
 
             {/* Carousel Container */}
             <div className="relative max-w-7xl mx-auto">
-              {/* Institutions Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-                {getCurrentInstitutions().map((institution, index) => (
-                  <div key={index} className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
+              {/* Responsive Institutions Grid/Carousel */}
+              <div className="block md:hidden">
+                {/* Mobile: Show only one card with chevrons */}
+                <div className="flex justify-center items-center">
+                  {/* Left Arrow */}
+                  <button 
+                    onClick={prevSlide}
+                    className="w-12 h-12 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group mr-4"
+                  >
+                    <svg className="w-5 h-5 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </button>
+                  {/* Card */}
+                  <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group w-full max-w-xs">
                     <div className="text-center mb-6">
                       <div className="w-32 h-32 flex items-center justify-center mx-auto mb-4">
                         <img 
-                          src={institution.logo} 
-                          alt={institution.alt}
+                          src={institutions[currentSlide].logo} 
+                          alt={institutions[currentSlide].alt}
                           className="school-logo-img max-w-full max-h-full object-contain transition-all duration-300 group-hover:scale-105"
                         />
                       </div>
-                      <h3 className="text-lg font-bold text-gray-900 mb-3">{institution.name}</h3>
-                      <p className="text-gray-600 text-sm mb-3">{institution.description}</p>
-                      <p className="text-[#0F2A44] font-semibold text-sm">{institution.stats}</p>
+                      <h3 className="text-lg font-bold text-gray-900 mb-3">{institutions[currentSlide].name}</h3>
+                      <p className="text-gray-600 text-sm mb-3">{institutions[currentSlide].description}</p>
+                      <p className="text-[#0F2A44] font-semibold text-sm">{institutions[currentSlide].stats}</p>
                     </div>
                   </div>
-                ))}
-              </div>
-
-              {/* Navigation Arrows */}
-              <div className="flex justify-center items-center mt-12 space-x-8">
-                {/* Left Arrow */}
-                <button 
-                  onClick={prevSlide}
-                  className="w-16 h-16 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
-                >
-                  <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
-                </button>
-
+                  {/* Right Arrow */}
+                  <button 
+                    onClick={nextSlide}
+                    className="w-12 h-12 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group ml-4"
+                  >
+                    <svg className="w-5 h-5 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
                 {/* Progress Indicators */}
-                <div className="flex space-x-2">
-                  {Array.from({ length: totalSlides }, (_, index) => (
+                <div className="flex justify-center mt-6 space-x-2">
+                  {institutions.map((_, idx) => (
                     <div
-                      key={index}
+                      key={idx}
                       className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                        index === currentSlide 
+                        idx === currentSlide 
                           ? 'bg-[#B8A67A] w-4' 
                           : 'bg-gray-300'
                       }`}
                     />
                   ))}
                 </div>
-
-                {/* Right Arrow */}
-                <button 
-                  onClick={nextSlide}
-                  className="w-16 h-16 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
-                >
-                  <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
+              </div>
+              <div className="hidden md:block">
+                {/* Desktop/Tablet: Show grid as before */}
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+                  {getCurrentInstitutions().map((institution, index) => (
+                    <div key={index} className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 group">
+                      <div className="text-center mb-6">
+                        <div className="w-32 h-32 flex items-center justify-center mx-auto mb-4">
+                          <img 
+                            src={institution.logo} 
+                            alt={institution.alt}
+                            className="school-logo-img max-w-full max-h-full object-contain transition-all duration-300 group-hover:scale-105"
+                          />
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-900 mb-3">{institution.name}</h3>
+                        <p className="text-gray-600 text-sm mb-3">{institution.description}</p>
+                        <p className="text-[#0F2A44] font-semibold text-sm">{institution.stats}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                {/* Navigation Arrows */}
+                <div className="flex justify-center items-center mt-12 space-x-8">
+                  {/* Left Arrow */}
+                  <button 
+                    onClick={prevSlide}
+                    className="w-16 h-16 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+                  >
+                    <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </button>
+                  {/* Progress Indicators */}
+                  <div className="flex space-x-2">
+                    {Array.from({ length: totalSlides }, (_, index) => (
+                      <div
+                        key={index}
+                        className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                          index === currentSlide 
+                            ? 'bg-[#B8A67A] w-4' 
+                            : 'bg-gray-300'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                  {/* Right Arrow */}
+                  <button 
+                    onClick={nextSlide}
+                    className="w-16 h-16 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+                  >
+                    <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -336,9 +387,9 @@ const MentorsPage = () => {
       </section>
 
       {/* Become a Mentor Section */}
-      <section className="py-16 lg:py-20 bg-gray-50 rounded-3xl mx-6 sm:mx-12 lg:mx-16 xl:mx-20 2xl:mx-28">
-        <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
-          <div className="max-w-screen-2xl mx-auto">
+      <section className="py-16 lg:py-20 bg-gray-50 rounded-3xl mx-2 sm:mx-8 lg:mx-16 xl:mx-20 2xl:mx-28 overflow-x-hidden">
+        <div className="w-full max-w-none mx-auto px-4 sm:px-8 lg:px-16 xl:px-20 2xl:px-28 overflow-x-hidden box-border">
+          <div className="max-w-screen-2xl mx-auto w-full box-border">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
                 Become a Mentor
@@ -348,7 +399,7 @@ const MentorsPage = () => {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-12 items-center w-full box-border">
               {/* Left Side - Content */}
               <div className="space-y-6">
                 <div className="bg-white rounded-2xl p-8 shadow-sm">
@@ -429,56 +480,56 @@ const MentorsPage = () => {
               </div>
 
               {/* Right Side - Application Form */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm">
+              <div className="bg-white rounded-2xl p-4 sm:p-8 shadow-sm">
                 <h3 className="text-xl font-semibold text-gray-900 mb-6">Apply to Become a Mentor</h3>
                 <p className="text-gray-600 mb-6">
                   To join our mentor network, please send your CV and personal details to our email address. We'll review your application and get back to you within 5-7 business days.
                 </p>
                 
-                                 <div className="space-y-6">
-                   <div className="bg-[#0F2A44] rounded-xl p-8 text-center">
-                     <div className="flex items-center justify-center mb-4">
-                       <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                       </svg>
-                     </div>
-                     <h4 className="text-xl font-semibold text-white mb-3">Email Your Application</h4>
-                     <p className="text-gray-200 text-base mb-6">Send your CV and details to:</p>
-                     <div className="flex justify-center">
-                       <a 
-                         href="mailto:hello@newtonimperial.education" 
-                         className="inline-block bg-white text-[#0F2A44] font-semibold py-4 px-8 rounded-lg hover:bg-gray-100 transition-all duration-300 text-base text-center min-w-[280px]"
-                       >
-                         hello@newtonimperial.education
-                       </a>
-                     </div>
-                   </div>
-
-                                     <div className="bg-gray-50 rounded-xl p-8">
-                     <h4 className="font-semibold text-gray-900 mb-4 text-lg">Please Include:</h4>
-                     <ul className="space-y-3 text-base text-gray-600">
-                       <li className="flex items-start">
-                         <span className="w-2 h-2 bg-[#0F2A44] rounded-full mr-4 mt-2.5 flex-shrink-0"></span>
-                         <span>Your CV/Resume with research experience</span>
-                       </li>
-                       <li className="flex items-start">
-                         <span className="w-2 h-2 bg-[#0F2A44] rounded-full mr-4 mt-2.5 flex-shrink-0"></span>
-                         <span>List of publications and research interests</span>
-                       </li>
-                       <li className="flex items-start">
-                         <span className="w-2 h-2 bg-[#0F2A44] rounded-full mr-4 mt-2.5 flex-shrink-0"></span>
-                         <span>Mentoring/teaching experience</span>
-                       </li>
-                       <li className="flex items-start">
-                         <span className="w-2 h-2 bg-[#0F2A44] rounded-full mr-4 mt-2.5 flex-shrink-0"></span>
-                         <span>Preferred subjects and availability</span>
-                       </li>
-                       <li className="flex items-start">
-                         <span className="w-2 h-2 bg-[#0F2A44] rounded-full mr-4 mt-2.5 flex-shrink-0"></span>
-                         <span>Brief statement of interest in mentoring</span>
-                       </li>
-                     </ul>
-                   </div>
+                <div className="space-y-6">
+                  <div className="bg-[#0F2A44] rounded-xl p-4 sm:p-8 text-center">
+                    <div className="flex items-center justify-center mb-4">
+                      <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <h4 className="text-xl font-semibold text-white mb-3">Email Your Application</h4>
+                    <p className="text-gray-200 text-base mb-6">Send your CV and details to:</p>
+                    <div className="flex justify-center">
+                      <a 
+                        href="mailto:hello@newtonimperial.education" 
+                        className="inline-block bg-white text-[#0F2A44] font-semibold py-4 px-4 sm:px-8 rounded-lg hover:bg-gray-100 transition-all duration-300 text-base text-center min-w-0 sm:min-w-[280px]"
+                        style={{ wordBreak: 'break-all' }}
+                      >
+                        hello@newtonimperial.education
+                      </a>
+                    </div>
+                  </div>
+                  <div className="bg-gray-50 rounded-xl p-4 sm:p-8">
+                    <h4 className="font-semibold text-gray-900 mb-4 text-lg">Please Include:</h4>
+                    <ul className="space-y-3 text-base text-gray-600">
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-[#0F2A44] rounded-full mr-4 mt-2.5 flex-shrink-0"></span>
+                        <span>Your CV/Resume with research experience</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-[#0F2A44] rounded-full mr-4 mt-2.5 flex-shrink-0"></span>
+                        <span>List of publications and research interests</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-[#0F2A44] rounded-full mr-4 mt-2.5 flex-shrink-0"></span>
+                        <span>Mentoring/teaching experience</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-[#0F2A44] rounded-full mr-4 mt-2.5 flex-shrink-0"></span>
+                        <span>Preferred subjects and availability</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-[#0F2A44] rounded-full mr-4 mt-2.5 flex-shrink-0"></span>
+                        <span>Brief statement of interest in mentoring</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

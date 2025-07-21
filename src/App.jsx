@@ -26,6 +26,7 @@ import WhyChooseUsPage from './components/WhyChooseUsPage.jsx';
 import FAQPage from './components/FAQPage.jsx';
 import WhoShouldJoin from './components/WhoShouldJoin.jsx';
 import MentorsPage from './components/MentorsPage.jsx';
+import FindACourse from './components/FindACourse.jsx';
 
 
 // Home page component
@@ -62,6 +63,7 @@ function App() {
       <Route path="/FAQPage" element={<FAQPage />} />
       <Route path="/who-should-join" element={<WhoShouldJoin />} />
       <Route path="/mentors" element={<MentorsPage />} />
+      <Route path="/find-a-course" element={<FindACourse />} />
 
     </Routes>
   );

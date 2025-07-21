@@ -22,7 +22,7 @@ const CareerExplorationPathways = () => {
       >
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
           <div className="text-center">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold mb-3 sm:mb-4 lg:mb-6 hero-title">
+            <h1 className="font-hero font-normal text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-3 sm:mb-4 lg:mb-6 hero-title">
               Career Exploration & University Pathways
             </h1>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-200 max-w-3xl mx-auto px-4 hero-subtitle">
@@ -183,15 +183,31 @@ const CareerExplorationPathways = () => {
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-100 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1.25rem)' }}>
             Join our career exploration program and discover your path to success
           </p>
-          <a 
-            href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-white text-primary-600 font-semibold py-2.5 sm:py-3 px-4 sm:px-6 md:px-8 rounded-lg hover:bg-gray-100 transition-colors text-xs sm:text-sm md:text-base w-full sm:w-auto"
-            style={{ fontSize: 'clamp(0.75rem, 1.8vw, 1rem)' }}
-          >
-            Apply Now
-          </a>
+          {/* Application Section/Button Group */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+            <a 
+              href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg bg-[#B8A67A] hover:bg-[#9A8B6A]"
+            >
+              Apply Now
+            </a>
+            <Link 
+              to="/find-a-course"
+              className="group inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg bg-[#0F2A44] hover:bg-[#1a3a5a] border border-white"
+            >
+              Find What Courses Are Available
+              <svg 
+                className="inline-block ml-2 w-4 h-4 transform transition-transform duration-300 group-hover:rotate-180" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 

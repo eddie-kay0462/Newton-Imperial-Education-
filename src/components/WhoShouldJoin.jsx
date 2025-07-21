@@ -34,8 +34,7 @@ const WhoShouldJoin = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-gray-25">
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-8 sm:py-12 lg:py-16 bg-gray-25">
           {/* Introduction */}
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -322,8 +321,7 @@ const WhoShouldJoin = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </main>
 
       <Footer />
     </div>
