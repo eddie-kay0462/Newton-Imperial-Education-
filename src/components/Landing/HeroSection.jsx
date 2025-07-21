@@ -144,19 +144,7 @@ const HeroSection = () => {
                       href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full text-white font-medium py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-500 ease-in-out hover:shadow-lg text-center block group relative overflow-hidden text-sm sm:text-sm lg:text-base text-button"
-                      style={{ 
-                        backgroundColor: '#0F2A44', 
-                        background: 'linear-gradient(135deg, #0F2A44 0%, #0F2A44 100%)'
-                      }}
-                      onMouseEnter={(e) => {
-                        e.target.style.background = 'linear-gradient(135deg, #766542 0%, #8B7355 100%)';
-                        e.target.style.transform = 'translateY(-2px)';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.target.style.background = 'linear-gradient(135deg, #0F2A44 0%, #0F2A44 100%)';
-                        e.target.style.transform = 'translateY(0)';
-                      }}
+                      className="w-full hero-apply-btn font-medium py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-500 ease-in-out text-center block group relative overflow-hidden text-sm sm:text-sm lg:text-base text-button"
                     >
                       <span className="flex items-center justify-center gap-2">
                         Apply Now
@@ -167,7 +155,7 @@ const HeroSection = () => {
                     </a>
                     <a 
                       href="/#programs"
-                      className="w-full border-2 border-gray-300 hover:border-[#0F2A44] text-gray-700 hover:text-[#0F2A44] font-medium py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-300 hover:shadow-lg text-center block hover:bg-gray-50 group text-sm sm:text-sm lg:text-base text-button"
+                      className="w-full hero-explore-btn border-2 border-gray-300 text-gray-700 font-medium py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-300 text-center block group text-sm sm:text-sm lg:text-base text-button"
                     >
                       <span className="flex items-center justify-center gap-2">
                         Explore Programs
