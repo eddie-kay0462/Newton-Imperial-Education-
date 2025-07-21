@@ -195,9 +195,10 @@ const CareerExplorationPathways = () => {
             </a>
             <Link 
               to="/find-a-course"
-              className="group inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg bg-[#0F2A44] hover:bg-[#1a3a5a] border border-white"
+              className="group inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg bg-[#0F2A44] hover:bg-[#1a3a5a] border border-white text-center leading-tight"
             >
-              Find What Courses Are Available
+              <span className="sm:hidden">Browse Courses</span>
+              <span className="hidden sm:inline">Find Available Courses</span>
               <svg 
                 className="inline-block ml-2 w-4 h-4 transform transition-transform duration-300 group-hover:rotate-180" 
                 fill="none" 
@@ -216,4 +217,4 @@ const CareerExplorationPathways = () => {
   );
 };
 
-export default CareerExplorationPathways; 
+export default CareerExplorationPathways;
