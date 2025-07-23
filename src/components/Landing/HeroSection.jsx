@@ -61,12 +61,12 @@ const HeroSection = () => {
 
   return (
     <section className="bg-white relative overflow-hidden" aria-labelledby="hero-heading">
-      {/* Container with expanded max-width for larger screens */}
-      <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
+      {/* Container matching header layout exactly */}
+      <div className="w-full max-w-none mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
         <div className="max-w-screen-2xl mx-auto">
           <div className="relative z-10">
-            {/* Hero Content */}
-            <header className="pt-8 sm:pt-12 lg:pt-16 xl:pt-20 2xl:pt-24 pb-8 sm:pb-12 lg:pb-16">
+            {/* Hero Content - Adding left margin to match logo positioning */}
+            <header className="pt-8 sm:pt-12 lg:pt-16 xl:pt-20 2xl:pt-24 pb-8 sm:pb-12 lg:pb-16 ml-2 lg:ml-4 xl:ml-6">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 2xl:gap-24 items-center">
                 {/* Left Side - Main Content */}
                 <div className="space-y-6 sm:space-y-8 lg:space-y-10">
@@ -75,16 +75,16 @@ const HeroSection = () => {
                     Applications are open for our upcoming cohorts
                   </div>
                   
-                  <h1 id="hero-heading" className="font-hero font-normal text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight text-gray-900 hero-title">
+                  <h1 id="hero-heading" className="font-hero font-normal text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl leading-tight text-gray-900 hero-title" style={{ fontFamily: 'Nocturne Serif, Georgia, serif'}}>
                     Research Opportunities
                     <br />
-                    <span className="text-gray-900">
+                    <span className="text-gray-900" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
                       with world's top 1% researchers
                     </span>
                   </h1>
                   
-                  <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl text-gray-600 max-w-2xl hero-subtitle">
-                    <span className="font-semibold">Newton Imperial Education</span> (<span className="italic">NIE</span>) connects you with top-tier researchers from <span className="font-semibold uppercase tracking-wide">Cambridge</span>, <span className="font-semibold uppercase tracking-wide">Oxford</span>, <span className="font-semibold uppercase tracking-wide">MIT</span>, and <span className="font-semibold uppercase tracking-wide">Harvard</span>. 
+                  <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl text-gray-600 max-w-2xl hero-subtitle" style={{ fontFamily: 'Circular Std, Arial, sans-serif' }}>
+                    <span className="font-semibold" style={{ fontFamily: 'Circular Std, Arial, sans-serif' }}>Newton Imperial Education</span> (<span className="italic" style={{ fontFamily: 'Circular Std, Arial, sans-serif' }}>NIE</span>) connects you with top-tier researchers from <span className="tracking-wide" style={{ fontFamily: 'Circular Std, Arial, sans-serif' }}>Cambridge</span>, <span className="tracking-wide" style={{ fontFamily: 'Circular Std, Arial, sans-serif' }}>Oxford</span>, <span className="tracking-wide" style={{ fontFamily: 'Circular Std, Arial, sans-serif' }}>MIT</span>, and <span className="tracking-wide" style={{ fontFamily: 'Circular Std, Arial, sans-serif' }}>Harvard</span>. 
                     Transform your academic journey with world-class mentorship and research opportunities.
                   </p>
                 </div>
@@ -94,7 +94,7 @@ const HeroSection = () => {
                   {/* Trust Indicators */}
                   <div ref={statsRef} className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8 shadow-sm border border-gray-100">
                     <div className="text-center mb-4 sm:mb-6">
-                      <h3 className="text-xs sm:text-sm font-medium text-gray-500 uppercase tracking-wider mb-2">
+                      <h3 className="text-xs sm:text-sm font-medium text-gray-500 uppercase tracking-wider mb-2" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
                         Trusted by Students Worldwide
                       </h3>
                     </div>
@@ -107,9 +107,9 @@ const HeroSection = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                             </svg>
                           </div>
-                          <div className="text-xs sm:text-sm lg:text-sm text-gray-700 font-medium stat-label">Research Papers</div>
+                          <div className="text-xs sm:text-sm lg:text-sm text-gray-700 font-medium stat-label" style={{ fontFamily: 'Circular Std, Arial, sans-serif' }}>Research Papers</div>
                         </div>
-                        <div className="text-base sm:text-lg lg:text-lg xl:text-xl font-semibold text-[#0F2A44] stat-number">{researchPapers}</div>
+                        <div className="text-base sm:text-lg lg:text-lg xl:text-xl font-semibold text-[#0F2A44] stat-number" style={{ fontWeight: 200 }}>{researchPapers}</div>
                       </div>
                       
                       <div className="flex items-center justify-between">
@@ -119,9 +119,9 @@ const HeroSection = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                             </svg>
                           </div>
-                          <div className="text-xs sm:text-sm lg:text-sm text-gray-700 font-medium stat-label">Research Mentors</div>
+                          <div className="text-xs sm:text-sm lg:text-sm text-gray-700 font-medium stat-label" style={{ fontFamily: 'Circular Std, Arial, sans-serif' }}>Research Mentors</div>
                         </div>
-                        <div className="text-base sm:text-lg lg:text-lg xl:text-xl font-semibold text-[#0F2A44] stat-number">{researchMentors}</div>
+                        <div className="text-base sm:text-lg lg:text-lg xl:text-xl font-semibold text-[#0F2A44] stat-number" style={{ fontWeight: 200 }}>{researchMentors}</div>
                       </div>
                       
                       <div className="flex items-center justify-between">
@@ -131,9 +131,9 @@ const HeroSection = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                             </svg>
                           </div>
-                          <div className="text-xs sm:text-sm lg:text-sm text-gray-700 font-medium stat-label">Complete Program Success</div>
+                          <div className="text-xs sm:text-sm lg:text-sm text-gray-700 font-medium stat-label" style={{ fontFamily: 'Circular Std, Arial, sans-serif' }}>Complete Program Success</div>
                         </div>
-                        <div className="text-base sm:text-lg lg:text-lg xl:text-xl font-semibold text-[#0F2A44] stat-number">{successRate}</div>
+                        <div className="text-base sm:text-lg lg:text-lg xl:text-xl font-semibold text-[#0F2A44] stat-number" style={{ fontWeight: 200 }}>{successRate}</div>
                       </div>
                     </div>
                   </div>
@@ -144,7 +144,7 @@ const HeroSection = () => {
                       href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full hero-apply-btn font-medium py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-500 ease-in-out text-center block group relative overflow-hidden text-sm sm:text-sm lg:text-base text-button"
+                      className="w-full bg-[#0F2A44] text-white hover:bg-[#1a3659] hover:shadow-lg focus:bg-[#1a3659] focus:ring-4 focus:ring-[#0F2A44]/20 active:bg-[#0a1e35] active:scale-[0.98] font-medium py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-300 ease-in-out text-center block group relative overflow-hidden text-sm sm:text-sm lg:text-base"
                     >
                       <span className="flex items-center justify-center gap-2">
                         Apply Now
@@ -155,7 +155,7 @@ const HeroSection = () => {
                     </a>
                     <a 
                       href="/#programs"
-                      className="w-full hero-explore-btn border-2 border-gray-300 text-gray-700 font-medium py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-300 text-center block group text-sm sm:text-sm lg:text-base text-button"
+                      className="w-full bg-transparent border-2 border-gray-300 text-gray-700 hover:border-[#0F2A44] hover:text-[#0F2A44] hover:bg-[#0F2A44]/5 hover:shadow-md focus:border-[#0F2A44] focus:text-[#0F2A44] focus:bg-[#0F2A44]/5 focus:ring-4 focus:ring-[#0F2A44]/10 active:border-[#1a3659] active:text-[#1a3659] active:bg-[#0F2A44]/10 active:scale-[0.98] font-medium py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-300 ease-in-out text-center block group text-sm sm:text-sm lg:text-base"
                     >
                       <span className="flex items-center justify-center gap-2">
                         Explore Programs
@@ -169,9 +169,9 @@ const HeroSection = () => {
               </div>
             </header>
 
-            {/* Hero Image Section - Expanded for larger screens */}
-            <div className="relative pb-8 sm:pb-12 lg:pb-16 xl:pb-20">
-              <div className="relative max-w-none mx-auto lg:mx-4 xl:mx-6 2xl:mx-8">
+            {/* Hero Image Section - Matching header alignment */}
+            <div className="relative pb-8 sm:pb-12 lg:pb-16 xl:pb-20 ml-2 lg:ml-4 xl:ml-6">
+              <div className="relative">
                 <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm">
                   <img 
                     src="/landing_page/kids_in_classroom.jpg"
