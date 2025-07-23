@@ -23,7 +23,7 @@ const WhoShouldJoin = () => {
       >
         <div className="relative max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
           <div className="text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-6 text-heading text-white" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
               Who Should Join Our Programs?
             </h1>
             <p className="text-lg xl:text-xl text-gray-200 max-w-3xl mx-auto">
@@ -50,9 +50,9 @@ const WhoShouldJoin = () => {
             {/* Who Should Join */}
             <div className="bg-white rounded-xl shadow-sm p-8 md:p-10">
               <div className="flex items-center mb-8">
-                <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mr-6">
-                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                <div className="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mr-6">
+                  <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 515.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 919.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900">
@@ -61,41 +61,41 @@ const WhoShouldJoin = () => {
               </div>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-6 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <span className="text-gray-700">High school students (ages 14-18) with strong academic performance</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-6 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <span className="text-gray-700">College students seeking research experience and publication opportunities</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-6 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <span className="text-gray-700">Students interested in STEM fields, social sciences, or humanities</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-6 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <span className="text-gray-700">Ambitious learners who want to enhance their university applications</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                  <div className="w-6 h-6 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <span className="text-gray-700">Future researchers and academic leaders</span>
@@ -108,7 +108,7 @@ const WhoShouldJoin = () => {
               <div className="flex items-center mb-8">
                 <div className="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mr-6">
                   <svg className="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900">
@@ -119,7 +119,7 @@ const WhoShouldJoin = () => {
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <span className="text-gray-700">Hands-on research experience with world-class mentors</span>
@@ -127,7 +127,7 @@ const WhoShouldJoin = () => {
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <span className="text-gray-700">Publication opportunities in peer-reviewed journals</span>
@@ -135,7 +135,7 @@ const WhoShouldJoin = () => {
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <span className="text-gray-700">Strong letters of recommendation for university applications</span>
@@ -143,7 +143,7 @@ const WhoShouldJoin = () => {
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <span className="text-gray-700">Global network of peers and academic connections</span>
@@ -151,7 +151,7 @@ const WhoShouldJoin = () => {
                 <li className="flex items-start">
                   <div className="w-6 h-6 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <span className="text-gray-700">Advanced research and critical thinking skills</span>
@@ -223,7 +223,7 @@ const WhoShouldJoin = () => {
                   <li className="flex items-start">
                     <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     Minimum GPA of 3.5 (or equivalent)
@@ -231,7 +231,7 @@ const WhoShouldJoin = () => {
                   <li className="flex items-start">
                     <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     Strong performance in relevant subjects
@@ -239,7 +239,7 @@ const WhoShouldJoin = () => {
                   <li className="flex items-start">
                     <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     Demonstrated interest in research or academic pursuits
@@ -247,7 +247,7 @@ const WhoShouldJoin = () => {
                   <li className="flex items-start">
                     <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     English proficiency (for international students)
@@ -260,7 +260,7 @@ const WhoShouldJoin = () => {
                   <li className="flex items-start">
                     <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     Intellectual curiosity and motivation
@@ -268,7 +268,7 @@ const WhoShouldJoin = () => {
                   <li className="flex items-start">
                     <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     Commitment to academic excellence
@@ -276,7 +276,7 @@ const WhoShouldJoin = () => {
                   <li className="flex items-start">
                     <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     Strong communication skills
@@ -284,7 +284,7 @@ const WhoShouldJoin = () => {
                   <li className="flex items-start">
                     <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     Ability to work independently and in teams
