@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation, useSearchParams } from 'react-router-dom';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 
@@ -32,7 +33,7 @@ const subjectData = [
   {
     name: 'Mathematics',
     overview: 'Mathematics covers topics such as algebra, calculus, geometry, and statistics. Students develop problem-solving and analytical skills, which are fundamental for careers in engineering, physics, data science, and economics.',
-    formats: ['online'],
+    formats: ['online', 'in_person'],
     pathways: ['Intensive Programs', 'University Prep Course'],
   },
   {
@@ -44,25 +45,25 @@ const subjectData = [
   {
     name: 'Biotechnology',
     overview: 'Biotechnology combines biology and technology to develop products and processes that improve lives. Students study genetic engineering, pharmaceuticals, and agricultural innovations.',
-    formats: ['in_person'],
+    formats: ['online', 'in_person'],
     pathways: ['Research Scholar Programs', 'Leadership and Personal Development'],
   },
   {
     name: 'Biology',
     overview: 'Biology is the study of living organisms, including their structure, function, evolution, and ecology. Topics include cellular biology, genetics, and evolution.',
-    formats: ['online'],
+    formats: ['online', 'in_person'],
     pathways: ['Research Scholar Programs', 'University Prep Course'],
   },
   {
     name: 'Chemistry',
     overview: 'Chemistry studies the composition, structure, and properties of matter. It helps students understand chemical reactions, molecular structures, and materials science.',
-    formats: ['in_person'],
+    formats: ['online', 'in_person'],
     pathways: ['Intensive Programs'],
   },
   {
     name: 'Coding',
     overview: 'Coding teaches students how to write software programs, develop websites, and build applications. Topics include programming languages (e.g., Python, JavaScript), algorithms, and data structures.',
-    formats: ['online'],
+    formats: ['online', 'in_person'],
     pathways: ['Career Exploration and University Pathways'],
   },
   {
@@ -74,49 +75,49 @@ const subjectData = [
   {
     name: 'Economics',
     overview: 'Economics studies the production, distribution, and consumption of goods and services. Topics include microeconomics, macroeconomics, market analysis, and economic policy.',
-    formats: ['online'],
+    formats: ['online', 'in_person'],
     pathways: ['Career Exploration and University Pathways'],
   },
   {
     name: 'Education',
     overview: 'Education studies the theory and practice of teaching and learning. Topics include pedagogy, curriculum development, educational psychology, and classroom management.',
-    formats: ['in_person'],
+    formats: ['online', 'in_person'],
     pathways: ['Leadership and Personal Development'],
   },
   {
     name: 'Sociology',
     overview: 'Sociology is the study of society, social behavior, institutions, and structures. Students learn how societies are organized, and explore issues such as inequality, culture, and social change.',
-    formats: ['online'],
+    formats: ['online', 'in_person'],
     pathways: ['Career Exploration and University Pathways'],
   },
   {
     name: 'International Relations',
     overview: 'International Relations focuses on the relationships between countries, including diplomacy, international conflict, global governance, and international organizations.',
-    formats: ['in_person'],
+    formats: ['online', 'in_person'],
     pathways: ['Leadership and Personal Development', 'Career Exploration and University Pathways'],
   },
   {
     name: 'Law',
     overview: 'Law studies the legal system, including civil, criminal, constitutional, and international law. Students explore legal theory, case law, and the application of laws to real-world situations.',
-    formats: ['online'],
+    formats: ['online', 'in_person'],
     pathways: ['University Prep Course'],
   },
   {
     name: 'English Literature',
     overview: 'English Literature involves the study of classic and contemporary literature, from poetry to novels. Students analyze themes, styles, and historical contexts of literary works.',
-    formats: ['in_person'],
+    formats: ['online', 'in_person'],
     pathways: ['Leadership and Personal Development'],
   },
   {
     name: 'Philosophy',
     overview: 'Philosophy explores fundamental questions about existence, knowledge, ethics, and reason. Students study key philosophers and philosophical movements that have shaped human thought.',
-    formats: ['online'],
+    formats: ['online', 'in_person'],
     pathways: ['Career Exploration and University Pathways'],
   },
   {
     name: 'Architecture',
     overview: 'Architecture involves the design and construction of buildings and other physical structures. Students explore architectural history, design principles, and the integration of engineering and aesthetics.',
-    formats: ['in_person'],
+    formats: ['online', 'in_person'],
     pathways: ['Intensive Programs'],
   },
   {
@@ -128,13 +129,13 @@ const subjectData = [
   {
     name: 'Psychology',
     overview: 'Psychology is the study of human behavior and the mind. Students explore cognitive processes, mental health, emotions, and developmental psychology.',
-    formats: ['online'],
+    formats: ['online', 'in_person'],
     pathways: ['Leadership and Personal Development'],
   },
   {
     name: 'Political Science',
     overview: 'Political Science examines government structures, political behavior, and public policy. Students analyze how political systems operate and influence societies on a national and global scale.',
-    formats: ['in_person'],
+    formats: ['online', 'in_person'],
     pathways: ['Career Exploration and University Pathways'],
   },
   {
@@ -146,15 +147,38 @@ const subjectData = [
 ];
 
 const FindACourse = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  const location = useLocation();
+  const [searchParams] = useSearchParams();
 
   const [selectedFormats, setSelectedFormats] = useState([]);
   const [selectedPathways, setSelectedPathways] = useState([]);
   const [selectedSubjects, setSelectedSubjects] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [showFilters, setShowFilters] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    
+    // Read URL parameters and apply filters
+    const formatParams = searchParams.get('formats');
+    const pathwayParams = searchParams.get('pathways');
+    const subjectParams = searchParams.get('subjects');
+
+    if (formatParams) {
+      setSelectedFormats([formatParams]);
+    }
+    if (pathwayParams) {
+      setSelectedPathways([pathwayParams]);
+    }
+    if (subjectParams) {
+      setSelectedSubjects([subjectParams]);
+    }
+
+    // Show filters if there are any applied from URL
+    if (formatParams || pathwayParams || subjectParams) {
+      setShowFilters(true);
+    }
+  }, [searchParams]);
 
   // Filtering logic
   const filteredSubjects = subjectData.filter((subject) => {
