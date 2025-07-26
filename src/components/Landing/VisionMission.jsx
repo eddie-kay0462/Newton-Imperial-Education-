@@ -6,7 +6,7 @@ const VisionMission = () => {
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', color: '#0F2A44' }}>
+            <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-6 text-heading" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
               Vision & Mission
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -20,11 +20,11 @@ const VisionMission = () => {
               <div className="text-center mb-6 lg:mb-8">
                 <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl items-center justify-center shadow-sm mx-auto mb-4 flex" style={{ backgroundColor: '#0F2A44' }}>
                   <svg className="w-8 h-8 lg:w-10 lg:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                   </svg>
                 </div>
-                <h3 className="text-xl lg:text-2xl xl:text-3xl font-bold text-gray-900" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>Our Vision</h3>
+                <h3 className="text-xl lg:text-2xl xl:text-3xl font-bold text-gray-900" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>Our Vision</h3>
               </div>
               <p className="text-sm lg:text-base xl:text-lg text-gray-600 leading-relaxed text-center lg:text-left">
                 To become the world's leading platform for connecting brilliant young minds with cutting-edge research opportunities, fostering the next generation of innovative thinkers and breakthrough discoveries that will shape the future of science and technology.
@@ -36,13 +36,13 @@ const VisionMission = () => {
               <div className="text-center mb-6 lg:mb-8">
                 <div className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl items-center justify-center shadow-sm mx-auto mb-4 flex" style={{ backgroundColor: '#0F2A44' }}>
                   <svg className="w-8 h-8 lg:w-10 lg:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h3 className="text-xl lg:text-2xl xl:text-3xl font-bold text-gray-900" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>Our Mission</h3>
+                <h3 className="text-xl lg:text-2xl xl:text-3xl font-bold text-gray-900" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>Our Mission</h3>
               </div>
               <p className="text-sm lg:text-base xl:text-lg text-gray-600 leading-relaxed text-center lg:text-left">
-                To provide exceptional research opportunities and mentorship to ambitious students worldwide, bridging the gap between academic potential and real-world impact through collaborative partnerships with leading universities and research institutions.
+                To provide exceptional research opportunities and mentorship to ambitious students worldwide, bridging the gap between academic potential and real-world impact through connections with leading universities and research institutions.
               </p>
             </div>
           </div>

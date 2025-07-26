@@ -249,7 +249,7 @@ const WhyChooseUsPage = () => {
                 {/* Left Arrow */}
                 <button 
                   onClick={prevSlide}
-                  className="w-16 h-16 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+                  className="w-16 h-16 rounded-full bg-white border border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] transition-all duration-300 group"
                 >
                   <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M15 19l-7-7 7-7" />
@@ -273,7 +273,7 @@ const WhyChooseUsPage = () => {
                 {/* Right Arrow */}
                 <button 
                   onClick={nextSlide}
-                  className="w-16 h-16 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+                  className="w-16 h-16 rounded-full bg-white border border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] transition-all duration-300 group"
                 >
                   <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 5l7 7-7 7" />
@@ -537,13 +537,13 @@ const WhyChooseUsPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-br from-primary-600 to-primary-700 py-20 lg:py-32">
+      <section className="py-16 lg:py-20 bg-[#F9FAFB]">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
-          <div className="max-w-screen-2xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold text-white mb-8">
+          <div className="bg-white rounded-2xl p-8 lg:p-12 xl:p-16 max-w-screen-2xl mx-auto text-center shadow-sm">
+            <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
               Ready to Transform Your Academic Journey?
             </h2>
-            <p className="text-lg xl:text-xl text-primary-100 mb-10 max-w-3xl mx-auto">
+            <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
               Join hundreds of students who have already started their path to academic excellence with Newton Imperial Education.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -551,13 +551,13 @@ const WhyChooseUsPage = () => {
                 href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-white text-primary-600 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+                className="inline-block text-white bg-[#0F2A44] font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg hover:bg-[#1a3a5a] text-lg"
               >
                 Apply Now
               </a>
               <Link
                 to="/#our-programs"
-                className="inline-flex items-center px-6 py-3 border-2 border-white text-white font-semibold rounded-xl transition-all duration-300 hover:bg-white hover:text-primary-600"
+                className="inline-block text-[#0F2A44] border-2 border-[#0F2A44] font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:bg-[#0F2A44] hover:text-white text-lg"
               >
                 Learn More About Our Programs
               </Link>

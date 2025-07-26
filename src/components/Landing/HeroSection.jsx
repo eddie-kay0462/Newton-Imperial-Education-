@@ -70,8 +70,10 @@ const HeroSection = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 2xl:gap-24 items-center">
                 {/* Left Side - Main Content */}
                 <div className="space-y-6 sm:space-y-8 lg:space-y-10">
-                  <div className="inline-flex items-center px-3 py-2 sm:px-4 sm:py-2 bg-green-50 border border-green-200 rounded-full text-green-700 font-semibold text-xs sm:text-sm animate-pulse hover:animate-none transition-all duration-300 hover:scale-105 hover:shadow-md">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-ping"></span>
+                  <div className="inline-flex items-center px-3 py-2 sm:px-4 sm:py-2 bg-green-50 border border-green-200 rounded-full text-green-700 font-semibold text-xs sm:text-sm hover:animate-none transition-all duration-300 hover:scale-105 hover:shadow-md">
+                    <span className="relative w-3 h-3 bg-green-500 rounded-full mr-2 animate-ping">
+                      <span className="absolute inset-0 w-3 h-3 bg-green-400 rounded-full animate-pulse"></span>
+                    </span>
                     Applications are open for our upcoming cohorts
                   </div>
                   
@@ -92,7 +94,7 @@ const HeroSection = () => {
                 {/* Right Side - Stats and CTA */}
                 <aside className="space-y-6 sm:space-y-8">
                   {/* Trust Indicators */}
-                  <div ref={statsRef} className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8 shadow-sm border border-gray-100">
+                  <div ref={statsRef} className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 sm:p-6 lg:p-8 shadow-sm border border-gray-250">
                     <div className="text-center mb-4 sm:mb-6">
                       <h3 className="text-xs sm:text-sm font-medium text-gray-500 uppercase tracking-wider mb-2" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
                         Trusted by Students Worldwide
@@ -155,7 +157,7 @@ const HeroSection = () => {
                     </a>
                     <a 
                       href="/#programs"
-                      className="w-full bg-transparent border-2 border-gray-300 text-gray-700 hover:border-[#0F2A44] hover:text-[#0F2A44] hover:bg-[#0F2A44]/5 hover:shadow-md focus:border-[#0F2A44] focus:text-[#0F2A44] focus:bg-[#0F2A44]/5 focus:ring-4 focus:ring-[#0F2A44]/10 active:border-[#1a3659] active:text-[#1a3659] active:bg-[#0F2A44]/10 active:scale-[0.98] font-medium py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-300 ease-in-out text-center block group text-sm sm:text-sm lg:text-base"
+                      className="w-full bg-transparent border-2 border-gray-200 text-gray-700 hover:border-[#0F2A44] hover:text-[#0F2A44] hover:bg-[#0F2A44]/5 hover:shadow-md focus:border-[#0F2A44] focus:text-[#0F2A44] focus:bg-[#0F2A44]/5 focus:ring-4 hover:border focus:ring-[#0F2A44]/10 active:border-[#1a3659] active:text-[#1a3659] active:bg-[#0F2A44]/10 active:scale-[0.98] font-medium py-3 sm:py-3 lg:py-3 px-6 sm:px-6 lg:px-8 rounded-full transition-all duration-300 ease-in-out text-center block group text-sm sm:text-sm lg:text-base"
                     >
                       <span className="flex items-center justify-center gap-2">
                         Explore Programs

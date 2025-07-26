@@ -30,13 +30,13 @@ const MentorsFrom = () => {
     },
     {
       role: "Data Scientist",
-      institution: "Oxford",
+      institution: "University of Oxford",
       image: "/mentor-5.jpg",
       description: "Analyzing complex datasets for climate research"
     },
     {
       role: "Postdoc Researcher",
-      institution: "Cambridge",
+      institution: "University of Cambridge",
       image: "/mentor-6.jpg",
       description: "Investigating sustainable energy solutions"
     }
@@ -68,10 +68,10 @@ const MentorsFrom = () => {
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 2.8vw, 2.5rem)', color: '#0F2A44' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal', fontSize: 'clamp(1.5rem, 2.8vw, 2.5rem)', color: '#0F2A44' }}>
               Where Do Our Mentors Come From?
             </h2>
-            <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1rem)' }}>
+            <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4" style={{ fontFamily: 'Circular Std, Arial, sans-serif', fontSize: 'clamp(0.875rem, 1.8vw, 1rem)' }}>
               Meet our exceptional mentors from the world's leading research institutions
             </p>
           </div>
@@ -80,20 +80,20 @@ const MentorsFrom = () => {
             {/* Left Navigation Arrow */}
             <button 
               onClick={prevSlide}
-              className="hidden lg:flex absolute left-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 lg:w-16 lg:h-16 bg-white border-2 border-[#0F2A44] rounded-full items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+                              className="hidden lg:flex absolute left-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 lg:w-16 lg:h-16 bg-white border border-[#0F2A44] rounded-full items-center justify-center hover:bg-[#0F2A44] transition-all duration-300 group"
             >
-              <svg className="w-4 h-4 lg:w-6 lg:h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
 
             {/* Right Navigation Arrow */}
             <button 
               onClick={nextSlide}
-              className="hidden lg:flex absolute right-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 lg:w-16 lg:h-16 bg-white border-2 border-[#0F2A44] rounded-full items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+                              className="hidden lg:flex absolute right-4 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 lg:w-16 lg:h-16 bg-white border border-[#0F2A44] rounded-full items-center justify-center hover:bg-[#0F2A44] transition-all duration-300 group"
             >
-              <svg className="w-4 h-4 lg:w-6 lg:h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 5l7 7-7 7" />
               </svg>
             </button>
 
@@ -110,13 +110,13 @@ const MentorsFrom = () => {
                   
                   {/* Mentor Info */}
                   <div className="text-center">
-                    <h3 className="text-lg sm:text-xl lg:text-xl xl:text-2xl font-bold text-gray-900 mb-2" style={{ fontSize: 'clamp(1.125rem, 1.8vw, 1.5rem)' }}>
+                    <h3 className="text-lg sm:text-xl lg:text-xl xl:text-2xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal', fontSize: 'clamp(1.125rem, 1.8vw, 1.5rem)' }}>
                       {mentor.role}
                     </h3>
-                    <p className="text-base sm:text-lg xl:text-lg font-black text-primary-600 mb-3 sm:mb-4 uppercase" style={{ fontSize: 'clamp(1rem, 1.6vw, 1.125rem)' }}>
+                    <p className="text-base sm:text-lg xl:text-lg font-black text-primary-600 mb-3 sm:mb-4 uppercase" style={{ fontFamily: 'Circular Std, Arial, sans-serif', fontSize: 'clamp(1rem, 1.6vw, 1.125rem)' }}>
                       {mentor.institution}
                     </p>
-                    <p className="text-sm sm:text-base xl:text-base text-gray-600 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1.4vw, 1rem)' }}>
+                    <p className="text-sm sm:text-base xl:text-base text-gray-600 leading-relaxed" style={{ fontFamily: 'Circular Std, Arial, sans-serif', fontSize: 'clamp(0.875rem, 1.4vw, 1rem)' }}>
                       {mentor.description}
                     </p>
                   </div>

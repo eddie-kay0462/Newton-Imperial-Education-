@@ -147,7 +147,7 @@ const MentorsPage = () => {
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         <div className="relative z-10 w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 sm:mb-8 drop-shadow-lg" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 sm:mb-8 drop-shadow-lg" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
               Meet Our World-Class Mentors
             </h1>
             <p className="text-lg sm:text-lg md:text-xl lg:text-xl xl:text-2xl text-gray-100 max-w-4xl mx-auto leading-relaxed drop-shadow-md">
@@ -162,7 +162,7 @@ const MentorsPage = () => {
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
                 Our Mentors' Credentials
               </h2>
               <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -220,7 +220,7 @@ const MentorsPage = () => {
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
                 Featured Mentors
               </h2>
               <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -259,16 +259,16 @@ const MentorsPage = () => {
         </div>
       </section>
 
-      {/* Partner Institutions */}
+      {/* Leading Universities */}
       <section className="py-16 lg:py-20 bg-gray-50 rounded-3xl mx-6 sm:mx-12 lg:mx-16 xl:mx-20 2xl:mx-28">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
-                Our Partner Institutions
+              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
+                Leading Universities
               </h2>
               <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                We collaborate with the world's most prestigious universities
+                Our mentors come from the world's most prestigious universities
               </p>
             </div>
 
@@ -281,10 +281,10 @@ const MentorsPage = () => {
                   {/* Left Arrow */}
                   <button 
                     onClick={prevSlide}
-                    className="w-12 h-12 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group mr-4"
+                    className="w-12 h-12 rounded-full bg-white border border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] transition-all duration-300 group mr-4"
                   >
                     <svg className="w-5 h-5 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M15 19l-7-7 7-7" />
                     </svg>
                   </button>
                   {/* Card */}
@@ -305,10 +305,10 @@ const MentorsPage = () => {
                   {/* Right Arrow */}
                   <button 
                     onClick={nextSlide}
-                    className="w-12 h-12 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group ml-4"
+                    className="w-12 h-12 rounded-full bg-white border border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] transition-all duration-300 group ml-4"
                   >
                     <svg className="w-5 h-5 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 5l7 7-7 7" />
                     </svg>
                   </button>
                 </div>
@@ -351,10 +351,10 @@ const MentorsPage = () => {
                   {/* Left Arrow */}
                   <button 
                     onClick={prevSlide}
-                    className="w-16 h-16 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+                    className="w-16 h-16 rounded-full bg-white border border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] transition-all duration-300 group"
                   >
                     <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M15 19l-7-7 7-7" />
                     </svg>
                   </button>
                   {/* Progress Indicators */}
@@ -373,10 +373,10 @@ const MentorsPage = () => {
                   {/* Right Arrow */}
                   <button 
                     onClick={nextSlide}
-                    className="w-16 h-16 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+                    className="w-16 h-16 rounded-full bg-white border border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] transition-all duration-300 group"
                   >
                     <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 5l7 7-7 7" />
                     </svg>
                   </button>
                 </div>
@@ -391,7 +391,7 @@ const MentorsPage = () => {
         <div className="w-full max-w-none mx-auto px-4 sm:px-8 lg:px-16 xl:px-20 2xl:px-28 overflow-x-hidden box-border">
           <div className="max-w-screen-2xl mx-auto w-full box-border">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
                 Become a Mentor
               </h2>
               <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -408,7 +408,7 @@ const MentorsPage = () => {
                     <li className="flex items-start">
                       <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
                       <span className="text-gray-700">Share your expertise with motivated students worldwide</span>
@@ -416,7 +416,7 @@ const MentorsPage = () => {
                     <li className="flex items-start">
                       <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
                       <span className="text-gray-700">Contribute to cutting-edge research projects</span>
@@ -424,7 +424,7 @@ const MentorsPage = () => {
                     <li className="flex items-start">
                       <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
                       <span className="text-gray-700">Expand your professional network and collaborations</span>
@@ -432,7 +432,7 @@ const MentorsPage = () => {
                     <li className="flex items-start">
                       <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
                       <span className="text-gray-700">Make a lasting impact on students' academic careers</span>
@@ -446,7 +446,7 @@ const MentorsPage = () => {
                      <li className="flex items-start">
                        <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                          <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                          </svg>
                        </div>
                        <span className="text-gray-700">PhD or equivalent research experience</span>
@@ -454,7 +454,7 @@ const MentorsPage = () => {
                      <li className="flex items-start">
                        <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                          <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                          </svg>
                        </div>
                        <span className="text-gray-700">Strong publication record in your field</span>
@@ -462,7 +462,7 @@ const MentorsPage = () => {
                      <li className="flex items-start">
                        <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                          <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                          </svg>
                        </div>
                        <span className="text-gray-700">Experience in mentoring or teaching</span>
@@ -470,7 +470,7 @@ const MentorsPage = () => {
                      <li className="flex items-start">
                        <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                          <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                          </svg>
                        </div>
                        <span className="text-gray-700">Commitment to student development</span>
@@ -490,7 +490,7 @@ const MentorsPage = () => {
                   <div className="bg-[#0F2A44] rounded-xl p-4 sm:p-8 text-center">
                     <div className="flex items-center justify-center mb-4">
                       <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     </div>
                     <h4 className="text-xl font-semibold text-white mb-3">Email Your Application</h4>
@@ -538,13 +538,13 @@ const MentorsPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-20 bg-gradient-to-br from-[#0F2A44] to-[#1a3a5a]">
+      <section className="py-16 lg:py-20 bg-[#F9FAFB]">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
-          <div className="max-w-screen-2xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-white mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+          <div className="bg-white rounded-2xl p-8 lg:p-12 xl:p-16 max-w-screen-2xl mx-auto text-center shadow-sm">
+            <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
               Ready to Learn from the Best?
             </h2>
-            <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed mb-8">
+            <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
               Join our programs and get mentored by world-class researchers from top universities
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -552,15 +552,13 @@ const MentorsPage = () => {
                 href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-[#0F2A44] bg-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg"
-                onMouseEnter={(e) => e.target.style.backgroundColor = '#f3f4f6'}
-                onMouseLeave={(e) => e.target.style.backgroundColor = '#ffffff'}
+                className="inline-block text-white bg-[#0F2A44] font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg hover:bg-[#1a3a5a] text-lg"
               >
                 Apply Now
               </a>
               <Link 
                 to="/"
-                className="inline-block text-white border-2 border-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:bg-white hover:text-[#0F2A44] text-lg"
+                className="inline-block text-[#0F2A44] border-2 border-[#0F2A44] font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:bg-[#0F2A44] hover:text-white text-lg"
               >
                 Learn More
               </Link>
@@ -568,6 +566,9 @@ const MentorsPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Separator Section */}
+      <div className="h-8 sm:h-12 lg:h-16 bg-white"></div>
 
       <Footer />
     </div>

@@ -7,10 +7,10 @@ const WhyChooseUs = () => {
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6 text-heading">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6 text-heading" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
               Why Choose NIE
             </h2>
-            <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto text-body px-4">
+            <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto text-body px-4" style={{ fontFamily: 'Circular Std, Arial, sans-serif' }}>
               Discover what makes our educational programs exceptional and why students worldwide choose us for their academic journey
             </p>
           </div>
@@ -36,10 +36,10 @@ const WhyChooseUs = () => {
             {/* Right Side - Content */}
             <div className="space-y-2 sm:space-y-3 order-1 lg:order-2 flex flex-col justify-center h-full">
               <div className="space-y-2 sm:space-y-3 text-gray-600 text-left lg:text-justify" style={{ lineHeight: '1.4' }}>
-                <p className="text-sm sm:text-base lg:text-base mb-1" style={{ fontSize: 'clamp(0.875rem, 1.6vw, 1rem)' }}>
+                <p className="text-sm sm:text-base lg:text-base mb-1" style={{ fontFamily: 'Circular Std, Arial, sans-serif', fontSize: 'clamp(0.875rem, 1.6vw, 1rem)' }}>
                   At Newton Imperial Education, we believe every student deserves access to world-class education and mentorship. Our programs are designed to unlock your potential and prepare you for success in top universities and beyond.
                 </p>
-                <p className="text-sm sm:text-base lg:text-base mb-1" style={{ fontSize: 'clamp(0.875rem, 1.6vw, 1rem)' }}>
+                <p className="text-sm sm:text-base lg:text-base mb-1" style={{ fontFamily: 'Circular Std, Arial, sans-serif', fontSize: 'clamp(0.875rem, 1.6vw, 1rem)' }}>
                   We partner with leading researchers and academics from prestigious institutions like Harvard, MIT, Oxford, and Cambridge to provide you with unparalleled learning experiences that go beyond traditional education.
                 </p>
               </div>
@@ -51,7 +51,7 @@ const WhyChooseUs = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-sm sm:text-base text-gray-700 font-medium" style={{ fontSize: 'clamp(0.875rem, 1.5vw, 0.9rem)' }}>World-Class Mentors</span>
+                  <span className="text-sm sm:text-base text-gray-700 font-medium" style={{ fontFamily: 'Circular Std, Arial, sans-serif', fontSize: 'clamp(0.875rem, 1.5vw, 0.9rem)' }}>World-Class Mentors</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-4 h-4 sm:w-5 sm:h-5 bg-primary-600 rounded-full flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0">
@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-sm sm:text-base text-gray-700 font-medium" style={{ fontSize: 'clamp(0.875rem, 1.5vw, 0.9rem)' }}>Research Opportunities</span>
+                  <span className="text-sm sm:text-base text-gray-700 font-medium" style={{ fontFamily: 'Circular Std, Arial, sans-serif', fontSize: 'clamp(0.875rem, 1.5vw, 0.9rem)' }}>Research Opportunities</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-4 h-4 sm:w-5 sm:h-5 bg-primary-600 rounded-full flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0">
@@ -67,7 +67,7 @@ const WhyChooseUs = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-sm sm:text-base text-gray-700 font-medium" style={{ fontSize: 'clamp(0.875rem, 1.5vw, 0.9rem)' }}>Global Community</span>
+                  <span className="text-sm sm:text-base text-gray-700 font-medium" style={{ fontFamily: 'Circular Std, Arial, sans-serif', fontSize: 'clamp(0.875rem, 1.5vw, 0.9rem)' }}>Global Community</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-4 h-4 sm:w-5 sm:h-5 bg-primary-600 rounded-full flex items-center justify-center mr-2 sm:mr-3 flex-shrink-0">
@@ -75,7 +75,7 @@ const WhyChooseUs = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-sm sm:text-base text-gray-700 font-medium" style={{ fontSize: 'clamp(0.875rem, 1.5vw, 0.9rem)' }}>Proven Results</span>
+                  <span className="text-sm sm:text-base text-gray-700 font-medium" style={{ fontFamily: 'Circular Std, Arial, sans-serif', fontSize: 'clamp(0.875rem, 1.5vw, 0.9rem)' }}>Proven Results</span>
                 </div>
               </div>
               {/* Learn More Button */}
@@ -92,7 +92,7 @@ const WhyChooseUs = () => {
                   onMouseLeave={(e) => e.target.style.backgroundColor = '#0F2A44'}
                 >
                   <span>Learn More</span>
-                  <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-3 h-3 sm:w-3 sm:h-3 lg:w-4 lg:h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </Link>

@@ -6,17 +6,17 @@ const MentorInstitutions = () => {
   
   const institutions = [
     {
-      name: "Oxford University",
-      displayName: { first: "Oxford", second: "University" },
+      name: "University of Oxford",
+      displayName: { first: "University of", second: "Oxford" },
       logo: "/school_logos/oxford_logo.png",
-      alt: "Oxford University Logo"
+      alt: "University of Oxford Logo"
     },
     {
 
       name: "University of Cambridge",
-      displayName: { first: "Cambridge", second: "University" },
+      displayName: { first: "University of", second: "Cambridge" },
       logo: "/school_logos/cambridge_logo.png",
-      alt: "Cambridge University Logo"
+      alt: "University of Cambridge Logo"
     },
     {
       name: "Princeton University",
@@ -80,7 +80,7 @@ const MentorInstitutions = () => {
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 2.8vw, 2.5rem)', color: '#0F2A44' }}>
+            <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-6 text-heading" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
               Our Mentors Are From Top Institutions
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1rem)' }}>
@@ -120,10 +120,10 @@ const MentorInstitutions = () => {
               {/* Left Arrow */}
               <button 
                 onClick={prevSlide}
-                className="w-16 h-16 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white border border-[#0F2A44] rounded-full flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
               >
-                <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
 
@@ -144,10 +144,10 @@ const MentorInstitutions = () => {
               {/* Right Arrow */}
               <button 
                 onClick={nextSlide}
-                className="w-16 h-16 rounded-full bg-white border-2 border-[#0F2A44] flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-white border border-[#0F2A44] rounded-full flex items-center justify-center hover:bg-[#0F2A44] hover:shadow-md transition-all duration-300 group"
               >
-                <svg className="w-6 h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#0F2A44] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
             </div>

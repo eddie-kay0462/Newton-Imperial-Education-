@@ -8,7 +8,7 @@ const OurStudents = () => {
       <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.5rem, 2.8vw, 2.5rem)', color: '#0F2A44' }}>
+            <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-6 text-heading" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
               Who Should Join Our Programs?
             </h2>
             <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1rem)' }}>
@@ -20,7 +20,7 @@ const OurStudents = () => {
           <div className="bg-white rounded-xl shadow-sm p-8 md:p-12 mb-16">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-lg sm:text-xl lg:text-xl xl:text-2xl font-bold text-gray-900 mb-2" style={{ fontSize: 'clamp(1.125rem, 1.8vw, 1.5rem)' }}>
+                <h3 className="text-lg sm:text-xl lg:text-xl xl:text-2xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal', fontSize: 'clamp(1.125rem, 1.8vw, 1.5rem)' }}>
                   Perfect for Ambitious Students
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
@@ -31,20 +31,20 @@ const OurStudents = () => {
                   className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors group"
                 >
                   Find Out More
-                  <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  <svg className="w-3 h-3 sm:w-3 sm:h-3 lg:w-4 lg:h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </Link>
                 </div>
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
                   What You'll Gain
                 </h3>
                 <ul className="space-y-3">
                 <li className="flex items-start">
                     <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                     <span className="text-gray-700">Hands-on research experience with world-class mentors</span>
@@ -52,7 +52,7 @@ const OurStudents = () => {
                 <li className="flex items-start">
                     <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                     <span className="text-gray-700">Publication opportunities in peer-reviewed journals</span>
@@ -60,7 +60,7 @@ const OurStudents = () => {
                 <li className="flex items-start">
                     <div className="w-5 h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                     <span className="text-gray-700">Strong letters of recommendation for university applications</span>
@@ -73,7 +73,7 @@ const OurStudents = () => {
           {/* Success Statistics */}
             <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-3xl p-12 lg:p-16 shadow-sm">
               <div className="text-center mb-8 sm:mb-12">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 px-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif', fontSize: 'clamp(1.25rem, 3vw, 1.875rem)' }}>
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 px-4" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal', fontSize: 'clamp(1.25rem, 3vw, 1.875rem)' }}>
                   Our Student Success
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-4" style={{ fontSize: 'clamp(0.875rem, 2vw, 1.125rem)' }}>

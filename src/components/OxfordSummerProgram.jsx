@@ -43,7 +43,7 @@ const OxfordSummerProgram = () => {
                   </a>
                   <a 
                     href="#faq-section"
-                    className="inline-block text-white font-medium py-3 px-6 md:px-8 rounded-full transition-all duration-300 hover:shadow-lg text-base border-2 border-white hover:bg-white hover:text-[#0F2A44] w-full sm:w-auto md:w-auto min-w-[120px] md:min-w-[140px] text-center text-button"
+                    className="inline-block text-white font-medium py-3 px-6 md:px-8 rounded-full transition-all duration-300 text-base border border-white hover:bg-white hover:text-[#0F2A44] w-full sm:w-auto md:w-auto min-w-[120px] md:min-w-[140px] text-center text-button"
                   >
                     Learn More
                   </a>
@@ -70,7 +70,7 @@ const OxfordSummerProgram = () => {
                 Program Overview
               </h2>
               <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-4xl mx-auto text-body">
-                Immerse yourself in the prestigious academic environment of Oxford University through our comprehensive summer program
+                Immerse yourself in the prestigious academic environment of the University of Oxford through our comprehensive summer program
               </p>
             </div>
 
@@ -120,7 +120,7 @@ const OxfordSummerProgram = () => {
                 </h2>
                 <p className="text-base lg:text-lg text-gray-600 mb-6 leading-relaxed">
                   Founded in 1096, the University of Oxford is the oldest university in the English-speaking world. 
-                  With over 900 years of academic tradition, Oxford has produced 72 Nobel laureates and countless 
+                  With over 900 years of academic tradition, the University of Oxford has produced 72 Nobel laureates and countless 
                   influential leaders, thinkers, and innovators.
                 </p>
                 <p className="text-base lg:text-lg text-gray-600 mb-8 leading-relaxed">
@@ -141,7 +141,7 @@ const OxfordSummerProgram = () => {
               <div className="relative">
                 <img 
                   src="/school_logos/oxford_logo.png" 
-                  alt="Oxford University Logo" 
+                  alt="University of Oxford Logo" 
                   className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[280px] xl:max-w-[320px] 2xl:max-w-md mx-auto"
                 />
               </div>
@@ -498,18 +498,18 @@ const OxfordSummerProgram = () => {
       </section>
 
       {/* Application Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-[#0F2A44] to-[#1a3a5a]">
+      <section className="py-16 lg:py-24 bg-[#F9FAFB]">
         <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
-          <div className="max-w-screen-2xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-white mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+          <div className="bg-white rounded-2xl p-8 lg:p-12 xl:p-16 max-w-screen-2xl mx-auto text-center shadow-sm">
+            <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
               Applications Open for Summer 2026
             </h2>
-            <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Don't miss this opportunity to experience the prestigious Oxford University environment. 
+            <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+              Don't miss this opportunity to experience the prestigious Oxford University environment.
               Limited spots available - apply early to secure your place.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
+              <a
                 href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -517,9 +517,9 @@ const OxfordSummerProgram = () => {
               >
                 Apply Now
               </a>
-              <Link 
+              <Link
                 to="/FAQPage"
-                className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg border-2 border-white hover:bg-white hover:text-[#0F2A44]"
+                className="inline-block text-[#0F2A44] font-semibold py-4 px-8 rounded-full transition-all duration-300 text-lg border-2 border-[#0F2A44] hover:bg-[#0F2A44] hover:text-white"
               >
                 Learn More
               </Link>
@@ -527,6 +527,9 @@ const OxfordSummerProgram = () => {
           </div>
         </div>
       </section>
+
+      {/* Separator Section */}
+      <div className="h-8 sm:h-12 lg:h-16 bg-white"></div>
 
       <Footer />
     </div>

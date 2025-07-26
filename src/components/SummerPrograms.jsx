@@ -11,7 +11,7 @@ const SummerPrograms = () => {
   const program = {
     title: 'Summer In-Person Program',
     duration: '2 weeks',
-    price: '£9,000',
+    price: '$11,000',
     overview:
       'This in-person program will take place during the summer in prestigious locations like Cambridge and Oxford, offering a mix of academic workshops and cultural engagement. Experience world-class education in historic settings while building lifelong connections with peers from around the globe.',
     format:
@@ -69,7 +69,7 @@ const SummerPrograms = () => {
       >
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
           <div className="text-center">
-            <h1 className="font-hero font-normal text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-3 sm:mb-4 lg:mb-6 hero-title">
+            <h1 className="font-hero font-normal text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-3 sm:mb-4 lg:mb-6 hero-title text-white">
               Summer Programs
             </h1>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-200 max-w-3xl mx-auto px-4 hero-subtitle">
@@ -122,7 +122,7 @@ const SummerPrograms = () => {
                       className="bg-[#766542] hover:bg-[#8a7a5a] text-white font-semibold py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg transition-colors text-xs sm:text-sm md:text-base w-full sm:w-auto text-center"
                       style={{ fontSize: 'clamp(0.75rem, 1.8vw, 1rem)' }}
                     >
-                      Enroll Now - £9,000
+                      Enroll Now - $11,000
                     </a>
                   </div>
                 </div>
@@ -136,7 +136,7 @@ const SummerPrograms = () => {
               <div className="space-y-3 sm:space-y-4 mb-4 sm:mb-6">
                 <div className="flex items-center">
                   <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary-600 mr-2 sm:mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <div>
                     <span className="text-xs sm:text-sm text-gray-500" style={{ fontSize: 'clamp(0.75rem, 1.4vw, 0.875rem)' }}>Duration</span>
@@ -152,7 +152,7 @@ const SummerPrograms = () => {
                 </div>
                 <div className="flex items-center">
                   <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary-600 mr-2 sm:mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                   <div>
                     <span className="text-xs sm:text-sm text-gray-500" style={{ fontSize: 'clamp(0.75rem, 1.4vw, 0.875rem)' }}>Format</span>
@@ -166,7 +166,7 @@ const SummerPrograms = () => {
                   <li className="flex items-center">
                     <div className="w-3 h-3 sm:w-4 sm:h-4 bg-[#0F2A44] rounded-full flex items-center justify-center mr-2 flex-shrink-0">
                       <svg className="w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     <span style={{ fontSize: 'clamp(0.75rem, 1.4vw, 0.875rem)' }}>Workshops in historical labs</span>
@@ -174,7 +174,7 @@ const SummerPrograms = () => {
                   <li className="flex items-center">
                     <div className="w-3 h-3 sm:w-4 sm:h-4 bg-[#0F2A44] rounded-full flex items-center justify-center mr-2 flex-shrink-0">
                       <svg className="w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     <span style={{ fontSize: 'clamp(0.75rem, 1.4vw, 0.875rem)' }}>Access to academic libraries</span>
@@ -182,7 +182,7 @@ const SummerPrograms = () => {
                   <li className="flex items-center">
                     <div className="w-3 h-3 sm:w-4 sm:h-4 bg-[#0F2A44] rounded-full flex items-center justify-center mr-2 flex-shrink-0">
                       <svg className="w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     <span style={{ fontSize: 'clamp(0.75rem, 1.4vw, 0.875rem)' }}>Cultural excursions</span>
@@ -190,7 +190,7 @@ const SummerPrograms = () => {
                   <li className="flex items-center">
                     <div className="w-3 h-3 sm:w-4 sm:h-4 bg-[#0F2A44] rounded-full flex items-center justify-center mr-2 flex-shrink-0">
                       <svg className="w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     <span style={{ fontSize: 'clamp(0.75rem, 1.4vw, 0.875rem)' }}>Networking with faculty</span>
@@ -198,7 +198,7 @@ const SummerPrograms = () => {
                   <li className="flex items-center">
                     <div className="w-3 h-3 sm:w-4 sm:h-4 bg-[#0F2A44] rounded-full flex items-center justify-center mr-2 flex-shrink-0">
                       <svg className="w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     <span style={{ fontSize: 'clamp(0.75rem, 1.4vw, 0.875rem)' }}>Certificate of completion</span>
@@ -238,7 +238,7 @@ const SummerPrograms = () => {
             </a>
             <Link 
               to="/find-a-course"
-              className="group inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg bg-transparent hover:bg-white hover:text-[#0F2A44] border-2 border-white text-center leading-tight"
+              className="group inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 text-lg bg-transparent hover:bg-white hover:text-[#0F2A44] border border-white text-center leading-tight"
             >
               <span className="sm:hidden">Browse Courses</span>
               <span className="hidden sm:inline">Find Available Courses</span>
@@ -248,12 +248,15 @@ const SummerPrograms = () => {
                 stroke="currentColor" 
                 viewBox="0 0 24 24"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 15l7-7 7 7" />
               </svg>
             </Link>
           </div>
         </div>
       </section>
+
+      {/* Separator Section */}
+      <div className="h-8 sm:h-12 lg:h-16 bg-white"></div>
 
       <Footer />
     </div>

@@ -22,7 +22,7 @@ const CareerExplorationPathways = () => {
       >
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
           <div className="text-center">
-            <h1 className="font-hero font-normal text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-3 sm:mb-4 lg:mb-6 hero-title">
+            <h1 className="font-hero font-normal text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-3 sm:mb-4 lg:mb-6 hero-title text-white">
               Career Exploration & University Pathways
             </h1>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-200 max-w-3xl mx-auto px-4 hero-subtitle">
@@ -49,7 +49,7 @@ const CareerExplorationPathways = () => {
                     <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3 lg:gap-4 mb-3 sm:mb-4 lg:mb-6">
                       <div className="flex items-center text-gray-600">
                         <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 mr-1 sm:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <span className="text-xs sm:text-sm md:text-base" style={{ fontSize: 'clamp(0.75rem, 1.8vw, 1rem)' }}>4 weeks</span>
                       </div>
@@ -72,7 +72,7 @@ const CareerExplorationPathways = () => {
                       <li className="flex items-start">
                         <div className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 flex-shrink-0">
                           <svg className="w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
                         <span className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed" style={{ fontSize: 'clamp(0.75rem, 1.6vw, 1rem)' }}>Hear from professionals in various fields about their career journeys.</span>
@@ -80,7 +80,7 @@ const CareerExplorationPathways = () => {
                       <li className="flex items-start">
                         <div className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 flex-shrink-0">
                           <svg className="w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
                         <span className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed" style={{ fontSize: 'clamp(0.75rem, 1.6vw, 1rem)' }}>Get a deeper understanding of how to choose the right university program.</span>
@@ -88,7 +88,7 @@ const CareerExplorationPathways = () => {
                       <li className="flex items-start">
                         <div className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 bg-[#0F2A44] rounded-full flex items-center justify-center mr-2 sm:mr-3 mt-0.5 flex-shrink-0">
                           <svg className="w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
                           </svg>
                         </div>
                         <span className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed" style={{ fontSize: 'clamp(0.75rem, 1.6vw, 1rem)' }}>Build your resume and learn about internships and scholarship opportunities.</span>
@@ -118,7 +118,7 @@ const CareerExplorationPathways = () => {
                 </h3>
                 <div className="flex items-center text-primary-600 font-semibold mb-2 sm:mb-3 lg:mb-4">
                   <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <span className="text-xs sm:text-sm md:text-base" style={{ fontSize: 'clamp(0.75rem, 1.8vw, 1rem)' }}>Duration:</span>
                 </div>
@@ -126,7 +126,7 @@ const CareerExplorationPathways = () => {
 
                 <div className="flex items-center text-primary-600 font-semibold mb-2 sm:mb-3 lg:mb-4">
                   <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <span className="text-xs sm:text-sm md:text-base" style={{ fontSize: 'clamp(0.75rem, 1.8vw, 1rem)' }}>Investment:</span>
                 </div>
@@ -134,7 +134,7 @@ const CareerExplorationPathways = () => {
 
                 <div className="flex items-center text-primary-600 font-semibold mb-2 sm:mb-3 lg:mb-4">
                   <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <span className="text-xs sm:text-sm md:text-base" style={{ fontSize: 'clamp(0.75rem, 1.8vw, 1rem)' }}>Format:</span>
                 </div>
@@ -142,7 +142,7 @@ const CareerExplorationPathways = () => {
 
                 <div className="flex items-center text-primary-600 font-semibold mb-2 sm:mb-3 lg:mb-4">
                   <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <span className="text-xs sm:text-sm md:text-base" style={{ fontSize: 'clamp(0.75rem, 1.8vw, 1rem)' }}>What's Included:</span>
                 </div>
@@ -175,42 +175,46 @@ const CareerExplorationPathways = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-8 sm:py-12 lg:py-16 bg-primary-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 text-center">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3 lg:mb-4" style={{ fontSize: 'clamp(1.25rem, 3vw, 2rem)' }}>
-            Ready to Explore Your Future?
-          </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-primary-100 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1.25rem)' }}>
-            Join our career exploration program and discover your path to success
-          </p>
-          {/* Application Section/Button Group */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <a 
-              href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg bg-[#B8A67A] hover:bg-[#9A8B6A]"
-            >
-              Apply Now
-            </a>
-            <Link 
-              to="/find-a-course"
-              className="group inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg bg-[#0F2A44] hover:bg-[#1a3a5a] border border-white text-center leading-tight"
-            >
-              <span className="sm:hidden">Browse Courses</span>
-              <span className="hidden sm:inline">Find Available Courses</span>
-              <svg 
-                className="inline-block ml-2 w-4 h-4 transform transition-transform duration-300 group-hover:rotate-180" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
+      <section className="py-8 sm:py-12 lg:py-16 bg-[#F9FAFB]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+          <div className="bg-white rounded-2xl p-8 lg:p-12 xl:p-16 text-center shadow-sm">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3 lg:mb-4 text-gray-900" style={{ fontSize: 'clamp(1.25rem, 3vw, 2rem)' }}>
+              Ready to Explore Your Future?
+            </h2>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto px-4 leading-relaxed" style={{ fontSize: 'clamp(0.875rem, 1.8vw, 1.25rem)' }}>
+              Join our career exploration program and discover your path to success
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+              <a
+                href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg text-lg bg-[#B8A67A] hover:bg-[#9A8B6A]"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-              </svg>
-            </Link>
+                Apply Now
+              </a>
+              <Link
+                to="/find-a-course"
+                className="group inline-block text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 text-lg bg-[#0F2A44] hover:bg-[#1a3a5a] border-2 border-[#0F2A44] text-center leading-tight"
+              >
+                <span className="sm:hidden">Browse Courses</span>
+                <span className="hidden sm:inline">Find Available Courses</span>
+                <svg
+                  className="inline-block ml-2 w-4 h-4 transform transition-transform duration-300 group-hover:rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 15l7-7 7 7" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
+
+      {/* Separator Section */}
+      <div className="h-8 sm:h-12 lg:h-16 bg-white"></div>
 
       <Footer />
     </div>

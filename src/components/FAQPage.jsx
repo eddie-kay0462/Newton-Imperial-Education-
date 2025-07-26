@@ -119,22 +119,16 @@ const FAQPage = () => {
       
       {/* Hero Section */}
       <section 
-        className="relative pt-48 pb-20 lg:pt-56 lg:pb-32 overflow-hidden"
-        style={{
-          backgroundImage: `url('/FAQ/faq_hero.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
+        className="relative pt-48 pb-20 lg:pt-56 lg:pb-32 overflow-hidden bg-gradient-to-br from-[#0F2A44] to-[#1e3a5f]"
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0F2A44]/20 to-transparent"></div>
         
         <div className="relative z-10 w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
           <div className="max-w-screen-2xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 drop-shadow-lg" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
               Frequently Asked Questions
             </h1>
-            <p className="text-xl md:text-2xl text-white max-w-4xl mx-auto leading-relaxed drop-shadow-md">
+            <p className="text-xl md:text-2xl text-blue-50 max-w-4xl mx-auto leading-relaxed">
               Find answers to common questions about our programs, application process, and what to expect
             </p>
           </div>

@@ -7,7 +7,7 @@ const ReadyToBeginJourney = () => {
         <div className="max-w-screen-2xl mx-auto">
           <div className="text-center">
             <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 xl:p-16">
-              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 sm:mb-6" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 sm:mb-6" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
                 Ready to Begin Your Journey?
               </h3>
               <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-4">

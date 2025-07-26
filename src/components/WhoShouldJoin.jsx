@@ -294,13 +294,16 @@ const WhoShouldJoin = () => {
             </div>
           </div>
 
-          {/* CTA Section */}
-          <div className="text-center">
-            <div className="bg-primary-600 text-white rounded-xl p-8 md:p-12">
-              <h3 className="text-3xl font-bold mb-4">
+        </main>
+
+        {/* CTA Section */}
+        <section className="py-16 lg:py-20 bg-[#F9FAFB]">
+          <div className="w-full max-w-none mx-auto px-6 sm:px-12 lg:px-16 xl:px-20 2xl:px-28">
+            <div className="bg-white rounded-2xl p-8 lg:p-12 xl:p-16 max-w-screen-2xl mx-auto text-center shadow-sm">
+              <h2 className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-6" style={{ fontFamily: 'Nocturne Serif, Georgia, serif', fontWeight: 200, fontStyle: 'normal' }}>
                 Ready to Join Our Community?
-              </h3>
-              <p className="text-lg xl:text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+              </h2>
+              <p className="text-lg md:text-lg lg:text-lg xl:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
                 Take the first step toward transforming your academic journey with world-class mentorship and research opportunities.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -308,20 +311,20 @@ const WhoShouldJoin = () => {
                   href="https://airtable.com/app1ohbxkdWuesC5E/shrntae0DXYXkCcDY"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-white text-primary-600 font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors"
+                  className="inline-block text-white bg-[#0F2A44] font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:shadow-lg hover:bg-[#1a3a5a] text-lg"
                 >
                   Apply Now
                 </a>
                 <Link 
                   to="/#programs"
-                  className="inline-block border-2 border-white text-white font-semibold py-3 px-6 rounded-lg hover:bg-white/10 transition-colors"
+                  className="inline-block text-[#0F2A44] border-2 border-[#0F2A44] font-semibold py-4 px-8 rounded-full transition-all duration-300 hover:bg-[#0F2A44] hover:text-white text-lg"
                 >
                   Explore Programs
                 </Link>
               </div>
             </div>
           </div>
-        </main>
+        </section>
 
       <Footer />
     </div>
