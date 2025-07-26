@@ -6,7 +6,8 @@ const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [mobileDropdowns, setMobileDropdowns] = useState({});
   const [hoverTimeout, setHoverTimeout] = useState(null);
-  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
+  const [isSearchDropdownOpen, setIsSearchDropdownOpen] = useState(false);
+  const [showDetailedSearch, setShowDetailedSearch] = useState(false);
   const [searchFilters, setSearchFilters] = useState({
     format: '',
     pathway: '',
@@ -17,6 +18,7 @@ const Header = () => {
     pathway: false,
     subject: false
   });
+  const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const dropdownRefs = useRef({});
@@ -74,7 +76,7 @@ const Header = () => {
   // Close search modal dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (isSearchModalOpen && !event.target.closest('.dropdown-container')) {
+      if (showDetailedSearch && !event.target.closest('.dropdown-container')) {
         setDropdownStates({
           format: false,
           pathway: false,
@@ -85,7 +87,8 @@ const Header = () => {
 
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [isSearchModalOpen]);
+  }, [showDetailedSearch]);
+
 
   // Cleanup timeout on unmount
   useEffect(() => {
@@ -107,14 +110,14 @@ const Header = () => {
   // Handle Escape key to close modal
   useEffect(() => {
     const handleEscapeKey = (event) => {
-      if (event.key === 'Escape' && isSearchModalOpen) {
-        closeSearchModal();
+      if (event.key === 'Escape' && isSearchDropdownOpen) {
+        closeSearchDropdown();
       }
     };
 
     document.addEventListener('keydown', handleEscapeKey);
     return () => document.removeEventListener('keydown', handleEscapeKey);
-  }, [isSearchModalOpen]);
+  }, [isSearchDropdownOpen]);
 
 
   // Helper function to check if a link is active
@@ -336,16 +339,16 @@ const Header = () => {
     'Political Science', 'International Development'
   ];
 
-  // Search modal handlers
-  const openSearchModal = () => {
-    setIsSearchModalOpen(true);
-    setActiveDropdown(null);
+  // Search dropdown handlers
+  const openSearchDropdown = () => {
+    setIsSearchDropdownOpen(true);
     // Disable background scrolling
     document.body.style.overflow = 'hidden';
   };
 
-  const closeSearchModal = () => {
-    setIsSearchModalOpen(false);
+  const closeSearchDropdown = () => {
+    setIsSearchDropdownOpen(false);
+    setShowDetailedSearch(false);
     setSearchFilters({
       format: '',
       pathway: '',
@@ -401,10 +404,23 @@ const Header = () => {
 
     const queryString = params.toString();
     navigate(`/find-a-course${queryString ? `?${queryString}` : ''}`);
-    closeSearchModal();
+    closeSearchDropdown();
   };
 
-  const hasActiveFilters = searchFilters.format || searchFilters.pathway || searchFilters.subject;
+  // Search handlers - simplified for new dropdown approach
+  const handleFormatSelection = async (format) => {
+    if (format === 'online') {
+      setShowDetailedSearch(true);
+    } else if (format === 'in_person_summer') {
+      setIsLoading(true);
+      closeSearchDropdown();
+      // Add a slight delay to show loading state
+      setTimeout(() => {
+        navigate('/summer-experience-selection');
+        setIsLoading(false);
+      }, 800);
+    }
+  };
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100">
@@ -428,7 +444,7 @@ const Header = () => {
               <div className="flex items-center space-x-2 mr-2">
                 {/* Search button */}
                 <button
-                  onClick={openSearchModal}
+                  onClick={openSearchDropdown}
                   className="text-gray-600 hover:text-primary-600 transition-all duration-300 p-2 rounded-lg hover:bg-gray-50"
                   aria-label="Search courses"
                 >
@@ -459,8 +475,8 @@ const Header = () => {
                 <div className="flex items-center space-x-3">
                   {/* Text */}
                   <div className="flex flex-col justify-center text-center">
-                    <span className="text-sm font-medium text-gray-500 leading-tight uppercase text-caption" style={{ fontSize: 'clamp(0.75rem, 1.3vw, 0.875rem)', fontFamily: 'Nocturne Serif, Georgia, serif' }}>Newton Imperial</span>
-                    <span className="text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold text-gray-900 leading-tight text-heading" style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)', fontFamily: ' Georgia, serif' }}>Education</span>
+                    <span className="text-sm font-medium text-gray-500 leading-tight uppercase text-caption -mb-2" style={{ fontSize: 'clamp(0.75rem, 1.3vw, 0.875rem)', fontFamily: 'Nocturne Serif, Georgia, serif' }}>Newton Imperial</span>
+                    <span className="text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold text-gray-900 leading-tight text-heading -mb-3" style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)', fontFamily: ' Georgia, serif' }}>Education</span>
                   </div>
                 </div>
               </Link>
@@ -726,7 +742,7 @@ const Header = () => {
             {/* CTA Buttons */}
             <div className="hidden lg:flex items-center space-x-2 xl:space-x-3">
               <button
-                onClick={openSearchModal}
+                onClick={openSearchDropdown}
                 className="text-gray-600 hover:text-primary-600 font-medium transition-all duration-300 px-3 xl:px-4 py-2 rounded-lg hover:bg-gray-50"
                 aria-label="Search courses"
               >
@@ -911,7 +927,7 @@ const Header = () => {
               <div className="px-4 py-3 border-t border-gray-200 mt-2">
                 <button
                   onClick={() => {
-                    openSearchModal();
+                    openSearchDropdown();
                     setIsMobileMenuOpen(false);
                   }}
                   className="flex items-center space-x-2 px-0 py-2 text-gray-600 hover:text-primary-600 font-medium transition-colors duration-300 text-base mb-3 w-full"
@@ -946,10 +962,73 @@ const Header = () => {
         )}
 
         {/* Search Modal */}
-        {isSearchModalOpen && (
+        {isSearchDropdownOpen && !showDetailedSearch && (
           <div 
             className="fixed inset-0 bg-black bg-opacity-50 z-[100] flex items-center justify-center p-4"
-            onClick={closeSearchModal}
+            onClick={closeSearchDropdown}
+          >
+            <div 
+              className="bg-white rounded-2xl shadow-xl w-full max-w-md mx-auto"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Modal Header */}
+              <div className="px-6 py-4 flex items-center justify-between border-b border-gray-100">
+                <h2 className="text-lg font-semibold text-gray-900">Choose Format</h2>
+                <button
+                  onClick={closeSearchDropdown}
+                  className="text-gray-400 hover:text-gray-600 transition-colors duration-200 p-1"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              {/* Modal Content */}
+              <div className="p-6 space-y-3">
+                <button
+                  onClick={() => handleFormatSelection('online')}
+                  className="w-full p-4 text-left bg-gray-50 hover:bg-primary-50 border border-gray-200 hover:border-primary-300 rounded-lg transition-all duration-200 group"
+                >
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 bg-primary-100 group-hover:bg-primary-200 rounded-lg flex items-center justify-center mr-3">
+                      <svg className="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-medium text-gray-900 group-hover:text-primary-700">Research Programs</h3>
+                      <p className="text-sm text-gray-500">Research-focused online or in-person programs</p>
+                    </div>
+                  </div>
+                </button>
+
+                <button
+                  onClick={() => handleFormatSelection('in_person_summer')}
+                  className="w-full p-4 text-left bg-gray-50 hover:bg-primary-50 border border-gray-200 hover:border-primary-300 rounded-lg transition-all duration-200 group"
+                >
+                  <div className="flex items-center">
+                    <div className="w-10 h-10 bg-primary-100 group-hover:bg-primary-200 rounded-lg flex items-center justify-center mr-3">
+                      <svg className="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-medium text-gray-900 group-hover:text-primary-700">In-person Summer Experience</h3>
+                      <p className="text-sm text-gray-500">On-campus programs at Oxford & Cambridge</p>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Detailed Search Modal for Online */}
+        {isSearchDropdownOpen && showDetailedSearch && (
+          <div 
+            className="fixed inset-0 bg-black bg-opacity-50 z-[100] flex items-center justify-center p-4"
+            onClick={closeSearchDropdown}
           >
             <div 
               className="bg-white rounded-2xl shadow-xl w-full max-w-4xl mx-auto max-h-[90vh] overflow-visible"
@@ -959,7 +1038,7 @@ const Header = () => {
               <div className="px-4 sm:px-6 py-4 flex items-center justify-between border-b border-gray-100">
                 <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-900">Find the best course for you:</h2>
                 <button
-                  onClick={closeSearchModal}
+                  onClick={closeSearchDropdown}
                   className="text-gray-400 hover:text-gray-600 transition-colors duration-200 p-1 ml-2 flex-shrink-0"
                 >
                   <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -975,11 +1054,11 @@ const Header = () => {
                   {/* Teaching Format Dropdown */}
                   <div className="relative dropdown-container lg:flex-1">
                     <label className="block text-sm font-medium text-gray-700 mb-2 lg:hidden">Teaching Format</label>
-                                          <button
-                        onClick={() => toggleDropdown('format')}
-                        className="w-full px-4 py-3 bg-gray-100 lg:bg-white border lg:border-2 border-gray-300 lg:border-gray-200 rounded-xl lg:rounded-lg text-gray-700 hover:bg-gray-50 lg:hover:border-gray-300 transition-all duration-200 flex items-center justify-between text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                      >
-                        <span className="text-sm lg:text-base">{searchFilters.format ? teachingFormats.find(f => f.value === searchFilters.format)?.label : 'All Formats'}</span>
+                    <button
+                      onClick={() => toggleDropdown('format')}
+                      className="w-full px-4 py-3 bg-gray-100 lg:bg-white border lg:border-2 border-gray-300 lg:border-gray-200 rounded-xl lg:rounded-lg text-gray-700 hover:bg-gray-50 lg:hover:border-gray-300 transition-all duration-200 flex items-center justify-between text-left focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    >
+                      <span className="text-sm lg:text-base">{searchFilters.format ? teachingFormats.find(f => f.value === searchFilters.format)?.label : 'All Formats'}</span>
                       <svg 
                         className={`w-4 h-4 text-gray-400 transition-transform duration-200 ${dropdownStates.format ? 'rotate-180' : ''}`} 
                         fill="none" 
@@ -1129,6 +1208,16 @@ const Header = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        )}
+
+        {/* Loading Overlay */}
+        {isLoading && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 z-[110] flex items-center justify-center">
+            <div className="bg-white rounded-lg p-6 flex items-center space-x-3">
+              <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-primary-600"></div>
+              <span className="text-gray-700 font-medium">Loading summer experiences...</span>
             </div>
           </div>
         )}
